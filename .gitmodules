@@ -28,3 +28,21 @@
 [submodule "realestateprototype"]
 	path = realestateprototype
 	url = https://github.com/candlestixxx/realestateprototype.git
+[submodule "p2p_service_marketplace"]
+	path = p2p_service_marketplace
+	url = https://github.com/candlestixxx/p2p_service_marketplace
+[submodule "socialmediacontentplanner"]
+	path = socialmediacontentplanner
+	url = https://github.com/candlestixxx/socialmediacontentplanner
+[submodule "skillzhub"]
+	path = skillzhub
+	url = https://github.com/candlestixxx/skillzhub
+[submodule "explorerexedecompiled"]
+	path = explorerexedecompiled
+	url = https://github.com/candlestixxx/explorerexedecompiled
+[submodule "hermes-agent"]
+	path = hermes-agent
+	url = https://github.com/candlestixxx/hermes-agent
+[submodule "theta-data-api"]
+	path = theta-data-api
+	url = https://github.com/candlestixxx/theta-data-api
