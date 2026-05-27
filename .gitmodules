@@ -46,3 +46,9 @@
 [submodule "theta-data-api"]
 	path = theta-data-api
 	url = https://github.com/candlestixxx/theta-data-api
+[submodule "forclosureworkflow"]
+	path = forclosureworkflow
+	url = https://github.com/candlestixxx/forclosureworkflow
+[submodule "realestateleadcaller"]
+	path = realestateleadcaller
+	url = https://github.com/candlestixxx/realestateleadcaller
