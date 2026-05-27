@@ -1,0 +1,30 @@
+[submodule "auto_dj_script"]
+	path = auto_dj_script
+	url = https://github.com/candlestixxx/auto_dj_script
+[submodule "borg"]
+	path = borg
+	url = https://github.com/robertpelloni/borg
+[submodule "brokeragentworkflow"]
+	path = brokeragentworkflow
+	url = https://github.com/candlestixxx/brokeragentworkflow
+[submodule "fwber"]
+	path = fwber
+	url = https://github.com/robertpelloni/fwber.git
+[submodule "hymnmania"]
+	path = hymnmania
+	url = https://github.com/robertpelloni/hymnmania
+[submodule "hypercode"]
+	path = hypercode
+	url = https://github.com/candlestixxx/hypercode
+[submodule "jules-autopilot"]
+	path = jules-autopilot
+	url = https://github.com/robertpelloni/jules-autopilot
+[submodule "re-agent-workflow-media-1"]
+	path = re-agent-workflow-media-1
+	url = https://github.com/candlestixxx/re-agent-workflow-media-1
+[submodule "realestatecrm"]
+	path = realestatecrm
+	url = git@github.com:robertpelloni/realestatecrm.git
+[submodule "realestateprototype"]
+	path = realestateprototype
+	url = https://github.com/candlestixxx/realestateprototype.git
