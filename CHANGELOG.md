@@ -1,5 +1,16 @@
-# CHANGELOG
 
+## [1.0.3] - 2026-05-29
+### Added
+- Comprehensive structural map and inventory of all submodules (SUBMODULE_INVENTORY.json, STRUCTURAL_MAP.txt).
+- Automated intelligent merge script (merge_script.ps1) for recursive submodule reconciliation.
+
+### Changed
+- Executed Dual-Direction Intelligent Merge:
+    - Merged active feature branches into main for rokeragentworkflow, hymnmania, hypercode, and jules-autopilot.
+    - Resolved file locking issues and reconciled development drift across 8 primary submodules.
+    - Synchronized all submodules to their latest tracking commits.
+- Updated ROADMAP.md and TODO.md reflecting completed branch reconciliation phase.
+- Incremented global version to 1.0.3.
 ## [1.0.2] - 2026-05-25
 ### Changed
 - Executed `Intelligent Merge Engine` for `borg` and `jules-autopilot`.
