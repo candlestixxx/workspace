@@ -8,6 +8,7 @@
 - Executed `git fetch --all --tags` on the root workspace and recursively across all submodules.
 - Synchronized submodule URLs and successfully resolved tracking issues for broken submodules within `borg/submodules/hypercode` (removed invalid `.gitmodules` entries `magg`, `mcp-proxy`, `mcphub`, `mcpproxy-go`, `pluggedin-app`, `pluggedin-mcp`, `pluggedin-mcp-proxy`, and `Super-MCP`).
 - Completed a recursive `git submodule update --init --recursive` to ensure pristine working directories.
+- Sanitized `borg` submodule by removing a stale `submodules/hypercode` reference that lacked a `.gitmodules` mapping, ensuring full recursive compatibility.
 
 ### 2. Dual-Direction Intelligent Merge Engine
 Inspected all active feature branches across `robertpelloni` repositories:
