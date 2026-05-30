@@ -1,4 +1,14 @@
 
+## [1.0.4] - 2026-05-30
+### Changed
+- Executed Dual-Direction Intelligent Merge across robertpelloni repositories.
+- Merged major feature branch (psy-mono pipeline) into hymnmania.
+- Merged federation hardening features into fwber.
+- Merged RAG consolidation cleanup into realestatecrm.
+- Reverse merged main into multimousergy.
+- Cleaned up broken submodules in borg/submodules/hypercode.
+- Updated global version to 1.0.4.
+
 ## [1.0.3] - 2026-05-29
 ### Added
 - Comprehensive structural map and inventory of all submodules (SUBMODULE_INVENTORY.json, STRUCTURAL_MAP.txt).

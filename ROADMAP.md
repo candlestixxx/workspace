@@ -6,9 +6,10 @@
 - [x] Establish global `.gitignore` and version control structure.
 
 ## Phase 2: Feature Branch Resolution (Completed)
-- [x] Complete "Intelligent Merge Engine" execution over heavily conflicted projects (`borg`, `jules-autopilot`, `fwber`).
+- [x] Complete "Intelligent Merge Engine" execution over heavily conflicted projects (`borg`, `jules-autopilot`, `fwber`, `hymnmania`, `realestatecrm`).
 - [x] Rebase and integrate active feature branches.
 
 ## Phase 3: Global Build Orchestration
 - [ ] Connect `build.bat` to all submodule build pipelines.
 - [ ] Connect `start.bat` to orchestrate multiple sub-services concurrently.
+- [ ] Monitor performance of newly merged federation and psy-mono pipelines.
