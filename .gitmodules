@@ -52,3 +52,6 @@
 [submodule "realestateleadcaller"]
 	path = realestateleadcaller
 	url = https://github.com/candlestixxx/realestateleadcaller
+[submodule "multimousergy"]
+	path = multimousergy
+	url = https://github.com/robertpelloni/multimousergy.git
