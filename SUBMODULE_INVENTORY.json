@@ -8,7 +8,7 @@
   {
     "Path": "borg",
     "URL": "git@github.com:robertpelloni/borg.git",
-    "Commit": "ec2d2bf9db162dc746c5c94ef77c5ce0e62e4622",
+    "Commit": "8b71db4ec348808e93150e553604c709a8cc462b",
     "Branch": "main"
   },
   {
