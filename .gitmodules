@@ -55,3 +55,9 @@
 [submodule "multimousergy"]
 	path = multimousergy
 	url = https://github.com/robertpelloni/multimousergy.git
+[submodule "techno_platform_detroit"]
+	path = techno_platform_detroit
+	url = https://github.com/candlestixxx/techno_platform_detroit
+[submodule "ArrowVortex"]
+	path = ArrowVortex
+	url = https://github.com/robertpelloni/ArrowVortex
