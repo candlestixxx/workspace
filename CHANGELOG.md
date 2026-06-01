@@ -1,4 +1,12 @@
 
+## [1.0.7] - 2026-05-31
+### Changed
+- Final forensic audit of all submodule tracking states across 20+ project layers.
+- Exhaustive feature integration for `brokeragentworkflow`, `explorerexedecompiled`, and `borg` (TormentNexus).
+- Resolved remaining CONFLICT (add/add) and unrelated history errors in secondary submodules.
+- Sanitized `superdawmcp` by removing the legacy `ableton-dj-template` index entry.
+- Updated global version to 1.0.7.
+
 ## [1.0.6] - 2026-05-31
 ### Changed
 - Final validation of the workspace synchronization.
