@@ -61,3 +61,6 @@
 [submodule "ArrowVortex"]
 	path = ArrowVortex
 	url = https://github.com/robertpelloni/ArrowVortex
+[submodule "superdawmcp"]
+	path = superdawmcp
+	url = https://github.com/robertpelloni/superdawmcp
