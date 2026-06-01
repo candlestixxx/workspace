@@ -1,4 +1,11 @@
 
+## [1.0.6] - 2026-05-31
+### Changed
+- Final validation of the workspace synchronization.
+- Resolved deeply nested submodule tracking issues in `superdawmcp` by removing non-functional entries (`ableton-remote-scripts`, `ableton-dj-template`) from the index.
+- Finalized global build sequence execution, resulting in 100% build compliance across all verified submodules (TormentNexus, Real Estate CRM).
+- Updated global version to 1.0.6.
+
 ## [1.0.5] - 2026-05-30
 ### Changed
 - Incremental feature integration across multiple submodules (brokeragentworkflow, forclosureworkflow, realestateleadcaller, realestateprototype, socialmediacontentplanner, techno_platform_detroit).
