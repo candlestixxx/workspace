@@ -1,4 +1,12 @@
 
+## [1.0.5] - 2026-05-30
+### Changed
+- Incremental feature integration across multiple submodules (brokeragentworkflow, forclosureworkflow, realestateleadcaller, realestateprototype, socialmediacontentplanner, techno_platform_detroit).
+- Final forensic audit and merge of thousands of insertions from stable feature branches into main.
+- Sanitized `superdawmcp` by removing broken nested submodule references (`ableton-remote-scripts`, `ableton-dj-template`) to enable clean recursive updates on Windows.
+- Resolved file locks in `hymnmania` (`test_output_suno_final`) and `jules-autopilot` (`hypernexus.db`).
+- Updated global version to 1.0.5.
+
 ## [1.0.4] - 2026-05-30
 ### Changed
 - Executed Dual-Direction Intelligent Merge across robertpelloni repositories.
