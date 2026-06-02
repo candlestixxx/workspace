@@ -3,28 +3,28 @@
 	url = https://github.com/candlestixxx/auto_dj_script
 [submodule "borg"]
 	path = borg
-	url = https://github.com/robertpelloni/borg
+	url = https://github.com/candlestixxx/borg
 [submodule "brokeragentworkflow"]
 	path = brokeragentworkflow
 	url = https://github.com/candlestixxx/brokeragentworkflow
 [submodule "fwber"]
 	path = fwber
-	url = https://github.com/robertpelloni/fwber.git
+	url = https://github.com/candlestixxx/fwber.git
 [submodule "hymnmania"]
 	path = hymnmania
-	url = https://github.com/robertpelloni/hymnmania
+	url = https://github.com/candlestixxx/hymnmania
 [submodule "hypercode"]
 	path = hypercode
 	url = https://github.com/candlestixxx/hypercode
 [submodule "jules-autopilot"]
 	path = jules-autopilot
-	url = https://github.com/robertpelloni/jules-autopilot
+	url = https://github.com/candlestixxx/jules-autopilot
 [submodule "re-agent-workflow-media-1"]
 	path = re-agent-workflow-media-1
 	url = https://github.com/candlestixxx/re-agent-workflow-media-1
 [submodule "realestatecrm"]
 	path = realestatecrm
-	url = git@github.com:robertpelloni/realestatecrm.git
+	url = git@github.com:candlestixxx/realestatecrm.git
 [submodule "realestateprototype"]
 	path = realestateprototype
 	url = https://github.com/candlestixxx/realestateprototype.git
@@ -54,13 +54,13 @@
 	url = https://github.com/candlestixxx/realestateleadcaller
 [submodule "multimousergy"]
 	path = multimousergy
-	url = https://github.com/robertpelloni/multimousergy.git
+	url = https://github.com/candlestixxx/multimousergy.git
 [submodule "techno_platform_detroit"]
 	path = techno_platform_detroit
 	url = https://github.com/candlestixxx/techno_platform_detroit
 [submodule "ArrowVortex"]
 	path = ArrowVortex
-	url = https://github.com/robertpelloni/ArrowVortex
+	url = https://github.com/candlestixxx/ArrowVortex
 [submodule "superdawmcp"]
 	path = superdawmcp
-	url = https://github.com/robertpelloni/superdawmcp
+	url = https://github.com/candlestixxx/superdawmcp

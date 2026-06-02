@@ -24,7 +24,7 @@
 
 ## [1.0.4] - 2026-05-30
 ### Changed
-- Executed Dual-Direction Intelligent Merge across robertpelloni repositories.
+- Executed Dual-Direction Intelligent Merge across candlestixxx repositories.
 - Merged major feature branch (psy-mono pipeline) into hymnmania.
 - Merged federation hardening features into fwber.
 - Merged RAG consolidation cleanup into realestatecrm.

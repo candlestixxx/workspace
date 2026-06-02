@@ -1,9 +1,9 @@
 [
   {
     "Path": "ArrowVortex",
-    "URL": "https://github.com/robertpelloni/ArrowVortex",
+    "URL": "https://github.com/candlestixxx/ArrowVortex",
     "Commit": "eee0267ae5068b04f66fb2e7d45e6150b78474c8",
-    "Branch": "release"
+    "Branch": "HEAD"
   },
   {
     "Path": "auto_dj_script",
@@ -13,32 +13,32 @@
   },
   {
     "Path": "borg",
-    "URL": "git@github.com:robertpelloni/borg.git",
-    "Commit": "041b4ccb0ad28200239300035ccfee109c403249",
+    "URL": "https://github.com/candlestixxx/borg",
+    "Commit": "375245b41c959c1907f7a58e152184786a9e4f0e",
     "Branch": "main"
   },
   {
     "Path": "brokeragentworkflow",
     "URL": "https://github.com/candlestixxx/brokeragentworkflow",
-    "Commit": "0f08eda482e3d021447132e425e33888914ab79f",
-    "Branch": "HEAD"
+    "Commit": "7a69117e9f56e2ed2173894dc37b4ce25817b026",
+    "Branch": "main"
   },
   {
     "Path": "explorerexedecompiled",
     "URL": "https://github.com/candlestixxx/explorerexedecompiled",
-    "Commit": "8cf4fe60615cb42bd007511c49627a572dcd1427",
+    "Commit": "66b2f27241eb45c30da9d77031a3c0dfd6de1289",
     "Branch": "main"
   },
   {
     "Path": "forclosureworkflow",
     "URL": "https://github.com/candlestixxx/forclosureworkflow",
-    "Commit": "727e3c0afe4bebd127f39eced3c53c1c328942ba",
+    "Commit": "86721a29ff4e3294f5ed32a834162425641f0b3b",
     "Branch": "main"
   },
   {
     "Path": "fwber",
-    "URL": "git@github.com:robertpelloni/fwber.git",
-    "Commit": "09bcc64a73b56f490a13fe3e1c180a419a503a52",
+    "URL": "https://github.com/candlestixxx/fwber.git",
+    "Commit": "00ab7ad272fb07c9f833d306a8933bb0e9744214",
     "Branch": "HEAD"
   },
   {
@@ -49,26 +49,26 @@
   },
   {
     "Path": "hymnmania",
-    "URL": "git@github.com:robertpelloni/hymnmania.git",
-    "Commit": "f43a7ecf4ec6bc2fb96a2221c00855ae0b8fa2be",
-    "Branch": "HEAD"
+    "URL": "https://github.com/candlestixxx/hymnmania",
+    "Commit": "4d1445a1f733eef37af5a176c99dee3e976cb5e8",
+    "Branch": "main"
   },
   {
     "Path": "hypercode",
     "URL": "https://github.com/candlestixxx/hypercode",
-    "Commit": "ac85a24362c045b039369b51a45d484082d7ddd6",
+    "Commit": "e1e5d2336f7ee1fa5ff33990bd0cf4791b604db2",
     "Branch": "main"
   },
   {
     "Path": "jules-autopilot",
-    "URL": "https://github.com/robertpelloni/jules-autopilot",
-    "Commit": "2c30a150caed29cd7a08deafae9eef828793b196",
+    "URL": "https://github.com/candlestixxx/jules-autopilot",
+    "Commit": "919732aa288a180d85091bc191b9926082610c15",
     "Branch": "HEAD"
   },
   {
     "Path": "multimousergy",
-    "URL": "git@github.com:robertpelloni/multimousergy.git",
-    "Commit": "a6ea93ed6ecc30ed81dd24f027b0fe71c5d3e7cb",
+    "URL": "https://github.com/candlestixxx/multimousergy.git",
+    "Commit": "b6ba30067d5491257f0766bdc971030149aa1f86",
     "Branch": "main"
   },
   {
@@ -85,20 +85,20 @@
   },
   {
     "Path": "realestatecrm",
-    "URL": "git@github.com:robertpelloni/realestatecrm.git",
-    "Commit": "88a5974eac84fb317f76dcd10c6c31fc107f4a36",
+    "URL": "git@github.com:candlestixxx/realestatecrm.git",
+    "Commit": "c0d91e28a1a55f53b1d5171bf9a5b071d46aeb37",
     "Branch": "main"
   },
   {
     "Path": "realestateleadcaller",
     "URL": "https://github.com/candlestixxx/realestateleadcaller",
-    "Commit": "30e06032379a89566be8b11ee354ba04ce5aa76b",
+    "Commit": "1f83ec8d1a3adeef620e9056da1e86bc5bcba3e8",
     "Branch": "HEAD"
   },
   {
     "Path": "realestateprototype",
     "URL": "https://github.com/candlestixxx/realestateprototype.git",
-    "Commit": "93af02f9f7162f781be1cb5f1a466225b74f6e90",
+    "Commit": "19a69e6521ef61ef2c19644dc1c7bf145628e4a1",
     "Branch": "master"
   },
   {
@@ -110,13 +110,19 @@
   {
     "Path": "socialmediacontentplanner",
     "URL": "https://github.com/candlestixxx/socialmediacontentplanner",
-    "Commit": "820d6a2cf3932a59a25a24e6c71843097c3c9798",
+    "Commit": "c13d64dbb0315844c33cf319cefcab82dea68f9f",
+    "Branch": "HEAD"
+  },
+  {
+    "Path": "superdawmcp",
+    "URL": "https://github.com/candlestixxx/superdawmcp",
+    "Commit": "6370ebbeb461bb37f6745bea5202601df4cbfaa7",
     "Branch": "main"
   },
   {
     "Path": "techno_platform_detroit",
     "URL": "https://github.com/candlestixxx/techno_platform_detroit",
-    "Commit": "e25a79b25155c4b9eaa0112898be4ed00c579c52",
+    "Commit": "3dd9e6b849421cf398ead10b5ec2172420c09c81",
     "Branch": "main"
   },
   {
