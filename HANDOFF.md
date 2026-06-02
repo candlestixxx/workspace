@@ -16,8 +16,9 @@
 - Executed the global build orchestrator (`build.bat`).
 - All core components, including the TormentNexus Go sidecar and the Real Estate CRM Next.js application, verified to be in a 100% build-stable state.
 
-### 3. Version Governance
+### 3. Version Governance & Identity
 - Incremented the global workspace version to `1.0.7`.
+- Migrated project identity from `robertpelloni` to `candlestixxx` across all documentation and workspace metadata.
 - All submodule pointers in the root repository are anchored to the latest sanitized `main`/`master` commits.
 
 ## Next Steps for Successive Models
