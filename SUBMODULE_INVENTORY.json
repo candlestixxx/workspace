@@ -1,134 +1,350 @@
 [
-  {
-    "Path": "ArrowVortex",
-    "URL": "https://github.com/candlestixxx/ArrowVortex",
-    "Commit": "eee0267ae5068b04f66fb2e7d45e6150b78474c8",
-    "Branch": "HEAD"
-  },
-  {
-    "Path": "auto_dj_script",
-    "URL": "https://github.com/candlestixxx/auto_dj_script",
-    "Commit": "cd170f78a253b98a3120426ca93ebb5de1b18e9c",
-    "Branch": "main"
-  },
-  {
-    "Path": "borg",
-    "URL": "https://github.com/candlestixxx/borg",
-    "Commit": "375245b41c959c1907f7a58e152184786a9e4f0e",
-    "Branch": "main"
-  },
-  {
-    "Path": "brokeragentworkflow",
-    "URL": "https://github.com/candlestixxx/brokeragentworkflow",
-    "Commit": "7a69117e9f56e2ed2173894dc37b4ce25817b026",
-    "Branch": "main"
-  },
-  {
-    "Path": "explorerexedecompiled",
-    "URL": "https://github.com/candlestixxx/explorerexedecompiled",
-    "Commit": "66b2f27241eb45c30da9d77031a3c0dfd6de1289",
-    "Branch": "main"
-  },
-  {
-    "Path": "forclosureworkflow",
-    "URL": "https://github.com/candlestixxx/forclosureworkflow",
-    "Commit": "86721a29ff4e3294f5ed32a834162425641f0b3b",
-    "Branch": "main"
-  },
-  {
-    "Path": "fwber",
-    "URL": "https://github.com/candlestixxx/fwber.git",
-    "Commit": "00ab7ad272fb07c9f833d306a8933bb0e9744214",
-    "Branch": "HEAD"
-  },
-  {
-    "Path": "hermes-agent",
-    "URL": "https://github.com/candlestixxx/hermes-agent",
-    "Commit": "e3f7ff1123fc8e0dc156807fb0935c89f613d6f4",
-    "Branch": "main"
-  },
-  {
-    "Path": "hymnmania",
-    "URL": "https://github.com/candlestixxx/hymnmania",
-    "Commit": "4d1445a1f733eef37af5a176c99dee3e976cb5e8",
-    "Branch": "main"
-  },
-  {
-    "Path": "hypercode",
-    "URL": "https://github.com/candlestixxx/hypercode",
-    "Commit": "e1e5d2336f7ee1fa5ff33990bd0cf4791b604db2",
-    "Branch": "main"
-  },
-  {
-    "Path": "jules-autopilot",
-    "URL": "https://github.com/candlestixxx/jules-autopilot",
-    "Commit": "919732aa288a180d85091bc191b9926082610c15",
-    "Branch": "HEAD"
-  },
-  {
-    "Path": "multimousergy",
-    "URL": "https://github.com/candlestixxx/multimousergy.git",
-    "Commit": "b6ba30067d5491257f0766bdc971030149aa1f86",
-    "Branch": "main"
-  },
-  {
-    "Path": "p2p_service_marketplace",
-    "URL": "https://github.com/candlestixxx/p2p_service_marketplace",
-    "Commit": "722e9b5a37682564fc9e1eed0efc0042d3aa74ac",
-    "Branch": "main"
-  },
-  {
-    "Path": "re-agent-workflow-media-1",
-    "URL": "https://github.com/candlestixxx/re-agent-workflow-media-1",
-    "Commit": "bea32d2dc2137b65bc7d512a45df717e98ba1880",
-    "Branch": "main"
-  },
-  {
-    "Path": "realestatecrm",
-    "URL": "git@github.com:candlestixxx/realestatecrm.git",
-    "Commit": "c0d91e28a1a55f53b1d5171bf9a5b071d46aeb37",
-    "Branch": "main"
-  },
-  {
-    "Path": "realestateleadcaller",
-    "URL": "https://github.com/candlestixxx/realestateleadcaller",
-    "Commit": "1f83ec8d1a3adeef620e9056da1e86bc5bcba3e8",
-    "Branch": "HEAD"
-  },
-  {
-    "Path": "realestateprototype",
-    "URL": "https://github.com/candlestixxx/realestateprototype.git",
-    "Commit": "19a69e6521ef61ef2c19644dc1c7bf145628e4a1",
-    "Branch": "master"
-  },
-  {
-    "Path": "skillzhub",
-    "URL": "https://github.com/candlestixxx/skillzhub",
-    "Commit": "bd9e06212d17a60b9a321e22c1a85dd6d1b83aed",
-    "Branch": "main"
-  },
-  {
-    "Path": "socialmediacontentplanner",
-    "URL": "https://github.com/candlestixxx/socialmediacontentplanner",
-    "Commit": "c13d64dbb0315844c33cf319cefcab82dea68f9f",
-    "Branch": "HEAD"
-  },
-  {
-    "Path": "superdawmcp",
-    "URL": "https://github.com/candlestixxx/superdawmcp",
-    "Commit": "6370ebbeb461bb37f6745bea5202601df4cbfaa7",
-    "Branch": "main"
-  },
-  {
-    "Path": "techno_platform_detroit",
-    "URL": "https://github.com/candlestixxx/techno_platform_detroit",
-    "Commit": "3dd9e6b849421cf398ead10b5ec2172420c09c81",
-    "Branch": "main"
-  },
-  {
-    "Path": "theta-data-api",
-    "URL": "https://github.com/candlestixxx/theta-data-api",
-    "Commit": "96f4807cd39f53a41ff460da3496bccbe4460453",
-    "Branch": "main"
-  }
+    {
+        "Path": "ArrowVortex",
+        "URL": "https://github.com/candlestixxx/ArrowVortex",
+        "Commit": "dd4473a33c8b91fee44829f608f7ed2d1338aedc",
+        "Branch": "release"
+    },
+    {
+        "Path": "ArrowVortex/lib/ddc",
+        "URL": "https://github.com/libddc/libddc",
+        "Commit": "500d5709ae5e271724b653e1b50c7313cf780825",
+        "Branch": "master"
+    },
+    {
+        "Path": "ArrowVortex/lib/ddc/ddc_onset",
+        "URL": "https://github.com/robertpelloni/ddc_onset",
+        "Commit": "0881ffc509a7da4eb1fc2f1be77a64eba5778ec3",
+        "Branch": "main"
+    },
+    {
+        "Path": "ArrowVortex/lib/ddc/ffr-difficulty-model",
+        "URL": "https://github.com/robertpelloni/ffr-difficulty-model",
+        "Commit": "b13fe4f16ffd8571edf79ba3655aec68900aa3f2",
+        "Branch": "master"
+    },
+    {
+        "Path": "ArrowVortex/odcnn",
+        "URL": "https://github.com/robertpelloni/odcnn",
+        "Commit": "454f4c72ccd50a3c67d5edb50da78c0b6f8b9b71",
+        "Branch": "master"
+    },
+    {
+        "Path": "auto_dj_script",
+        "URL": "https://github.com/candlestixxx/auto_dj_script",
+        "Commit": "cd170f78a253b98a3120426ca93ebb5de1b18e9c",
+        "Branch": "main"
+    },
+    {
+        "Path": "borg",
+        "URL": "https://github.com/candlestixxx/borg",
+        "Commit": "bd766cce40b4a35886cbc82bd2cfb628e1b4733f",
+        "Branch": "main"
+    },
+    {
+        "Path": "brokeragentworkflow",
+        "URL": "https://github.com/candlestixxx/brokeragentworkflow",
+        "Commit": "c02290a2a704b9160257893062f56d71cc9e8c1a",
+        "Branch": "main"
+    },
+    {
+        "Path": "explorerexedecompiled",
+        "URL": "https://github.com/candlestixxx/explorerexedecompiled",
+        "Commit": "ee21f45ca363de156a8bda2828d1439aa0edfbf1",
+        "Branch": "main"
+    },
+    {
+        "Path": "forclosureworkflow",
+        "URL": "https://github.com/candlestixxx/forclosureworkflow",
+        "Commit": "86721a29ff4e3294f5ed32a834162425641f0b3b",
+        "Branch": "main"
+    },
+    {
+        "Path": "fwber",
+        "URL": "https://github.com/candlestixxx/fwber.git",
+        "Commit": "3039af84314054ee5b2e1d66dafe1e9dd62bbd5e",
+        "Branch": "main"
+    },
+    {
+        "Path": "hermes-agent",
+        "URL": "https://github.com/candlestixxx/hermes-agent",
+        "Commit": "e3f7ff1123fc8e0dc156807fb0935c89f613d6f4",
+        "Branch": "main"
+    },
+    {
+        "Path": "hymnmania",
+        "URL": "https://github.com/candlestixxx/hymnmania",
+        "Commit": "26e88983797f1bbcab26de6bf36220254b7a1a91",
+        "Branch": "main"
+    },
+    {
+        "Path": "hypercode",
+        "URL": "https://github.com/candlestixxx/hypercode",
+        "Commit": "b4c14031064846b1a53579c9d5ebe77083d2b2c9",
+        "Branch": "main"
+    },
+    {
+        "Path": "jules-autopilot",
+        "URL": "https://github.com/candlestixxx/jules-autopilot",
+        "Commit": "71d6c9ccb4e13f7086f85f3bb95c37d1934a7118",
+        "Branch": "main"
+    },
+    {
+        "Path": "multimousergy",
+        "URL": "https://github.com/candlestixxx/multimousergy.git",
+        "Commit": "81ff660f81e3e50da87764eb45f87e85c1684ffb",
+        "Branch": "main"
+    },
+    {
+        "Path": "p2p_service_marketplace",
+        "URL": "https://github.com/candlestixxx/p2p_service_marketplace",
+        "Commit": "722e9b5a37682564fc9e1eed0efc0042d3aa74ac",
+        "Branch": "main"
+    },
+    {
+        "Path": "re-agent-workflow-media-1",
+        "URL": "https://github.com/candlestixxx/re-agent-workflow-media-1",
+        "Commit": "e447e8c21bde38e0759d2880efe86e4b4d88e696",
+        "Branch": "main"
+    },
+    {
+        "Path": "realestatecrm",
+        "URL": "git@github.com:candlestixxx/realestatecrm.git",
+        "Commit": "e917ae69b0794f652ccb6ec0523316ffe135cc40",
+        "Branch": "main"
+    },
+    {
+        "Path": "realestateleadcaller",
+        "URL": "https://github.com/candlestixxx/realestateleadcaller",
+        "Commit": "6f4af8f7a538c218fe1380e973339489882a4970",
+        "Branch": "main"
+    },
+    {
+        "Path": "realestateprototype",
+        "URL": "https://github.com/candlestixxx/realestateprototype.git",
+        "Commit": "19a69e6521ef61ef2c19644dc1c7bf145628e4a1",
+        "Branch": "master"
+    },
+    {
+        "Path": "skillzhub",
+        "URL": "https://github.com/candlestixxx/skillzhub",
+        "Commit": "bd9e06212d17a60b9a321e22c1a85dd6d1b83aed",
+        "Branch": "main"
+    },
+    {
+        "Path": "socialmediacontentplanner",
+        "URL": "https://github.com/candlestixxx/socialmediacontentplanner",
+        "Commit": "82d5aaac5ab77f940cb18157fec0b82189045238",
+        "Branch": "main"
+    },
+    {
+        "Path": "superdawmcp",
+        "URL": "https://github.com/candlestixxx/superdawmcp",
+        "Commit": "b67a8ef957c57dceb9a143d2784e8bfeae4620fa",
+        "Branch": "main"
+    },
+    {
+        "Path": "superdawmcp/third_party/ableton-dj-template",
+        "URL": "https://github.com/willrjmarshall/AbletonDJTemplateUnsupported",
+        "Commit": "b64e859b3c521d4e734d636b962268c94ee02d13",
+        "Branch": "master"
+    },
+    {
+        "Path": "superdawmcp/third_party/ableton-js",
+        "URL": "https://github.com/leolabs/ableton-js",
+        "Commit": "f711b999cd4e0cce5cedab3499a330c3aa02f2fa",
+        "Branch": "master"
+    },
+    {
+        "Path": "superdawmcp/third_party/ableton-link",
+        "URL": "https://github.com/Ableton/link",
+        "Commit": "902aef95bf94af49746fdda5369b42cdcfa1e6d2",
+        "Branch": "master"
+    },
+    {
+        "Path": "superdawmcp/third_party/ableton-live-mcp-server",
+        "URL": "https://github.com/Simon-Kansara/ableton-live-mcp-server",
+        "Commit": "97e7585e212d1430493bf04b7af637d315227b02",
+        "Branch": "main"
+    },
+    {
+        "Path": "superdawmcp/third_party/ableton-live-tools",
+        "URL": "https://github.com/danielbayley/Ableton-Live-tools",
+        "Commit": "eece8d4f289532512488ff77e3c99aec601d72e3",
+        "Branch": "master"
+    },
+    {
+        "Path": "superdawmcp/third_party/ableton-mcp-ahujasid",
+        "URL": "https://github.com/ahujasid/ableton-mcp",
+        "Commit": "5e9ffbd246bae60994699900f4fef34ad7b40407",
+        "Branch": "main"
+    },
+    {
+        "Path": "superdawmcp/third_party/ableton-mcp-extended",
+        "URL": "https://github.com/uisato/ableton-mcp-extended",
+        "Commit": "11164498a31e782ca3d3f4ac67cbb526df0166e7",
+        "Branch": "main"
+    },
+    {
+        "Path": "superdawmcp/third_party/ableton-mcp-josefigueredo",
+        "URL": "https://github.com/josefigueredo/ableton-mcp",
+        "Commit": "9cc46d7f2b3dbb87d9e2696d94c730675148c513",
+        "Branch": "main"
+    },
+    {
+        "Path": "superdawmcp/third_party/ableton-mcp-jpoindexter",
+        "URL": "https://github.com/jpoindexter/ableton-mcp",
+        "Commit": "fa4f9ec40dcf536f7d15794ed82f09e53fbda430",
+        "Branch": "main"
+    },
+    {
+        "Path": "superdawmcp/third_party/ableton-osc",
+        "URL": "https://github.com/ideoforms/AbletonOSC",
+        "Commit": "0ca68214bd62c9b5cb641ca34006cfd70ba94430",
+        "Branch": "master"
+    },
+    {
+        "Path": "superdawmcp/third_party/ableton-proj-mcp",
+        "URL": "https://github.com/closestfriend/ableton-proj-mcp",
+        "Commit": "2618bcdc1debd23c8137440d82054e1d233a0320",
+        "Branch": "main"
+    },
+    {
+        "Path": "superdawmcp/third_party/ableton-rufoa",
+        "URL": "https://github.com/rufoa/ableton",
+        "Commit": "3e9060c9ab8683e80f2da0630a5af5652c28abe5",
+        "Branch": "master"
+    },
+    {
+        "Path": "superdawmcp/third_party/advanced-reason-mcp",
+        "URL": "https://github.com/Kuon-dev/advanced-reason-mcp",
+        "Commit": "c8d72e6aab71e461a456685936144544e0d08b0c",
+        "Branch": "main"
+    },
+    {
+        "Path": "superdawmcp/third_party/ardour-mcp",
+        "URL": "https://github.com/pyroqbit/ardour-mcp",
+        "Commit": "2f6bc80447832a9ba180d1b7b108c8fd55eeb593",
+        "Branch": "main"
+    },
+    {
+        "Path": "superdawmcp/third_party/code-reasoning",
+        "URL": "https://github.com/mettamatt/code-reasoning",
+        "Commit": "689ab67415ffc1eaa4d0fb6f453cb73f5c855d99",
+        "Branch": "main"
+    },
+    {
+        "Path": "superdawmcp/third_party/daw-mcp-ptaczek",
+        "URL": "https://github.com/ptaczek/daw-mcp",
+        "Commit": "a30cbf62f8741265550fc2d638b0cd56559255e6",
+        "Branch": "main"
+    },
+    {
+        "Path": "superdawmcp/third_party/daw-mcp-ruud0",
+        "URL": "https://github.com/ruud0/daw-mcp",
+        "Commit": "d68aab9df37e488ca49c53834f55bbdd2731323a",
+        "Branch": "master"
+    },
+    {
+        "Path": "superdawmcp/third_party/daw-midi-generator-mcp",
+        "URL": "https://github.com/s2d01/daw-midi-generator-mcp",
+        "Commit": "40238d423cae632a1b042302562b0f8b6fed06c3",
+        "Branch": "main"
+    },
+    {
+        "Path": "superdawmcp/third_party/dawpilot-mcp",
+        "URL": "https://github.com/squarewave-studio/dawpilot-mcp",
+        "Commit": "900eb657feb8c8a142252899432ee1550146318b",
+        "Branch": "main"
+    },
+    {
+        "Path": "superdawmcp/third_party/launchpad95",
+        "URL": "https://github.com/hdavid/Launchpad95",
+        "Commit": "adb4a55731a810fcee440552ede7d02a50e0fae3",
+        "Branch": "master"
+    },
+    {
+        "Path": "superdawmcp/third_party/livepilot",
+        "URL": "https://github.com/dreamrec/LivePilot",
+        "Commit": "81c346066f927bb038705cec43ea51f3b1e69303",
+        "Branch": "main"
+    },
+    {
+        "Path": "superdawmcp/third_party/opendaw-mcp",
+        "URL": "https://github.com/inin-zou/OpenDAW_MCP",
+        "Commit": "6047976828a9f44b95b6c69d0aaa60ee48df5af3",
+        "Branch": "main"
+    },
+    {
+        "Path": "superdawmcp/third_party/phantom",
+        "URL": "https://github.com/fadelabs/phantom",
+        "Commit": "d81d7524e872b6861430f6988513d8da5d0f5b8e",
+        "Branch": "main"
+    },
+    {
+        "Path": "superdawmcp/third_party/pylive",
+        "URL": "https://github.com/ideoforms/pylive",
+        "Commit": "3b1d84f0b93ed7bd6308a1085515feeef3013c8f",
+        "Branch": "master"
+    },
+    {
+        "Path": "superdawmcp/third_party/reaper-daw-mcp-server",
+        "URL": "https://github.com/Aavishkar-Kolte/reaper-daw-mcp-server",
+        "Commit": "6a592d556a3006f72ca9068a2a413d1d1e0050e1",
+        "Branch": "main"
+    },
+    {
+        "Path": "superdawmcp/third_party/reaper-mcp-server",
+        "URL": "https://github.com/yeeking/reaper-mcp-server",
+        "Commit": "0403762dcd9f564ace8fa08a9fa758ddb98fdaab",
+        "Branch": "main"
+    },
+    {
+        "Path": "superdawmcp/third_party/reaper-mcp-skills-example",
+        "URL": "https://github.com/wastee/REAPER-MCP-Skills-Example",
+        "Commit": "afa830b8ec8fa84002de2f3dc1c1d175723cbf92",
+        "Branch": "main"
+    },
+    {
+        "Path": "superdawmcp/third_party/reaper-mcp-xdarkzx",
+        "URL": "https://github.com/xDarkzx/Reaper-MCP",
+        "Commit": "a14297d0447e0d0b5442824d23e50e5bfb192064",
+        "Branch": "main"
+    },
+    {
+        "Path": "superdawmcp/third_party/reaper-reapy-mcp",
+        "URL": "https://github.com/wegitor/reaper-reapy-mcp",
+        "Commit": "5cfb2fe05393d780f9616a07d6085122dfa60cbf",
+        "Branch": "main"
+    },
+    {
+        "Path": "superdawmcp/third_party/scribbletune",
+        "URL": "https://github.com/scribbletune/scribbletune",
+        "Commit": "fbc9a4bd975b869c534331690b11227fc16f7c50",
+        "Branch": "master"
+    },
+    {
+        "Path": "superdawmcp/third_party/spleeter4max",
+        "URL": "https://github.com/diracdeltas/spleeter4max",
+        "Commit": "85dce7bd4b0f1a3316b642d1127099724fe49aff",
+        "Branch": "master"
+    },
+    {
+        "Path": "superdawmcp/third_party/total-reaper-mcp",
+        "URL": "https://github.com/shiehn/total-reaper-mcp",
+        "Commit": "71b82bfc6e960d2433c536050de0291394415800",
+        "Branch": "main"
+    },
+    {
+        "Path": "techno_platform_detroit",
+        "URL": "https://github.com/candlestixxx/techno_platform_detroit",
+        "Commit": "188629bee7de3418b2ecaeffb16b7cc0a04de260",
+        "Branch": "main"
+    },
+    {
+        "Path": "theta-data-api",
+        "URL": "https://github.com/candlestixxx/theta-data-api",
+        "Commit": "96f4807cd39f53a41ff460da3496bccbe4460453",
+        "Branch": "main"
+    }
 ]

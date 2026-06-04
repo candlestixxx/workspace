@@ -1,4 +1,19 @@
 
+## [1.0.9] - 2026-06-02
+### Changed
+- Comprehensive local and remote repository synchronization across all submodule layers.
+- Executed Dual-Direction Intelligent Merge Engine for all candlestixxx repositories.
+- Forward merged development progress from feature branches (e.g., `re-agent-workflow-media-1`) into main.
+- Reverse merged updated main branches back into active feature branches to prevent drift.
+- Fixed malformed submodule remote configurations (origin and upstream).
+- Reconciled and auto-resolved conflicts in `borg`, `hypercode`, and `auto_dj_script` preferring local progress.
+- Updated global version to 1.0.9.
+
+## [1.0.8] - 2026-06-01
+### Changed
+- Workspace maintenance and submodule synchronization.
+- Updated global version to 1.0.8.
+
 ## [1.0.7] - 2026-05-31
 ### Changed
 - Final forensic audit of all submodule tracking states across 20+ project layers.
