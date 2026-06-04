@@ -1,4 +1,15 @@
 
+## [1.1.0] - 2026-06-02
+### Changed
+- Executed Second Generation "Executive Protocol" for global workspace synchronization.
+- Upgraded all submodule origin remotes to SSH format (`git@github.com:candlestixxx/...`) to resolve authentication and 403 errors.
+- Completed Recursive Dual-Direction Intelligent Merge Engine across 50+ project layers.
+- Reconciled and consolidated feature branches for `borg`, `hypercode`, `re-agent-workflow-media-1`, `techno_platform_detroit`, `realestateleadcaller`, and `p2p_service_marketplace`.
+- Integrated upstream changes from `robertpelloni` into local `main` branches.
+- Updated global build scripts (`build.bat`, `start.bat`) to v1.1.0.
+- Updated `ROADMAP.md` and `TODO.md` reflecting Phase 3 progress.
+- Incremented global version to 1.1.0.
+
 ## [1.0.9] - 2026-06-02
 ### Changed
 - Comprehensive local and remote repository synchronization across all submodule layers.
