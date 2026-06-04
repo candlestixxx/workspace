@@ -11,45 +11,24 @@ def run_command(cmd, cwd=None):
 
 def push_repo(path, name):
     print(f"Pushing {name}...")
-    # Get current branch
     _, branch, _ = run_command("git rev-parse --abbrev-ref HEAD", cwd=path)
-    if branch == "HEAD":
-        print(f"  Skipping {name} (detached HEAD)")
-        return
+    if branch == "HEAD": return
 
-    # Check if there are commits to push
-    # Use origin/{branch} if it exists
     code_check, _, _ = run_command(f"git rev-parse --verify origin/{branch}", cwd=path)
     if code_check == 0:
         code, out, _ = run_command(f"git log origin/{branch}..{branch} --oneline", cwd=path)
         if code == 0 and out:
-            print(f"  Pushing commits to origin/{branch}...")
-            p_code, p_out, p_err = run_command(f"git push origin {branch}", cwd=path)
-            if p_code != 0:
-                print(f"  PUSH FAILED: {p_err}")
-            else:
-                print(f"  PUSH SUCCESS")
-        else:
-            print(f"  Nothing to push for {name}")
+            run_command(f"git push origin {branch}", cwd=path)
     else:
-        # Try to push anyway if it's a new branch
-        print(f"  Branch {branch} not on origin. Attempting first push...")
-        p_code, p_out, p_err = run_command(f"git push origin {branch}", cwd=path)
-        if p_code != 0:
-            print(f"  PUSH FAILED: {p_err}")
-        else:
-            print(f"  PUSH SUCCESS")
+        run_command(f"git push origin {branch}", cwd=path)
 
 def main():
-    # Push submodules first
     submodules_raw_code, submodules_raw, _ = run_command("git submodule foreach --recursive \"pwd\"")
     for line in submodules_raw.splitlines():
         if line.startswith("Entering '"):
             sub_path = line[10:-1]
             push_repo(sub_path, sub_path)
 
-    # Commit and push root
-    print("\nCommitting and pushing root...")
     run_command("git add .")
     run_command("git commit -m \"chore: version bump 1.1.0 & repository synchronization\"")
     push_repo(".", "root")
