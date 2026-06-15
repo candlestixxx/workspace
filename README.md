@@ -1,4 +1,4 @@
-# Robert Pelloni's Workspace (Monorepo)
+# Workspace (Monorepo)
 
 This workspace serves as a centralized monorepo and orchestration hub for various independent projects. Each project is managed separately in its own session, while this root context handles cross-project organization, documentation, and synchronization.
 
@@ -23,4 +23,4 @@ This workspace serves as a centralized monorepo and orchestration hub for variou
 - **Flat Organization**: Projects are maintained as top-level directories or submodules for direct access.
 
 ---
-**Note:** This repository is synced on GitHub as a consolidated view of Robert Pelloni's original work.
+**Note:** This repository is maintained at [github.com/candlestixxx/workspace](https://github.com/candlestixxx/workspace).
