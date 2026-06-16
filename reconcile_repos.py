@@ -1,79 +1,62 @@
-import subprocess
 import os
+import subprocess
 
-def run_command(cmd, cwd=None):
+def run_cmd(cmd, cwd=None):
     try:
-        process = subprocess.Popen(cmd, shell=True, cwd=cwd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        stdout, stderr = process.communicate()
-        return process.returncode, stdout.decode().strip(), stderr.decode().strip()
-    except Exception as e:
-        return -1, "", str(e)
+        res = subprocess.run(cmd, cwd=cwd, shell=True, capture_output=True, text=True)
+        return res.stdout.strip()
+    except:
+        return ""
 
-def reconcile_repo(path):
-    print(f"\nReconciling {path}...")
+def get_robert_repos():
+    with open("robertpelloni_repos.txt", "r") as f:
+        return [line.strip().lower() for line in f if line.strip()]
+
+robert_repos = get_robert_repos()
+
+# Get all submodules from git index
+index_output = run_cmd("git ls-files --stage")
+submodules = []
+for line in index_output.splitlines():
+    if line.startswith("160000"):
+        parts = line.split()
+        if len(parts) >= 4:
+            path = parts[3]
+            submodules.append(path)
+
+print(f"Found {len(submodules)} submodules in index.")
+
+kept_submodules = []
+removed_submodules = []
+
+for path in submodules:
+    name = os.path.basename(path).lower()
+    # Check if it's a robert fork
+    is_robert = name in robert_repos
     
-    # 1. Commit local changes if any
-    _, status, _ = run_command("git status --short", cwd=path)
-    if status:
-        print(f"  Committing local changes...")
-        run_command("git add .", cwd=path)
-        run_command("git commit -m \"chore: automated checkpoint of local changes during repo sync\"", cwd=path)
+    if is_robert and name != "ultratrader":
+        removed_submodules.append(path)
+    else:
+        kept_submodules.append(path)
 
-    # Get current branch
-    _, branch, _ = run_command("git rev-parse --abbrev-ref HEAD", cwd=path)
-    
-    # Determine main branch name
-    main_branch = "main"
-    code, _, _ = run_command("git show-ref --verify refs/heads/master", cwd=path)
-    if code == 0:
-        main_branch = "master"
-    
-    # 2. Sync main with remotes
-    for remote in ["upstream", "origin"]:
-        remote_main = f"{remote}/{main_branch}"
-        code, _, _ = run_command(f"git show-ref --verify refs/remotes/{remote_main}", cwd=path)
-        if code == 0:
-            print(f"  Merging {remote_main} into {main_branch}...")
-            target_branch = branch
-            if branch != main_branch:
-                run_command(f"git checkout {main_branch}", cwd=path)
-            
-            code_merge, _, err_merge = run_command(f"git merge {remote_main} --no-edit --allow-unrelated-histories", cwd=path)
-            if code_merge != 0:
-                print(f"    CONFLICT during merge of {remote_main}. Attempting auto-resolution (preferring current)...")
-                run_command("git merge --abort", cwd=path)
-                run_command(f"git merge {remote_main} -X ours --no-edit --allow-unrelated-histories", cwd=path)
-            
-            if branch != main_branch:
-                run_command(f"git checkout {branch}", cwd=path)
+print(f"Keeping {len(kept_submodules)} submodules.")
+print(f"Removing {len(removed_submodules)} submodules.")
 
-    # 3. Dual-direction merge
-    if branch != main_branch and branch != "HEAD":
-        print(f"  Forward merge: {branch} -> {main_branch}")
-        run_command(f"git checkout {main_branch}", cwd=path)
-        code_fm, _, _ = run_command(f"git merge {branch} --no-edit --allow-unrelated-histories", cwd=path)
-        if code_fm != 0:
-            print("    CONFLICT in forward merge. Preferring feature branch.")
-            run_command("git merge --abort", cwd=path)
-            run_command(f"git merge {branch} -X theirs --no-edit --allow-unrelated-histories", cwd=path)
-        
-        print(f"  Reverse merge: {main_branch} -> {branch}")
-        run_command(f"git checkout {branch}", cwd=path)
-        code_rm, _, _ = run_command(f"git merge {main_branch} --no-edit --allow-unrelated-histories", cwd=path)
-        if code_rm != 0:
-            print("    CONFLICT in reverse merge. Preferring main.")
-            run_command("git merge --abort", cwd=path)
-            run_command(f"git merge {main_branch} -X theirs --no-edit --allow-unrelated-histories", cwd=path)
+# Create new .gitmodules content
+new_gitmodules = ""
+for path in kept_submodules:
+    name = os.path.basename(path)
+    # Special cases if needed, but assuming standard candlestixxx URL
+    url = f"https://github.com/candlestixxx/{name}.git"
+    new_gitmodules += f'[submodule "{path}"]\n'
+    new_gitmodules += f'\tpath = {path}\n'
+    new_gitmodules += f'\turl = {url}\n'
 
-def main():
-    # Reconcile root first
-    reconcile_repo(".")
+with open(".gitmodules_new", "w") as f:
+    f.write(new_gitmodules)
 
-    submodules_raw_code, submodules_raw, _ = run_command("git submodule foreach --recursive \"pwd\"")
-    for line in submodules_raw.splitlines():
-        if line.startswith("Entering '"):
-            sub_path = line[10:-1]
-            reconcile_repo(sub_path)
-
-if __name__ == "__main__":
-    main()
+# Create a script to remove the others
+with open("remove_submodules.sh", "w") as f:
+    for path in removed_submodules:
+        f.write(f"git rm --cached {path}\n")
+        f.write(f"rm -rf {path}\n") # Be careful with this, but it's what's requested

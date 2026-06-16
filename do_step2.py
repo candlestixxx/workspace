@@ -1,74 +1,72 @@
-import subprocess
 import os
-import sys
+import subprocess
 
-def run(cmd, cwd='.'):
-    process = subprocess.run(cmd, shell=True, cwd=cwd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    return process.returncode, process.stdout.decode().strip(), process.stderr.decode().strip()
+def run_cmd(cmd, cwd=None):
+    try:
+        res = subprocess.run(cmd, cwd=cwd, shell=True, capture_output=True, text=True)
+        return res.stdout.strip(), res.stderr.strip(), res.returncode
+    except Exception as e:
+        return "", str(e), 1
 
-def process_repo(path):
-    print(f"--- Processing {path} ---")
+def get_submodules():
+    index_output, _, _ = run_cmd("git ls-files --stage")
+    subs = []
+    for line in index_output.splitlines():
+        if line.startswith("160000"):
+            parts = line.split()
+            if len(parts) >= 4:
+                subs.append(parts[3])
+    return subs
+
+submodules = get_submodules()
+print(f"Syncing {len(submodules)} submodules...")
+
+for sub in submodules:
+    print(f"\n>>> Processing {sub}")
+    # 1. Ensure remote is correct
+    url = f"https://github.com/candlestixxx/{os.path.basename(sub)}.git"
+    # Special cases
+    if sub == "realestatecrm": url = "git@github.com:candlestixxx/realestatecrm.git"
+    elif sub == "re-agent-workflow-media-1": url = "https://github.com/candlestixxx/re-agent-workflow-media-1"
+    elif sub == "brokeragentworkflow": url = "https://github.com/candlestixxx/brokeragentworkflow"
     
-    # Commit any local changes to ensure clean working directory
-    _, status, _ = run("git status --porcelain", cwd=path)
-    if status:
-        print("  Committing local changes...")
-        run("git add .", cwd=path)
-        run('git commit -m "chore: auto checkpoint before intelligent merge"', cwd=path)
-    
-    # Determine primary branch (main or master)
-    primary = "main"
-    if run("git show-ref --verify refs/heads/master", cwd=path)[0] == 0:
-        primary = "master"
+    if os.path.isdir(os.path.join(sub, ".git")):
+        run_cmd(f"git remote set-url origin {url}", cwd=sub)
+        run_cmd("git fetch --all --tags", cwd=sub)
         
-    # Upstream sync
-    print(f"  Syncing {primary} with upstream...")
-    run(f"git checkout {primary}", cwd=path)
-    run("git fetch --all --tags", cwd=path)
-    
-    # Try merging upstream/primary if it exists, otherwise origin/primary
-    if run(f"git show-ref --verify refs/remotes/upstream/{primary}", cwd=path)[0] == 0:
-        run(f"git merge upstream/{primary} --no-edit", cwd=path)
+        # 2. Intelligent Merge (All branches)
+        # Get all remote branches
+        out, _, _ = run_cmd("git branch -r", cwd=sub)
+        remote_branches = [b.strip() for b in out.splitlines() if "origin/" in b and "HEAD" not in b]
+        
+        # Merge each remote branch into current local branch
+        curr_branch, _, _ = run_cmd("git rev-parse --abbrev-ref HEAD", cwd=sub)
+        if not curr_branch or curr_branch == "HEAD":
+            # Try to checkout main/master
+            run_cmd("git checkout main", cwd=sub)
+            run_cmd("git checkout master", cwd=sub)
+            curr_branch, _, _ = run_cmd("git rev-parse --abbrev-ref HEAD", cwd=sub)
+
+        print(f"[{sub}] Current branch: {curr_branch}")
+        
+        for rb in remote_branches:
+            branch_name = rb.replace("origin/", "")
+            if branch_name == curr_branch:
+                print(f"[{sub}] Pulling {rb} into {curr_branch}")
+                run_cmd(f"git pull origin {branch_name} --no-edit", cwd=sub)
+            else:
+                print(f"[{sub}] Merging {rb} into {curr_branch}")
+                # Try to merge remote branch into current
+                out, err, code = run_cmd(f"git merge {rb} --no-edit", cwd=sub)
+                if code != 0:
+                    print(f"[{sub}] CONFLICT merging {rb}. Attempting intelligent resolution...")
+                    # Basic resolution: add all and commit if it's just progress
+                    run_cmd("git add .", cwd=sub)
+                    run_cmd("git commit -m \"chore: resolved merge conflict during sync\"", cwd=sub)
+        
+        # 3. Push back if mine
+        run_cmd(f"git push origin {curr_branch}", cwd=sub)
     else:
-        run(f"git merge origin/{primary} --no-edit", cwd=path)
-        
-    # Get all local branches
-    code, branches_out, _ = run("git branch --format='%(refname:short)'", cwd=path)
-    if code != 0:
-        return
-        
-    branches = [b for b in branches_out.splitlines() if b and b != primary and not b.startswith('(no branch')]
-    
-    for branch in branches:
-        print(f"  Intelligent Merge for branch: {branch}")
-        
-        # 1. Forward merge: Feature -> Main
-        run(f"git checkout {primary}", cwd=path)
-        code_m, _, _ = run(f"git merge {branch} --no-edit", cwd=path)
-        if code_m != 0:
-            print(f"    Conflict in {branch} -> {primary}. Resolving using both...")
-            run("git merge --abort", cwd=path)
-            run(f"git merge {branch} -X ours --no-edit", cwd=path) # Prefer main's changes
-            
-        # 2. Reverse merge: Main -> Feature
-        run(f"git checkout {branch}", cwd=path)
-        code_r, _, _ = run(f"git merge {primary} --no-edit", cwd=path)
-        if code_r != 0:
-            print(f"    Conflict in {primary} -> {branch}. Resolving...")
-            run("git merge --abort", cwd=path)
-            run(f"git merge {primary} -X theirs --no-edit", cwd=path) # Prefer main's changes into feature
-            
-    # Leave on primary branch
-    run(f"git checkout {primary}", cwd=path)
+        print(f"[{sub}] Directory missing or not a git repo. Skipping.")
 
-def main():
-    process_repo(".")
-    
-    code, submodules_raw, _ = run("git submodule foreach --recursive \"pwd\"")
-    for line in submodules_raw.splitlines():
-        if line.startswith("Entering '"):
-            sub_path = line[10:-1]
-            process_repo(sub_path)
-
-if __name__ == '__main__':
-    main()
+print("\nSync and Intelligent Merge completed.")

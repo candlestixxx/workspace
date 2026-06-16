@@ -1,62 +1,39 @@
-import subprocess
 import os
+import subprocess
 
-def run_command(cmd, cwd=None):
+def run_cmd(cmd, cwd=None):
     try:
-        result = subprocess.run(cmd, shell=True, capture_output=True, text=True, cwd=cwd)
-        return result.stdout.strip(), result.stderr.strip()
-    except Exception as e:
-        return "", str(e)
+        res = subprocess.run(cmd, cwd=cwd, shell=True, capture_output=True, text=True)
+        return res.stdout.strip()
+    except:
+        return ""
 
-def audit_repo(repo_path):
-    print(f"\n--- Auditing {repo_path} ---")
+def get_robert_repos():
+    with open("robertpelloni_repos.txt", "r") as f:
+        return [line.strip() for line in f if line.strip()]
+
+robert_repos = get_robert_repos()
+def is_git_repo(d):
+    git_path = os.path.join(d, ".git")
+    return os.path.exists(git_path)
+
+dirs = [d for d in os.listdir(".") if os.path.isdir(d) and is_git_repo(d)]
+
+print(f"{'Directory':<40} {'Remote URL':<60} {'Action'}")
+print("-" * 120)
+
+for d in dirs:
+    url = run_cmd("git remote get-url origin", cwd=d)
+    name = d.lower()
+    is_robert = any(r.lower() == name for r in robert_repos)
+    is_candlestixxx = "candlestixxx" in url.lower()
     
-    # Get all submodules
-    output, _ = run_command("git submodule status --recursive", cwd=repo_path)
-    if not output:
-        print("No submodules found or error running command.")
-        return
-
-    submodules = []
-    for line in output.splitlines():
-        parts = line.split()
-        if len(parts) >= 2:
-            sha = parts[0].strip('+-')
-            path = parts[1]
-            submodules.append((sha, path))
-
-    for sha, path in submodules:
-        sub_full_path = os.path.join(repo_path, path)
-        if not os.path.exists(os.path.join(sub_full_path, '.git')):
-            print(f"[!] Submodule {path} not initialized at {sub_full_path}")
-            continue
-            
-        # Check if the commit exists on the remote
-        # We try to fetch the commit directly
-        stdout, stderr = run_command(f"git fetch origin {sha}", cwd=sub_full_path)
-        if "fatal" in stderr and "not our ref" in stderr:
-            print(f"[X] INVALID REF: {path} points to {sha} which is missing on remote!")
-            
-            # Suggest a fix: find the nearest branch (master/main/develop)
-            branch_out, _ = run_command("git remote show origin", cwd=sub_full_path)
-            branch = "main"
-            if "HEAD branch: master" in branch_out:
-                branch = "master"
-            elif "HEAD branch: develop" in branch_out:
-                branch = "development" # or develop
-            
-            print(f"    Suggested fix: git checkout origin/{branch} && git add {path}")
-        else:
-            print(f"[OK] {path} is valid.")
-
-repos = [
-    "C:/Users/hyper/workspace/bobmani/itgmania",
-    "C:/Users/hyper/workspace/bg/bobsgameonlinejava",
-    "C:/Users/hyper/workspace/bobfilez"
-]
-
-for repo in repos:
-    if os.path.exists(repo):
-        audit_repo(repo)
-    else:
-        print(f"Path not found: {repo}")
+    action = "KEEP"
+    if "robertpelloni" in url.lower() and name != "ultratrader":
+        action = "REMOVE (robert url)"
+    elif is_robert and name != "ultratrader":
+        action = "REMOVE (robert fork name)"
+    elif not is_candlestixxx and name != "ultratrader":
+        action = "REMOVE (not candlestixxx)"
+    
+    print(f"{d:<40} {url:<60} {action}")

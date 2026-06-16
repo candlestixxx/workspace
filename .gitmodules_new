@@ -21,7 +21,7 @@
 	url = https://github.com/candlestixxx/bobtrader.git
 [submodule "brokeragentworkflow"]
 	path = brokeragentworkflow
-	url = https://github.com/candlestixxx/brokeragentworkflow
+	url = https://github.com/candlestixxx/brokeragentworkflow.git
 [submodule "computer-use-preview"]
 	path = computer-use-preview
 	url = https://github.com/candlestixxx/computer-use-preview.git
@@ -87,10 +87,10 @@
 	url = https://github.com/candlestixxx/psytrance_night_outreach_agent.git
 [submodule "re-agent-workflow-media-1"]
 	path = re-agent-workflow-media-1
-	url = https://github.com/candlestixxx/re-agent-workflow-media-1
+	url = https://github.com/candlestixxx/re-agent-workflow-media-1.git
 [submodule "realestatecrm"]
 	path = realestatecrm
-	url = git@github.com:candlestixxx/realestatecrm.git
+	url = https://github.com/candlestixxx/realestatecrm.git
 [submodule "realestateleadcaller"]
 	path = realestateleadcaller
 	url = https://github.com/candlestixxx/realestateleadcaller.git

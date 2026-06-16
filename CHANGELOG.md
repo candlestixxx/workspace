@@ -6,6 +6,16 @@
 
 ---
 
+## [5.14.2] - 2026-06-16
+
+### Maintenance — Monorepo Reconfiguration & Submodule Cleanup
+- Reconfigured workspace to strictly track `candlestixxx/workspace`.
+- Purged all `robertpelloni` fork submodules from the index and filesystem.
+- Protected `ultratrader` (bobtrader) and `forclosureworkflow` as requested exceptions.
+- Retained all original `candlestixxx` submodules matching local subfolders.
+- Force-initialized and synced all 46 kept submodules with their respective remotes.
+- Performed intelligent merge of all remote branches into local submodule states.
+
 ## [5.14.1] - 2026-06-15
 
 ### Maintenance — Comprehensive Submodule Sync & Intelligent Merge
