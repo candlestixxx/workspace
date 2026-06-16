@@ -59,7 +59,7 @@ def handle_repo(path):
     # else:
     #     print(f"{path}: [CLEAN]")
 
-    # 2. Robert Pelloni Feature Branch Hunt
+    # 2. candlestixxx Feature Branch Hunt
     remote_url = get_remote_url(path)
     if TARGET_USER.lower() in remote_url.lower():
         # print(f"{path}: [TARGET] Owned by {TARGET_USER}.")

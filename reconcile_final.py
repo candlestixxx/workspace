@@ -29,7 +29,7 @@ def check_url(url):
 
 def main():
     workspace_root = os.getcwd()
-    archive_dir = os.path.abspath(os.path.join(workspace_root, "..", "robertpelloni"))
+    archive_dir = os.path.abspath(os.path.join(workspace_root, "..", "candlestixxx"))
     if not os.path.exists(archive_dir):
         os.makedirs(archive_dir)
 
@@ -82,7 +82,7 @@ def main():
                 print(f"  [KEEP] Folder {item} exists as a repo in candlestixxx.")
         
         if not should_keep:
-            print(f"  [ARCHIVE] {item} does not exist in candlestixxx (or belongs to robertpelloni).")
+            print(f"  [ARCHIVE] {item} does not exist in candlestixxx (or belongs to candlestixxx).")
             target_path = os.path.join(archive_dir, item)
             target_parent = os.path.dirname(target_path)
             if not os.path.exists(target_parent):

@@ -11,7 +11,7 @@ Corrected `okgame` submodule, bumped project version to 1.1.2, and updated the c
 1.  **Corrected Okgame**:
     - Cleaned up deleted libraries (`BeatDrop`, `nanovg`) from the index.
     - Synchronized all internal submodules.
-    - Committed and pushed to `robertpelloni/okgame`.
+    - Committed and pushed to `candlestixxx/okgame`.
 2.  **Synced Root**:
     - Updated the root workspace to track the new `okgame` commit.
     - Refreshed `SUBMODULE_DASHBOARD.md`.

@@ -30,7 +30,7 @@ def get_default_branch(cwd):
 
 def is_robert_repo(cwd):
     out, _ = run_cmd("git remote -v", cwd=cwd, ignore_errors=True)
-    if out and "robertpelloni" in out.lower():
+    if out and ("robertpelloni" in out.lower() or "candlestixxx" in out.lower()):
         return True
     return False
 
@@ -81,7 +81,7 @@ def process_repo(cwd):
 
     # 2. Setup branches
     default_branch = get_default_branch(cwd)
-    run_cmd("git fetch --all --prune", cwd=cwd, ignore_errors=True)
+    run_cmd("git fetch --all --tags --prune", cwd=cwd, ignore_errors=True)
     
     curr_branch, _ = run_cmd("git rev-parse --abbrev-ref HEAD", cwd=cwd, ignore_errors=True)
     if curr_branch != default_branch:

@@ -28,14 +28,14 @@ process_repo() {
     fi
 
     # Identify remotes
-    local has_robertpelloni=false
+    local has_candlestixxx=false
     local upstream_remote=""
     local origin_remote=""
 
     for remote in $(git remote); do
         local url=$(git remote get-url $remote)
-        if [[ $url == *"robertpelloni"* ]]; then
-            has_robertpelloni=true
+        if [[ $url == *"candlestixxx"* ]]; then
+            has_candlestixxx=true
         fi
         if [[ $remote == "upstream" ]]; then
             upstream_remote=$remote
@@ -66,9 +66,9 @@ process_repo() {
         git pull $origin_remote $default_branch --no-rebase || true
     fi
 
-    # If it's a robertpelloni repo, we need to merge local feature branches
-    if [ "$has_robertpelloni" = true ]; then
-        echo "Repo is under robertpelloni. Checking for local feature branches..."
+    # If it's a candlestixxx repo, we need to merge local feature branches
+    if [ "$has_candlestixxx" = true ]; then
+        echo "Repo is under candlestixxx. Checking for local feature branches..."
         
         # Merge upstream changes if upstream remote exists
         if [ -n "$upstream_remote" ]; then

@@ -21,7 +21,7 @@ def get_submodules():
         # Parse .gitmodules
         # [submodule "BobsGameOnline"]
         # 	path = BobsGameOnline
-        # 	url = https://github.com/robertpelloni/BobsGameOnline
+        # 	url = https://github.com/candlestixxx/BobsGameOnline
 
         matches = re.finditer(
             r'\[submodule "(.*?)"\]\s*path = (.*?)\s*url = (.*?)\s',

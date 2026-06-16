@@ -22,7 +22,7 @@ def check_url_curl(url):
 
 def main():
     workspace_root = os.getcwd()
-    archive_dir = os.path.abspath(os.path.join(workspace_root, "..", "robertpelloni"))
+    archive_dir = os.path.abspath(os.path.join(workspace_root, "..", "candlestixxx"))
     if not os.path.exists(archive_dir):
         os.makedirs(archive_dir)
 
@@ -37,9 +37,9 @@ def main():
         should_archive = False
         final_url = url
 
-        if "robertpelloni" in url:
+        if "candlestixxx" in url:
             # Check for candlestixxx migration
-            candlestixxx_url = url.replace("robertpelloni", "candlestixxx")
+            candlestixxx_url = url.replace("candlestixxx", "candlestixxx")
             if check_url_curl(candlestixxx_url):
                 print(f"  [MIGRATE] {sub} moved to candlestixxx.")
                 final_url = candlestixxx_url
@@ -47,7 +47,7 @@ def main():
                 if os.path.exists(os.path.join(sub, ".git")):
                     run(f"git remote set-url origin {final_url}", cwd=sub)
             else:
-                print(f"  [ARCHIVE] {sub} only exists under robertpelloni.")
+                print(f"  [ARCHIVE] {sub} only exists under candlestixxx.")
                 should_archive = True
         else:
             # External or already migrated

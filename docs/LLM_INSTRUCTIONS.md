@@ -2,7 +2,7 @@
 
 > **Version:** Synchronized with `VERSION` file (currently 1.2.0)
 > **Last Updated:** 2026-02-08
-> **Owner:** Robert Pelloni (@robertpelloni)
+> **Owner:** candlestixxx (@candlestixxx)
 > **Scope:** ALL AI models/agents working on this monorepo
 
 ---
@@ -27,12 +27,12 @@
 
 ## 1. Overview & Vision
 
-This workspace is **Robert Pelloni's unified development ecosystem** — a centralized monorepo and orchestration hub managing 60+ root-level submodules and 273+ nested submodules across multiple domains:
+This workspace is **candlestixxx's unified development ecosystem** — a centralized monorepo and orchestration hub managing 60+ root-level submodules and 273+ nested submodules across multiple domains:
 
 - **AI/Agents/MCP** — The AIOS meta-orchestrator (`aios/`)
 - **Rhythm Games** — ITGmania, StepMania, ArrowVortex, beatoraja, and more (`bobmani/`)
 - **Game Engines & Games** — okgame, Bob's Game Online, sm64coopdx, mk64, and more
-- **Web Applications** — FWBer (dating platform), robertpelloni.com
+- **Web Applications** — FWBer (dating platform), candlestixxx.com
 - **Bob Ecosystem** — bobcoin, bobfilez, bobsaver, bobtorrent, bobui, bobium, bobzilla, and more
 - **Developer Tools** — filez, raindropioapp, copyparty, ccmanager
 - **External/Collaborative** — mnmballa2323 projects (Chamber.Law, Stone.Ledger, etc.)
@@ -152,7 +152,7 @@ Then update `SUBMODULE_DASHBOARD.md` and `PROJECT_STRUCTURE.md`.
 
 ### 5.1 Feature Branch Merging
 - Merge **all feature branches** into `main` (or `master`).
-- Primary concern: feature branches created by **Google Jules** or other AI dev tools, local to `github.com/robertpelloni` fork repos.
+- Primary concern: feature branches created by **Google Jules** or other AI dev tools, local to `github.com/candlestixxx` fork repos.
 - Intelligently solve conflicts **without losing any progress, features, or functionality**.
 - If upstream feature branches are unfinished/old/external, **ignore them** unless explicitly told otherwise.
 
@@ -166,7 +166,7 @@ For forked repositories:
 
 ### 5.3 Conflict Resolution Philosophy
 - **Never lose features.** When in doubt, keep both sides.
-- Prefer local (robertpelloni) changes when they represent active development.
+- Prefer local (candlestixxx) changes when they represent active development.
 - Upstream changes that are purely additive (new files, new features) should be merged in.
 - If a conflict is truly irresolvable without domain knowledge, document it and move on.
 
@@ -358,7 +358,7 @@ The AIOS meta-orchestrator with 273+ nested submodules. Contains all AI agents, 
 
 #### Web Applications (root level)
 - **fwber** — Dating platform (Laravel 12 + Next.js) — **ACTIVE**
-- **robertpelloni.com** — Personal website
+- **candlestixxx.com** — Personal website
 
 #### Developer & Automation Tools (root level)
 - **raindropioapp** — Raindrop.io bookmark manager

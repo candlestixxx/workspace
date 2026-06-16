@@ -18,7 +18,7 @@ python update_repos_v3.py
 3.  Pulls origin changes.
 4.  Fetches and merges `upstream` changes (if it's a fork).
 5.  Merges all local feature branches into the default branch (aborting on severe conflicts or unrelated histories to prevent data loss).
-6.  Pushes updated `robertpelloni` repositories to their origins.
+6.  Pushes updated `candlestixxx` repositories to their origins.
 
 ## 2. Dashboard Generation
 After syncing, you MUST regenerate the dashboard to reflect the new state:

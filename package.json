@@ -6,16 +6,16 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/robertpelloni/workspace.git"
+    "url": "git+https://github.com/candlestixxx/workspace.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/robertpelloni/workspace/issues"
+    "url": "https://github.com/candlestixxx/workspace/issues"
   },
-  "homepage": "https://github.com/robertpelloni/workspace#readme",
+  "homepage": "https://github.com/candlestixxx/workspace#readme",
   "devDependencies": {
     "@playwright/test": "^1.56.1",
     "@types/node": "^24.10.0",

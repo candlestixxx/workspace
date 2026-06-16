@@ -1,6 +1,6 @@
 # Session 17 Handoff Document
 # Date: 2025-05-04
-# Workspace: https://github.com/robertpelloni/workspace.git
+# Workspace: https://github.com/candlestixxx/workspace.git
 
 ## Critical Issues Resolved This Session
 
@@ -12,11 +12,11 @@
 
 ### 2. bobsgameonlinejava Missing from .gitmodules
 - **Problem**: `bobsgameonlinejava` was tracked as a submodule in git but had no URL entry in `.gitmodules`, causing `fatal: No url found for submodule path 'bobsgameonlinejava'` errors.
-- **Fix**: Added `submodule.bobsgameonlinejava.url = https://github.com/robertpelloni/bobsgameonlinejava.git` to `.gitmodules`.
+- **Fix**: Added `submodule.bobsgameonlinejava.url = https://github.com/candlestixxx/bobsgameonlinejava.git` to `.gitmodules`.
 
 ### 3. agentirc Relative URL (from Session 16)
 - **Problem**: `agentirc` had relative URL `./agentirc` which resolved incorrectly on remote build servers.
-- **Fix**: Changed to absolute `https://github.com/robertpelloni/agentirc.git`.
+- **Fix**: Changed to absolute `https://github.com/candlestixxx/agentirc.git`.
 
 ## Feature Branch Merge Summary
 
@@ -71,7 +71,7 @@ Updated feature branches with latest main/master changes to keep them current:
 
 ## Repository Structure
 - **66 submodules** tracked in .gitmodules
-- **~30 robertpelloni-owned repos** (AI feature branches managed here)
+- **~30 candlestixxx-owned repos** (AI feature branches managed here)
 - **6 third-party repos** (sickn33, diegosouzapw, krmslmz, google-gemini, TechNickAI, tugcantopaloglu, TopazLabs, bobsgame)
 - **1 forked repo with upstream**: bobfilez (upstream: master)
 - **Version**: 3.10.0
@@ -87,5 +87,5 @@ Updated feature branches with latest main/master changes to keep them current:
 1. **Fix bobfilez pybind11 recursion**: Clone bobfilez standalone, add build_output dirs to .gitignore, force-push
 2. **Cherry-pick bobeditpro copilot changes**: If the copilot branches have useful code, identify specific commits and cherry-pick them
 3. **Set up .gitignore for nested submodule dirty states**: Add .gitignore entries in parent submodules for their nested submodule build artifacts
-4. **Verify full fresh clone**: `git clone --recurse-submodules https://github.com/robertpelloni/workspace.git /tmp/test-clone` to confirm the .agent fix works end-to-end
+4. **Verify full fresh clone**: `git clone --recurse-submodules https://github.com/candlestixxx/workspace.git /tmp/test-clone` to confirm the .agent fix works end-to-end
 5. **Add upstream remotes** to any other forked submodules that need upstream syncing

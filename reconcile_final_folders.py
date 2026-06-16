@@ -7,7 +7,7 @@ def run(cmd):
 
 def main():
     workspace_root = os.getcwd()
-    archive_dir = os.path.abspath(os.path.join(workspace_root, "..", "robertpelloni"))
+    archive_dir = os.path.abspath(os.path.join(workspace_root, "..", "candlestixxx"))
     if not os.path.exists(archive_dir):
         os.makedirs(archive_dir)
 

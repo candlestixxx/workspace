@@ -293,10 +293,10 @@
     },
     {
       "id": "26",
-      "subject": "Add missing robertpelloni repositories as submodules",
-      "description": "Identify and add all public repositories from the 'robertpelloni' GitHub organization that are not currently submodules of the 'workspace' monorepo.\n\nMissing repositories identified so far:\n- bobsgameweb\n- workspace (recursive? checking if current repo is 'workspace')\n- stonerock\n- private_gemini_storage\n\nNeed to verify if 'workspace' is the current repo name or a separate repo.\nAlso need to check for any other missing repos from the 'robertpelloni' org.",
+      "subject": "Add missing candlestixxx repositories as submodules",
+      "description": "Identify and add all public repositories from the 'candlestixxx' GitHub organization that are not currently submodules of the 'workspace' monorepo.\n\nMissing repositories identified so far:\n- bobsgameweb\n- workspace (recursive? checking if current repo is 'workspace')\n- stonerock\n- private_gemini_storage\n\nNeed to verify if 'workspace' is the current repo name or a separate repo.\nAlso need to check for any other missing repos from the 'candlestixxx' org.",
       "status": "in_progress",
-      "activeForm": "Adding missing robertpelloni repositories as submodules",
+      "activeForm": "Adding missing candlestixxx repositories as submodules",
       "metadata": {},
       "blocks": [],
       "blockedBy": [],

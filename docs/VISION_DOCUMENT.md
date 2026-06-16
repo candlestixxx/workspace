@@ -1,6 +1,6 @@
-# The Complete Vision of Robert Pelloni's Workspace
+# The Complete Vision of candlestixxx's Workspace
 
-**Author:** Robert Pelloni  
+**Author:** candlestixxx  
 **Document Version:** 1.0  
 **Last Updated:** 2026-01-09  
 **Status:** Canonical Reference
@@ -202,7 +202,7 @@ Production-ready applications demonstrating the full stack:
 |---------|-------------|-------|
 | **fwber** | Privacy-first dating platform with AI avatars | Laravel 12 + Next.js 14 |
 | **copyparty** | Multi-protocol file server | Python |
-| **robertpelloni.com** | Personal portfolio | Web |
+| **candlestixxx.com** | Personal portfolio | Web |
 
 ### 3.4 Developer Tools
 

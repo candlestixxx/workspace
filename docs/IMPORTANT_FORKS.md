@@ -7,7 +7,7 @@
 
 ## Overview
 
-These projects were forked to Robert Pelloni's GitHub because their functionality seemed particularly important. The forks have now been switched to upstream URLs, but their features and patterns should be carefully researched and potentially reimplemented in the core workspace projects.
+These projects were forked to candlestixxx's GitHub because their functionality seemed particularly important. The forks have now been switched to upstream URLs, but their features and patterns should be carefully researched and potentially reimplemented in the core workspace projects.
 
 ---
 
@@ -122,6 +122,6 @@ These projects were forked to Robert Pelloni's GitHub because their functionalit
 ## Notes
 
 - All upstream URLs have been updated in `.gitmodules` files
-- Original forks may be deleted from robertpelloni GitHub once upstream sync is confirmed
+- Original forks may be deleted from candlestixxx GitHub once upstream sync is confirmed
 - Features from these projects should be abstracted and integrated, not copied directly
 - Maintain attribution when implementing derived features

@@ -24,11 +24,11 @@ This workspace is a **519+ submodule monorepo** containing:
 
 ```bash
 # Clone with submodules (warning: 500+ repos)
-git clone --recursive https://github.com/robertpelloni/workspace.git
+git clone --recursive https://github.com/candlestixxx/workspace.git
 cd workspace
 
 # Or shallow clone for faster setup
-git clone --depth 1 https://github.com/robertpelloni/workspace.git
+git clone --depth 1 https://github.com/candlestixxx/workspace.git
 cd workspace
 git submodule update --init --depth 1
 ```

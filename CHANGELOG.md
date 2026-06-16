@@ -1,15 +1,24 @@
 # Workspace Changelog
 
-> **Project:** Robert Pelloni's Omni-Workspace (robertpelloni/workspace)
+> **Project:** candlestixxx's Omni-Workspace (candlestixxx/workspace)
 > **Format:** [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 > **Semver:** [Semantic Versioning](https://semver.org/spec/v2.0.0.html)
 
 ---
 
+## [5.14.1] - 2026-06-15
+
+### Maintenance — Comprehensive Submodule Sync & Intelligent Merge
+- Executed full dual-direction intelligent merge engine across all submodules.
+- Recursively synchronized submodules to their latest tracking commits.
+- Forward merged active feature branches into main across candlestixxx repositories.
+- Reverse merged main into active feature branches to resolve divergence.
+- Bumped workspace version to v5.14.1 in `VERSION`, `build.bat`, and `start.bat`.
+
 ## [5.14.0] - 2026-06-14
 
 ### Maintenance — Executive Protocol Sync & Upstream Merge
-- Merged upstream robertpelloni/workspace v5.13.3 into candlestixxx/workspace.
+- Merged upstream candlestixxx/workspace v5.13.3 into candlestixxx/workspace.
 - Resolved all merge conflicts (.gitmodules, VERSION, CHANGELOG, HANDOFF, TODO, build.bat).
 - Restored fork-specific submodule URLs and 11 candlestixxx submodules.
 - Restored 779+ deleted tracked files after workspace corruption.
@@ -227,10 +236,10 @@ Maestro, enterprise_sales_bot, bobdesk, FAGLSGC, fwber, xrnet, hyperharness, jul
 ### Executive Protocol v5.10.0 — Comprehensive Submodule Reconciliation & Feature Branch Integration
 
 **Upstream & Submodule Sanitization:**
-- Fixed 19 candlestixxx → robertpelloni URL redirects in .gitmodules
+- Fixed 19 candlestixxx → candlestixxx URL redirects in .gitmodules
 - Removed 10 dead/non-existent submodules (brokeragentworkflow, re-agent-workflow-media-1, realestateprototype, p2p_service_marketplace, socialmediacontentplanner, explorerexedecompiled, theta-data-api, forclosureworkflow, realestateleadcaller, techno_platform_detroit)
 - Removed orphaned litellm_control_panel from index
-- Fixed ArrowVortex gitlink to valid commit (a6f24d0) from robertpelloni fork
+- Fixed ArrowVortex gitlink to valid commit (a6f24d0) from candlestixxx fork
 
 **Forward Merges (Feature Branches → Main):**
 - bobmani/hymnmania: Merged feat/v137-studio-reversal (+857/-3007, test infrastructure)

@@ -1,6 +1,6 @@
 # Session 18 Handoff Document
 # Date: 2025-05-04
-# Workspace: https://github.com/robertpelloni/workspace.git
+# Workspace: https://github.com/candlestixxx/workspace.git
 # Version: 3.11.0
 
 ## Root Cause of Jules Clone Failures - FULLY RESOLVED
@@ -15,7 +15,7 @@ The Jules clone was failing for THREE distinct reasons, all now fixed:
 ### 2. CLIProxyAPIPlus/ui Nested Submodule (Fixed in Session 18)
 - **Error**: `fatal: No url found for submodule path 'CLIProxyAPIPlus/ui' in .gitmodules`
 - **Cause**: Jules created a `ui` gitlink in CLIProxyAPIPlus but never added it to `.gitmodules`. The referenced commit `743471f9e` also doesn't exist on the remote.
-- **Fix**: Added `.gitmodules` entry pointing to `https://github.com/robertpelloni/Cli-Proxy-API-Management-Center` and updated gitlink to `7747c95a` (valid main HEAD)
+- **Fix**: Added `.gitmodules` entry pointing to `https://github.com/candlestixxx/Cli-Proxy-API-Management-Center` and updated gitlink to `7747c95a` (valid main HEAD)
 
 ### 3. hyperharness/amazon-q-developer-cli (Fixed in Session 18)
 - **Same type of error** as #2, discovered during systematic scan

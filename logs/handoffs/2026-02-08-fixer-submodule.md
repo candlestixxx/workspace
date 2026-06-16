@@ -14,7 +14,7 @@
 | Bumped workspace version to 1.2.3, synced manifests, and regenerated the dashboard | `VERSION`, `package.json`, `pyproject.toml`, `CHANGELOG.md`, `SUBMODULE_DASHBOARD.md` | ✅ `python scripts/generate_dashboard.py`
 
 ### Key Decisions Made
-1. **Use the absolute `https://github.com/robertpelloni/Simply-Love-SM5.git` URL** to recover from the broken relative pointer and allow a clean clone.
+1. **Use the absolute `https://github.com/candlestixxx/Simply-Love-SM5.git` URL** to recover from the broken relative pointer and allow a clean clone.
 2. **Fetch the theme with `--depth 1`** so the large StepMania theme finishes within the time budget while still delivering the required commit.
 
 ### Files Modified
@@ -89,13 +89,13 @@ python scripts/generate_dashboard.py  # Refresh SUBMODULE_DASHBOARD.md after sub
 
 ## Quick Resume Prompt
 ```
-We are working on the Robert Pelloni workspace at C:/Users/hyper/workspace.
+We are working on the candlestixxx workspace at C:/Users/hyper/workspace.
 
 **Last Session Completed:** Fixed the Simply-Love-SM5 theme submodule inside bobmani/itgmania, bumped the workspace version to 1.2.3, regenerated the dashboard, and pushed both repositories.
 
 **Continue From:** No pending work; resume with other roadmap tasks (e.g., addressing remaining dirty submodules or documentation updates).
 
-**Key Context:** The theme now references https://github.com/robertpelloni/Simply-Love-SM5.git, which fetched commit 842a42d7f. The workspace is at version 1.2.3 with synchronized manifest files.
+**Key Context:** The theme now references https://github.com/candlestixxx/Simply-Love-SM5.git, which fetched commit 842a42d7f. The workspace is at version 1.2.3 with synchronized manifest files.
 
 **Files to Reference:** bobmani/itgmania/.gitmodules, SUBMODULE_DASHBOARD.md, CHANGELOG.md, VERSION
 

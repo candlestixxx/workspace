@@ -52,7 +52,7 @@
 |-----------|-------|--------|
 | `topaz-ffmpeg` | Permission denied on push | TopazLabs repo, not our fork |
 | `mcpenetes` | Archived/read-only | Repository archived on GitHub |
-| `antigravity-jules-orchestration` | Permission denied | Scarmonit repo, not robertpelloni |
+| `antigravity-jules-orchestration` | Permission denied | Scarmonit repo, not candlestixxx |
 | `antigravity-autopilot/AUTO-ALL-AntiGravity` | Permission denied | ai-dev-2024 repo |
 | `antigravity-autopilot/yoke-antigravity` | Permission denied | ai-dev-2024 repo |
 | `antigravity-autopilot/auto-accept-agent` | Permission denied | Munkhin repo |
@@ -130,7 +130,7 @@ chore: bump version to 1.2.1
 ## Context for Next Agent
 - All model-specific files now reference `docs/LLM_INSTRUCTIONS.md` as the master protocol
 - VERSION file is the single source of truth — must be synced to package.json and pyproject.toml
-- User (Robert Pelloni) uses Google Jules and other AI tools that create feature branches — always merge these into default branch
+- User (candlestixxx) uses Google Jules and other AI tools that create feature branches — always merge these into default branch
 - Bobcoin references must NOT appear in non-crypto projects
 - The monorepo has 51 root submodules and 273+ nested (mostly in aios/)
 - mnmballa2323 repos are external/collaborative — document separately from core vision

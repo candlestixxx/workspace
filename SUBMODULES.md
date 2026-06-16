@@ -6,7 +6,7 @@
 ## Project Structure
 
 ```
-robertpelloni/workspace/
+candlestixxx/workspace/
 ├── .agent/                    # Antigravity skills SDK
 ├── CLIProxyAPIPlus/           # CLI proxy API service
 ├── Maestro/                   # AI agent orchestration

@@ -1,7 +1,7 @@
 #!/bin/bash
 # Full Workspace Sync Script
 # Handles: branch merges, upstream sync, submodule updates, commit & push
-# Focus on robertpelloni repos, intelligent conflict resolution
+# Focus on candlestixxx repos, intelligent conflict resolution
 
 set -e
 WORKSPACE="/c/Users/hyper/workspace"
@@ -30,10 +30,10 @@ process_repo() {
     local remote_url=""
     remote_url=$(git remote get-url origin 2>/dev/null) || true
     
-    # Check if this is a robertpelloni repo
-    local is_robertpelloni=false
-    if echo "$remote_url" | grep -qi "robertpelloni"; then
-        is_robertpelloni=true
+    # Check if this is a candlestixxx repo
+    local is_candlestixxx=false
+    if echo "$remote_url" | grep -qi "candlestixxx"; then
+        is_candlestixxx=true
     fi
     
     log "Processing: $repo_name ($remote_url)"
@@ -56,8 +56,8 @@ process_repo() {
         return 0
     fi
     
-    # Step 2: For robertpelloni repos, handle feature branches
-    if [ "$is_robertpelloni" = true ]; then
+    # Step 2: For candlestixxx repos, handle feature branches
+    if [ "$is_candlestixxx" = true ]; then
         # Get default branch (main or master)
         local default_branch="main"
         git rev-parse --verify main 2>/dev/null || default_branch="master"
@@ -104,7 +104,7 @@ process_repo() {
             
             log "  Found feature branch: $branch in $repo_name"
             
-            # Check if this branch has robertpelloni commits (i.e., it's our branch)
+            # Check if this branch has candlestixxx commits (i.e., it's our branch)
             local has_our_commits=false
             if git log "$default_branch..$branch" --format='%an' 2>/dev/null | grep -qi -E "robert|jules|bot|dependabot"; then
                 has_our_commits=true
@@ -173,7 +173,7 @@ process_repo() {
     fi
     
     # Step 5: Push
-    if [ "$is_robertpelloni" = true ]; then
+    if [ "$is_candlestixxx" = true ]; then
         log "  Pushing $repo_name"
         git push origin HEAD 2>/dev/null || {
             log "  Push failed, trying with --force-with-lease"

@@ -1,3 +1,17 @@
+# HANDOFF — Session v5.14.1
+**Date:** 2026-06-15
+**Operator:** Gemini CLI (Executive Protocol)
+**Previous Version:** 5.14.0 → **5.14.1**
+
+## Session Summary — Executive Protocol v5.14.1
+
+### Core Operations
+1. **Intelligent Submodule Sync:** Executed full workspace repository synchronization (`scripts/comprehensive_sync.py` updated to check for `candlestixxx`).
+2. **Upstream Merge & Submodule Tracking:** Fetched all tags and recursively updated 100+ submodules to their latest tracking commits.
+3. **Dual-Direction Merge:** Forward merged active feature branches across `candlestixxx` repositories into main, and reverse merged main into feature branches to prevent drift.
+4. **Documentation & Dashboards:** Regenerated submodule structural map (`SUBMODULE_DASHBOARD.md`). Updated `ROADMAP.md` and `TODO.md`.
+5. **Script & Version Upgrades:** Bumped versions in `build.bat`, `start.bat`, `VERSION`, and `CHANGELOG.md` to v5.14.1.
+
 # HANDOFF — Session v5.14.0
 **Date:** 2026-06-14
 **Operator:** Pi Coding Agent (Executive Protocol)
@@ -7,7 +21,7 @@
 
 ### Core Operations
 1. **Workspace Recovery:** Restored 779 deleted tracked files after workspace corruption (bot purge).
-2. **Upstream Merge:** Merged robertpelloni/workspace upstream/main (v5.13.3) into candlestixxx/workspace main.
+2. **Upstream Merge:** Merged candlestixxx/workspace upstream/main (v5.13.3) into candlestixxx/workspace main.
 3. **Conflict Resolution:** Resolved 19 merge conflicts including:
    - `.gitmodules` — Restored 21 candlestixxx fork URLs, added upstream's fwber+freellm
    - `VERSION` — Bumped to 5.14.0

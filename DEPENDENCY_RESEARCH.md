@@ -1,6 +1,6 @@
 # Omni-Workspace Dependency & Submodule Research
 
-This document outlines the detailed research and inferred reasoning for all top-level libraries, packages, and submodules integrated into the `robertpelloni/workspace` Omni-Workspace.
+This document outlines the detailed research and inferred reasoning for all top-level libraries, packages, and submodules integrated into the `candlestixxx/workspace` Omni-Workspace.
 
 ## 1. Top-Level Package Dependencies (`package.json`)
 The root workspace utilizes an NPM `package.json` acting as the global manager for local orchestration and AI agent tooling.

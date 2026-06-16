@@ -63,10 +63,10 @@ apps\native-ui\main.go:7:2: github.com/go-git/go-git/v5@v5.19.0: missing go.sum 
 apps\native-ui\main.go:8:2: github.com/go-git/go-git/v5@v5.19.0: missing go.sum entry for go.mod file; to add it:
 	go mod download github.com/go-git/go-git/v5
 apps\native-ui\main.go:11:12: pattern all:frontend/dist: no matching files found
-git\commit.go:4:2: missing go.sum entry for module providing package github.com/go-git/go-git/v5 (imported by github.com/robertpelloni/hypernexus/git); to add:
-	go get github.com/robertpelloni/hypernexus/git
-git\commit.go:5:2: missing go.sum entry for module providing package github.com/go-git/go-git/v5/plumbing/object (imported by github.com/robertpelloni/hypernexus/git); to add:
-	go get github.com/robertpelloni/hypernexus/git
+git\commit.go:4:2: missing go.sum entry for module providing package github.com/go-git/go-git/v5 (imported by github.com/candlestixxx/hypernexus/git); to add:
+	go get github.com/candlestixxx/hypernexus/git
+git\commit.go:5:2: missing go.sum entry for module providing package github.com/go-git/go-git/v5/plumbing/object (imported by github.com/candlestixxx/hypernexus/git); to add:
+	go get github.com/candlestixxx/hypernexus/git
 --> Building borg\agents\maestro...
     Building Node project...
       Executing: npm install --no-fund --no-audit --loglevel=error in .\borg\agents\maestro

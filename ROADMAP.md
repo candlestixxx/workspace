@@ -22,3 +22,4 @@
 - [x] Dual-Direction Sync v4.64.0 Completed (2026-06-07)
 - [x] Executive Protocol v5.10.0 Completed (2026-06-12)
 - [x] Executive Protocol v5.14.0 Completed (2026-06-14) — Upstream merge, workspace recovery, submodule reconciliation
+- [x] Executive Protocol v5.14.1 Completed (2026-06-15) — Comprehensive dual-direction submodule sync and intelligent merge

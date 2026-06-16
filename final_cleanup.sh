@@ -1,6 +1,6 @@
 #!/bin/bash
 WORKSPACE="/c/Users/hyper/workspace"
-REPOS=$(grep -B 2 "url = .*robertpelloni" "$WORKSPACE/.gitmodules" | grep "path =" | awk '{print $NF}')
+REPOS=$(grep -B 2 "url = .*candlestixxx" "$WORKSPACE/.gitmodules" | grep "path =" | awk '{print $NF}')
 
 for REPO in $REPOS; do
     cd "$WORKSPACE/$REPO" 2>/dev/null || continue

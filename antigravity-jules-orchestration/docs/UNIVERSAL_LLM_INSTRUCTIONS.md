@@ -12,7 +12,7 @@ This repository is an **Omni-Workspace**—a centralized manager and command cen
 *   **Autonomy First:** Proceed with implementation, research, and documentation autonomously. Do not pause for confirmation unless a critical, irreversible destructive action is about to be taken (and even then, explain clearly).
 *   **Never Lose Features:** When merging branches (especially AI-generated feature branches) or syncing upstream, **ALWAYS intelligently merge and solve conflicts.** Favor the "new" or "local" changes if they represent progress. Never force push or overwrite working code.
 *   **Conventions:** Rigorously adhere to existing project conventions (formatting, naming). Analyze surrounding code, tests, and configuration first.
-*   **Upstream Syncing:** Always check for and merge upstream changes into `robertpelloni` forks if a valid upstream branch exists.
+*   **Upstream Syncing:** Always check for and merge upstream changes into `candlestixxx` forks if a valid upstream branch exists.
 *   **Submodule Integrity:** Run `python scripts/update_repos_v5.py` (or the latest iteration) to recursively sync all submodules. **Never** leave submodules in a detached HEAD state if possible; merge changes into the default branch (`main` or `master`) and push.
 
 ## 3. Documentation & Versioning Protocol
