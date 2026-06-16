@@ -1,33 +1,4 @@
-node_modules/
-.env
-hymn_remaker_backup/
-# Cache/agent directories (generated — not tracked)
-.agent/
-.borg-session.json
-.borg_startup_marker
-.chunkhound/
-.codemachine/
-.cursor/
-.pi-lens/cache/
-.pi-lens/change-log.jsonl
-.pi-lens/code-quality-warnings.jsonl
-.pi-lens/metrics-history.json
-.pi-lens/turn-state.json
-.pi-lens/worklog.jsonl
-.pi/tasks/
-.pi/caps-context-state.json
-.pi/tasks-config.json
-# Generated files
-.gitmodules.restore
-.stale_commit_results.json
-.stale_pointers.json
-.tormentnexus-session.json
-.tormentnexus_startup_marker
-.tormentnexus/
-.vscode/
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-borg.db
-ultratrader/
+*.py
+*.sh
+*.ps1
+.gitmodules_new

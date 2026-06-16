@@ -1,90 +1,18 @@
-[submodule "TormentNexus"]
-	path = TormentNexus
-	url = https://github.com/candlestixxx/TormentNexus.git
-[submodule "WebAI-to-API"]
-	path = WebAI-to-API
-	url = https://github.com/candlestixxx/WebAI-to-API.git
-[submodule "ableton_psytrance_hymn_creator"]
-	path = ableton_psytrance_hymn_creator
-	url = https://github.com/candlestixxx/ableton_psytrance_hymn_creator.git
-[submodule "ai_game_engine"]
-	path = ai_game_engine
-	url = https://github.com/candlestixxx/ai_game_engine.git
-[submodule "antigravity-cli"]
-	path = antigravity-cli
-	url = https://github.com/candlestixxx/antigravity-cli.git
-[submodule "auto_dj_script"]
-	path = auto_dj_script
-	url = https://github.com/candlestixxx/auto_dj_script.git
-[submodule "bobtrader"]
-	path = bobtrader
-	url = https://github.com/candlestixxx/bobtrader.git
 [submodule "brokeragentworkflow"]
 	path = brokeragentworkflow
 	url = https://github.com/candlestixxx/brokeragentworkflow
-[submodule "computer-use-preview"]
-	path = computer-use-preview
-	url = https://github.com/candlestixxx/computer-use-preview.git
-[submodule "crowdsourced_dance_club"]
-	path = crowdsourced_dance_club
-	url = https://github.com/candlestixxx/crowdsourced_dance_club.git
-[submodule "dao"]
-	path = dao
-	url = https://github.com/candlestixxx/dao.git
-[submodule "element-web"]
-	path = element-web
-	url = https://github.com/candlestixxx/element-web.git
-[submodule "enterprise_sales_bot"]
-	path = enterprise_sales_bot
-	url = https://github.com/candlestixxx/enterprise_sales_bot.git
 [submodule "excel-legacy-leadgen"]
 	path = excel-legacy-leadgen
 	url = https://github.com/candlestixxx/excel-legacy-leadgen.git
 [submodule "explorerexedecompiled"]
 	path = explorerexedecompiled
 	url = https://github.com/candlestixxx/explorerexedecompiled.git
-[submodule "fcdm"]
-	path = fcdm
-	url = https://github.com/candlestixxx/fcdm.git
 [submodule "forclosureworkflow"]
 	path = forclosureworkflow
 	url = https://github.com/candlestixxx/forclosureworkflow.git
-[submodule "fully_automated_gay_luxury_space_communism"]
-	path = fully_automated_gay_luxury_space_communism
-	url = https://github.com/candlestixxx/fully_automated_gay_luxury_space_communism.git
-[submodule "hermes-agent"]
-	path = hermes-agent
-	url = https://github.com/candlestixxx/hermes-agent.git
-[submodule "hyper"]
-	path = hyper
-	url = https://github.com/candlestixxx/hyper.git
-[submodule "litellm"]
-	path = litellm
-	url = https://github.com/candlestixxx/litellm.git
-[submodule "litellm_control_panel"]
-	path = litellm_control_panel
-	url = https://github.com/candlestixxx/litellm_control_panel.git
-[submodule "multimousergy"]
-	path = multimousergy
-	url = https://github.com/candlestixxx/multimousergy.git
-[submodule "native-fy"]
-	path = native-fy
-	url = https://github.com/candlestixxx/native-fy.git
-[submodule "openclaw-config"]
-	path = openclaw-config
-	url = https://github.com/candlestixxx/openclaw-config.git
-[submodule "openclaw-dashboard"]
-	path = openclaw-dashboard
-	url = https://github.com/candlestixxx/openclaw-dashboard.git
 [submodule "p2p_service_marketplace"]
 	path = p2p_service_marketplace
 	url = https://github.com/candlestixxx/p2p_service_marketplace.git
-[submodule "planet_fitness_stepmaniax_agent"]
-	path = planet_fitness_stepmaniax_agent
-	url = https://github.com/candlestixxx/planet_fitness_stepmaniax_agent.git
-[submodule "psytrance_night_outreach_agent"]
-	path = psytrance_night_outreach_agent
-	url = https://github.com/candlestixxx/psytrance_night_outreach_agent.git
 [submodule "re-agent-workflow-media-1"]
 	path = re-agent-workflow-media-1
 	url = https://github.com/candlestixxx/re-agent-workflow-media-1
@@ -100,36 +28,18 @@
 [submodule "skillzhub"]
 	path = skillzhub
 	url = https://github.com/candlestixxx/skillzhub.git
-[submodule "slsk_discography_downloader_script"]
-	path = slsk_discography_downloader_script
-	url = https://github.com/candlestixxx/slsk_discography_downloader_script.git
 [submodule "socialmediacontentplanner"]
 	path = socialmediacontentplanner
 	url = https://github.com/candlestixxx/socialmediacontentplanner.git
-[submodule "superdawmcp"]
-	path = superdawmcp
-	url = https://github.com/candlestixxx/superdawmcp.git
 [submodule "techno_platform_detroit"]
 	path = techno_platform_detroit
 	url = https://github.com/candlestixxx/techno_platform_detroit.git
 [submodule "theta-data-api"]
 	path = theta-data-api
 	url = https://github.com/candlestixxx/theta-data-api.git
-[submodule "topaz-ffmpeg"]
-	path = topaz-ffmpeg
-	url = https://github.com/candlestixxx/topaz-ffmpeg.git
-[submodule "tormentnexus"]
-	path = tormentnexus
-	url = https://github.com/candlestixxx/tormentnexus.git
 [submodule "ultratrader"]
 	path = ultratrader
 	url = https://github.com/candlestixxx/ultratrader.git
-[submodule "veilid_reddit_facebook"]
-	path = veilid_reddit_facebook
-	url = https://github.com/candlestixxx/veilid_reddit_facebook.git
-[submodule "vst_monster"]
-	path = vst_monster
-	url = https://github.com/candlestixxx/vst_monster.git
 [submodule "warp"]
 	path = warp
 	url = https://github.com/candlestixxx/warp.git
