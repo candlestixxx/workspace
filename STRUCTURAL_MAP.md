@@ -2,20 +2,20 @@
 
 | Submodule | Path | Remote URL | Current Commit |
 |-----------|------|-----------|----------------|
-| brokeragentworkflow | brokeragentworkflow/ | https://github.com/candlestixxx/brokeragentworkflow | (gitlink) |
-| excel-legacy-leadgen | excel-legacy-leadgen/ | https://github.com/candlestixxx/excel-legacy-leadgen.git | (gitlink) |
-| explorerexedecompiled | explorerexedecompiled/ | https://github.com/candlestixxx/explorerexedecompiled.git | (gitlink) |
-| forclosureworkflow | forclosureworkflow/ | https://github.com/candlestixxx/forclosureworkflow.git | (gitlink) |
-| p2p_service_marketplace | p2p_service_marketplace/ | https://github.com/candlestixxx/p2p_service_marketplace.git | (gitlink) |
-| re-agent-workflow-media-1 | re-agent-workflow-media-1/ | https://github.com/candlestixxx/re-agent-workflow-media-1 | (gitlink) |
-| realestatecrm | realestatecrm/ | https://github.com/candlestixxx/realestatecrm.git | (gitlink) |
-| realestateleadcaller | realestateleadcaller/ | https://github.com/candlestixxx/realestateleadcaller.git | (gitlink) |
-| realestateprototype | realestateprototype/ | https://github.com/candlestixxx/realestateprototype.git | (gitlink) |
-| skillzhub | skillzhub/ | https://github.com/candlestixxx/skillzhub.git | (gitlink) |
-| socialmediacontentplanner | socialmediacontentplanner/ | https://github.com/candlestixxx/socialmediacontentplanner.git | (gitlink) |
-| techno_platform_detroit | techno_platform_detroit/ | https://github.com/candlestixxx/techno_platform_detroit.git | (gitlink) |
-| theta-data-api | theta-data-api/ | https://github.com/candlestixxx/theta-data-api.git | (gitlink) |
-| ultratrader | ultratrader/ | https://github.com/candlestixxx/ultratrader.git | (gitlink) |
+| brokeragentworkflow | brokeragentworkflow/ | https://github.com/candlestixxx/brokeragentworkflow | 9ed6cc9f886c4d98ad738e476c6b579dfc0809af |
+| excel-legacy-leadgen | excel-legacy-leadgen/ | https://github.com/candlestixxx/excel-legacy-leadgen.git | 1574ba467d26861c18097671454b6e4f3071af4d |
+| explorerexedecompiled | explorerexedecompiled/ | https://github.com/candlestixxx/explorerexedecompiled.git | b67d6b79152ef1f23262fddb1d6484f50416bbea |
+| forclosureworkflow | forclosureworkflow/ | https://github.com/candlestixxx/forclosureworkflow.git | ae51564e7d63f54764dd5bebe7344d3746026ce9 |
+| p2p_service_marketplace | p2p_service_marketplace/ | https://github.com/candlestixxx/p2p_service_marketplace.git | 1c94136184b0399205a3fe0dcc1f0e65414e1883 |
+| re-agent-workflow-media-1 | re-agent-workflow-media-1/ | https://github.com/candlestixxx/re-agent-workflow-media-1 | 1733f9295cfee501a090563c5e30d21eeff25014 |
+| realestatecrm | realestatecrm/ | git@github.com:candlestixxx/realestatecrm.git | ba8539d58844396c1c631abbedd9a0c443af8ed5 |
+| realestateleadcaller | realestateleadcaller/ | https://github.com/candlestixxx/realestateleadcaller.git | c45d7c1063704e2be105d6cabd3d18bd0961809e |
+| realestateprototype | realestateprototype/ | https://github.com/candlestixxx/realestateprototype.git | 2e308fae488ebc4e50d5045748cbf45db543f0d4 |
+| skillzhub | skillzhub/ | https://github.com/candlestixxx/skillzhub.git | 47f3d570051dfe86a94de25eb4d1780302d3f1ba |
+| socialmediacontentplanner | socialmediacontentplanner/ | https://github.com/candlestixxx/socialmediacontentplanner.git | 5551b5baa850b73001599eb78331edf96f1d5be8 |
+| techno_platform_detroit | techno_platform_detroit/ | https://github.com/candlestixxx/techno_platform_detroit.git | 314cf36471b32354f8031f9c42ca4bd3b950d571 |
+| theta-data-api | theta-data-api/ | https://github.com/candlestixxx/theta-data-api.git | 1110e9b198b216981a68e4b3969b7765b000ecf2 |
+| ultratrader | ultratrader/ | https://github.com/candlestixxx/ultratrader.git | bdd0ff87964766db892b62e5721bf6fab72892a3 |
 
 **Note:** All submodules are original candlestixxx repos (not forks of robertpelloni). The only exception is `ultratrader` which was forked from robertpelloni/ultratrader.
 
