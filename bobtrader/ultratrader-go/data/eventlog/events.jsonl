@@ -1,1 +1,0 @@
-{"timestamp":"2026-06-17T15:45:40.8403814Z","type":"app.started","source":"ultratrader-go","payload":{"accounts":1,"environment":"production-live-trading","initial_usdt":10000,"market_data":"websocket"}}
