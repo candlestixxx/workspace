@@ -1,12 +1,14 @@
 # Workspace TODO
 
 ## High Priority
-- [ ] Push root repository changes (including submodule pointers).
-- [ ] Verify `warp` and `xrnet` submodule status (missing in local tree?).
+- [x] Push root repository changes (including submodule pointers).
+- [x] Verify `warp` and `xrnet` submodule status (initialized and tracked).
+- [x] Fix stale `submodules/bobcoin` gitlink in `xrnet`.
+- [x] Execute dual-direction intelligent merge across all 16 submodules.
 - [ ] Execute full system build/deployment sequence.
 
 ## Maintenance
-- [ ] Review and update all execution scripts (`start.bat`, `build.bat`).
+- [ ] Review and update all execution scripts (`start.bat`, `build.bat`) across submodules.
 - [ ] Monitor submodule drift and schedule periodic reconciliations.
 - [ ] Clean up AI-generated artifacts in `realestateleadcaller`.
 
