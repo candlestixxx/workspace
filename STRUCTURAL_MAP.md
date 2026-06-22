@@ -22,3 +22,5 @@
 **Note:** All submodules are original candlestixxx repos (not forks of robertpelloni). The only exception is `ultratrader` which was forked from robertpelloni/ultratrader (upstream no longer accessible).
 
 Root remote: `https://github.com/candlestixxx/workspace.git` (main branch)
+
+**Last verified:** 2026-06-21 (v1.0.3) — All submodules fetched, all feature branches reconciled, no divergence between feature and primary branches.

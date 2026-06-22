@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.0.3] - 2026-06-21
+
+### Repository Refresh & Intelligent Merge v1.0.3
+- Fetched all remotes and tags across root and 16 submodules.
+- Verified all feature branches are fully reconciled with primary branches (no diverge in either direction).
+- Preserved untracked development artifacts in `realestatecrm` (new sync scripts, API routes, UI components).
+- Preserved untracked development artifacts in `realestateleadcaller` (proxy, data scripts).
+- Added AI tool session directories to `.gitignore` in `realestateleadcaller`.
+- Bumped global version to v1.0.3.
+- Updated `CHANGELOG.md`, `STRUCTURAL_MAP.md`, `ROADMAP.md`, `TODO.md`, `HANDOFF.md`.
+- Verified workspace integrity and submodule tracking.
+
 ## [1.0.2] - 2026-06-20
 
 ### Synchronized & Reconciled
