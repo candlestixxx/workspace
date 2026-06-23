@@ -13,8 +13,10 @@
 - Initialized `warp` and `xrnet` submodules (16 total).
 
 ## Phase 3: Build & Deployment Automation (In Progress)
-- [x] Global versioning and changelog tracking implemented (v1.0.3).
+- [x] Global versioning and changelog tracking implemented (v1.0.4).
 - [x] Submodule structural map maintained and up to date.
+- [x] Fixed submodule tracking: 5 submodules had `origin/HEAD` pointing to feature branches; reset to primary branches.
+- [x] Repaired `xrnet` local main — fast-forwarded to `origin/main`.
 - [ ] Validate all execution scripts (`start.bat`, `build.bat`) across submodules.
 - [ ] Standardize CI/CD across submodules.
 - [ ] Execute full system build/deployment sequence.
