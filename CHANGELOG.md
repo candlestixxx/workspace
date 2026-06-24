@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.5] - 2026-06-21
+
+### Submodule Addition — leadG
+- Added `leadG` submodule (17th submodule) from `https://github.com/candlestixxx/leadG.git`.
+- Updated `STRUCTURAL_MAP.md` with leadG entry.
+- Bumped global version to v1.0.5.
+
 ## [1.0.4] - 2026-06-21
 
 ### Repository Refresh & Intelligent Merge v1.0.4

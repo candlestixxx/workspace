@@ -46,3 +46,6 @@
 [submodule "xrnet"]
 	path = xrnet
 	url = https://github.com/candlestixxx/xrnet.git
+[submodule "leadG"]
+	path = leadG
+	url = https://github.com/candlestixxx/leadG.git

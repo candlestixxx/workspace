@@ -18,9 +18,10 @@
 | ultratrader | ultratrader/ | https://github.com/candlestixxx/ultratrader.git | bdd0ff87964766db892b62e5721bf6fab72892a3 |
 | warp | warp/ | https://github.com/candlestixxx/warp.git | 25d557224446028bf49c6bfc0163ff30a68cf9a8 |
 | xrnet | xrnet/ | https://github.com/candlestixxx/xrnet.git | 1b314f264770a2f035de4e7d05ae9e3d2d8f71ff |
+| leadG | leadG/ | https://github.com/candlestixxx/leadG.git | 81576bc7294ad690db6ea7b7f50ea873c46d1aa2 |
 
 **Note:** All submodules are original candlestixxx repos (not forks of robertpelloni). The only exception is `ultratrader` which was forked from robertpelloni/ultratrader (upstream no longer accessible).
 
 Root remote: `https://github.com/candlestixxx/workspace.git` (main branch)
 
-**Last verified:** 2026-06-21 (v1.0.4) — All submodules fetched, all feature branches reconciled, no divergence. Fixed 5 submodules tracking feature-branch `origin/HEAD` instead of primary branch. Repaired `xrnet` local main.
+**Last verified:** 2026-06-21 (v1.0.5) — Added `leadG` submodule (17 total). All submodules fetched, tracked, and reconciled.
