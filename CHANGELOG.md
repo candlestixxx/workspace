@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.6] - 2026-06-26
+
+### Repository Synchronization & Merge Reconciliation
+- Fetched all remotes and tags across root and 17 submodules.
+- Performed branch reconciliation in `realestatecrm` merging local feature branches into `main` and catching them up with reverse merges.
+- Preserved untracked development artifacts and resolved SQLite db file lock issues in `realestatecrm`.
+- Bumped global version to v1.0.6.
+- Updated documentation.
+
 ## [1.0.5] - 2026-06-21
 
 ### Submodule Addition — leadG

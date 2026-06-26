@@ -8,7 +8,7 @@
 | forclosureworkflow | forclosureworkflow/ | https://github.com/candlestixxx/forclosureworkflow.git | ae51564e7d63f54764dd5bebe7344d3746026ce9 |
 | p2p_service_marketplace | p2p_service_marketplace/ | https://github.com/candlestixxx/p2p_service_marketplace.git | 1c94136184b0399205a3fe0dcc1f0e65414e1883 |
 | re-agent-workflow-media-1 | re-agent-workflow-media-1/ | https://github.com/candlestixxx/re-agent-workflow-media-1 | 1733f9295cfee501a090563c5e30d21eeff25014 |
-| realestatecrm | realestatecrm/ | git@github.com:candlestixxx/realestatecrm.git | 5f7aebbbe8d350a9f2a91458d13003bef2e3661f |
+| realestatecrm | realestatecrm/ | git@github.com:candlestixxx/realestatecrm.git | 47dd3ba006a7c0b05b68f613fd27663853aefd7a |
 | realestateleadcaller | realestateleadcaller/ | https://github.com/candlestixxx/realestateleadcaller.git | c45d7c1063704e2be105d6cabd3d18bd0961809e |
 | realestateprototype | realestateprototype/ | https://github.com/candlestixxx/realestateprototype.git | 2e308fae488ebc4e50d5045748cbf45db543f0d4 |
 | skillzhub | skillzhub/ | https://github.com/candlestixxx/skillzhub.git | 47f3d570051dfe86a94de25eb4d1780302d3f1ba |
@@ -24,4 +24,4 @@
 
 Root remote: `https://github.com/candlestixxx/workspace.git` (main branch)
 
-**Last verified:** 2026-06-21 (v1.0.5) — Added `leadG` submodule (17 total). All submodules fetched, tracked, and reconciled.
+**Last verified:** 2026-06-26 (v1.0.6) — Re-synchronized and branch reconciled (17 total). All submodules fetched, tracked, and reconciled.
