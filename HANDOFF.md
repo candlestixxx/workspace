@@ -61,7 +61,20 @@ Reset `origin/HEAD` from stale feature branches to primary branches:
 - `realestateleadcaller` has untracked dev artifacts (`.hypercode/`, `.hypernexus/`, `data/`, `src/proxy.ts`) — intentionally preserved.
 - `brokeragentworkflow` has untracked `nul` file.
 
+### Build Phase Results
+- **realestatecrm** ✅ — Built successfully (Next.js 16, Turbopack)
+- **realestateprototype** ✅ — Built successfully (Vite project)
+- **forclosureworkflow** ❌ — Pre-existing module-not-found error
+- **p2p_service_marketplace** ❌ — Pre-existing Stripe page data collection error
+- **re-agent-workflow-media-1** ❌ — Pre-existing TypeScript compilation errors
+- **realestateleadcaller** ❌ — Pre-existing middleware/proxy conflict (Next.js 16)
+- **skillzhub** ❌ — Pre-existing API route data collection error
+- **socialmediacontentplanner** ❌ — Pre-existing API package build failure
+- **Other submodules**: No standard build file or no build script configured
+
+All build failures are pre-existing submodule-specific issues, not caused by this synchronization.
+
 ### Pending Items
-- Run system-level build or deployment validation.
+- Fix pre-existing build errors in affected submodules (forclosureworkflow, p2p_service_marketplace, re-agent-workflow-media-1, realestateleadcaller, skillzhub, socialmediacontentplanner).
 - Consider removing `delete_repos.sh` and `bobtrader/` from workspace.
 - Standardize local scripts and CI pipelines.
