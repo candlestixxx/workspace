@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.0.7] - 2026-06-26
+
+### Repository Synchronization v1.0.7 — Submodule Sanitization & Feature Branch Reconciliation
+- Removed `warp` and `xrnet` submodules (repos deleted from GitHub as per upstream fork cleanup).
+- Removed dead `upstream` remote from `ultratrader` (robertpelloni/ultratrader no longer accessible).
+- Fixed `origin/HEAD` on 6 submodules pointing to stale feature branches instead of primary branch.
+- Reverse-merged `main` into `rag-consolidation-cleanup` and `rag-consolidation-cleanup-*` feature branches in `realestatecrm`.
+- Synced and push-reconciled `jules-ai-drip-execution-*` remote feature branch in `realestatecrm`.
+- Updated STRUCTURAL_MAP.md (removed warp/xrnet, added leadG, updated commit hashes).
+- Bumped global version to v1.0.7.
+
 ## [1.0.6] - 2026-06-26
 
 ### Repository Synchronization & Merge Reconciliation

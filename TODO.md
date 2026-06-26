@@ -2,13 +2,11 @@
 
 ## High Priority
 - [x] Push root repository changes (including submodule pointers).
-- [x] Verify `warp` and `xrnet` submodule status (initialized and tracked).
-- [x] Fix stale `submodules/bobcoin` gitlink in `xrnet`.
-- [x] Execute dual-direction intelligent merge across all 16 submodules.
-- [x] Fetch all remotes and verify branch reconciliation (v1.0.3).
-- [x] Fix submodule tracking — reset 5 submodules from feature-branch `origin/HEAD` to primary branch tracking.
-- [x] Repair `xrnet` local main (fast-forwarded to origin/main).
-- [x] Synchronize 17 submodules and reconcile feature branches (v1.0.6).
+- [x] Remove `warp` and `xrnet` submodules (repos deleted from GitHub).
+- [x] Fix `origin/HEAD` on 6 submodules pointing to feature branches instead of primary branch.
+- [x] Remove dead `upstream` remote from `ultratrader`.
+- [x] Reverse-merge main into stale feature branches in `realestatecrm`.
+- [x] Synchronize 15 submodules and reconcile feature branches (v1.0.7).
 - [ ] Execute full system build/deployment sequence.
 
 ## Maintenance

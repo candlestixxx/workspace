@@ -2,12 +2,13 @@
 
 This workspace serves as a centralized monorepo and orchestration hub for various independent projects.
 
-## Submodules
+## Submodules (15 total)
 
 - **brokeragentworkflow** — Agent orchestration workflow system
 - **excel-legacy-leadgen** — Legacy lead generation pipeline
 - **explorerexedecompiled** — Windows Explorer EXE decompilation tooling
 - **forclosureworkflow** — Foreclosure CRM workflow platform
+- **leadG** — Lead generation service
 - **p2p_service_marketplace** — Peer-to-peer service marketplace
 - **re-agent-workflow-media-1** — Real estate agent workflow media system
 - **realestatecrm** — Real estate CRM platform
