@@ -40,12 +40,6 @@
 [submodule "ultratrader"]
 	path = ultratrader
 	url = https://github.com/candlestixxx/ultratrader.git
-[submodule "warp"]
-	path = warp
-	url = https://github.com/candlestixxx/warp.git
-[submodule "xrnet"]
-	path = xrnet
-	url = https://github.com/candlestixxx/xrnet.git
 [submodule "leadG"]
 	path = leadG
 	url = https://github.com/candlestixxx/leadG.git
