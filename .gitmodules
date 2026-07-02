@@ -43,3 +43,15 @@
 [submodule "leadG"]
 	path = leadG
 	url = https://github.com/candlestixxx/leadG.git
+[submodule "LegacyLeads"]
+	path = LegacyLeads
+	url = https://github.com/candlestixxx/LegacyLeads.git
+[submodule "crowdsourced_dance_club"]
+	path = crowdsourced_dance_club
+	url = https://github.com/candlestixxx/crowdsourced_dance_club.git
+[submodule "hyperharness"]
+	path = hyperharness
+	url = https://github.com/candlestixxx/hyperharness.git
+[submodule "bobgui"]
+	path = bobgui
+	url = https://github.com/candlestixxx/bobgui.git

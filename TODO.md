@@ -1,12 +1,11 @@
 # Workspace TODO
 
 ## High Priority
-- [x] Push root repository changes (including submodule pointers).
-- [x] Remove `warp` and `xrnet` submodules (repos deleted from GitHub).
-- [x] Fix `origin/HEAD` on 6 submodules pointing to feature branches instead of primary branch.
-- [x] Remove dead `upstream` remote from `ultratrader`.
-- [x] Reverse-merge main into stale feature branches in `realestatecrm`.
-- [x] Synchronize 15 submodules and reconcile feature branches (v1.0.7).
+- [x] Add all 4 missing repos as submodules (LegacyLeads, bobgui, crowdsourced_dance_club, hyperharness).
+- [x] Forward-merge 7 feature branches with unique progress into primary branches.
+- [x] Reverse-merge main back into 11 stale feature branches across 6 submodules.
+- [x] Resolve merge conflicts (explorerexedecompiled).
+- [x] Synchronize 19 submodules and reconcile all feature branches (v1.0.8).
 - [ ] Execute full system build/deployment sequence.
 
 ## Maintenance
@@ -17,4 +16,4 @@
 
 ## Long Term
 - [ ] Implement a more automated "Intelligent Merge" tool for future syncs.
-- [ ] Explore sparse checkout for very large monorepo clones.
+- [ ] Explore sparse checkout for very large monorepo clones (hyperharness, bobgui are 800MB+).

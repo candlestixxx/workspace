@@ -1,5 +1,23 @@
 # Changelog
 
+## [1.0.8] - 2026-07-02
+
+### Repository Synchronization v1.0.8 — Submodule Expansion & Full Branch Reconciliation
+- Added 4 new submodules: `LegacyLeads`, `bobgui`, `crowdsourced_dance_club`, `hyperharness` (all repos under candlestixxx).
+- Submodule count: 15 → 19.
+- Forward-merged feature branches into main across 7 submodules:
+  - `brokeragentworkflow`: jules-9001697729867452564-2a7481a5 (94 commits, gamification/AI features)
+  - `excel-legacy-leadgen`: jules-3034080756571898596-77bdfea6 (2 commits, platform profiles)
+  - `explorerexedecompiled`: ast-parsing-entry-point, compile-unblock-v1.2.9 (7 commits, plugin architecture)
+  - `leadG`: main-14181498285415879315 (52 commits, VoiceForge AI MVP)
+  - `p2p_service_marketplace`: 3 feature branches (octopus merge)
+  - `realestateleadcaller`: jules-ai-real-estate-concierge-mvp (1 commit)
+  - `realestatecrm`: jules-ai-drip-execution (headless CMS adapter)
+- Reverse-merged main back into 11 feature branches across 6 submodules.
+- Resolved merge conflicts in explorerexedecompiled (HANDOFF.md, VERSION.md, post_analysis.py, test_frontend.html).
+- Updated STRUCTURAL_MAP.md with 19 entries.
+- Bumped global version to v1.0.8.
+
 ## [1.0.7] - 2026-06-26
 
 ### Repository Synchronization v1.0.7 — Submodule Sanitization & Feature Branch Reconciliation
