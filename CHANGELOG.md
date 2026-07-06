@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.0.9] - 2026-07-06
+
+### Repository Synchronization v1.0.9 — Feature Branch Forward-Merge & Full Reconciliation
+- Fetched all remotes and tags across root and 19 submodules.
+- Forward-merged 4 remote feature branches into primary branches:
+  - `forclosureworkflow`: feat/s3-document-upload → main (S3 document upload integration, 16 files)
+  - `excel-legacy-leadgen`: jules-3034080756571898596-77bdfea6 → master (video automation blueprint & CRM guide, v1.3.0)
+  - `leadG`: main-14181498285415879315 → main (tooltip guidance indicators across dashboard, 6 files)
+  - `socialmediacontentplanner`: jules-6504094641305471454-6d1e3af8 → main (mobile RN screens + RAG chunking, 12 files)
+- Reverse-merged main back into 12 active feature branches across 5 submodules:
+  - `p2p_service_marketplace`: 3 branches (already up to date)
+  - `realestatecrm`: 5 branches (dashboard-newest, jules-*, rag-consolidation-cleanup*)
+  - `realestateleadcaller`: jules-ai-real-estate-concierge-mvp
+  - `explorerexedecompiled`: 2 jules branches (already up to date)
+  - `socialmediacontentplanner`: foundation-build
+- Deinitialized `bobgui` and `hyperharness` submodules (empty or timeout issues).
+- Updated STRUCTURAL_MAP.md with current commit hashes.
+- Bumped global version to v1.0.9.
+
 ## [1.0.8] - 2026-07-02
 
 ### Repository Synchronization v1.0.8 — Submodule Expansion & Full Branch Reconciliation

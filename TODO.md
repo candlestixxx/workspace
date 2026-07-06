@@ -6,13 +6,16 @@
 - [x] Reverse-merge main back into 11 stale feature branches across 6 submodules.
 - [x] Resolve merge conflicts (explorerexedecompiled).
 - [x] Synchronize 19 submodules and reconcile all feature branches (v1.0.8).
-- [ ] Execute full system build/deployment sequence.
+- [x] Forward-merge 4 new remote feature branches (forclosureworkflow S3, excel-legacy-leadgen video, leadG tooltips, socialmediacontentplanner RN/RAG) (v1.0.9).
+- [x] Reverse-merge main into 12 feature branches across 5 submodules (v1.0.9).
+- [x] Execute full system build/deployment sequence (v1.0.9).
 
 ## Maintenance
-- [ ] Review and update all execution scripts (`start.bat`, `build.bat`) across submodules.
+- [x] Review and update all execution scripts (`start.bat`, `build.bat`) across submodules.
 - [ ] Monitor submodule drift and schedule periodic reconciliations.
 - [ ] Add AI tool session directories to `.gitignore` in relevant submodules.
-- [ ] Rebuild submodule structural map after any pointer changes.
+- [x] Rebuild submodule structural map after any pointer changes.
+- [ ] Re-init `bobgui` and `hyperharness` submodules (deinitialized due to timeout/empty issues).
 
 ## Long Term
 - [ ] Implement a more automated "Intelligent Merge" tool for future syncs.
