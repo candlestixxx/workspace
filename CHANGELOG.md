@@ -1,5 +1,27 @@
 # Changelog
 
+## [1.0.10] - 2026-07-07
+
+### Repository Synchronization v1.0.10 — Full Branch Reconciliation & Dual-Direction Merge
+- Fetched all remotes and tags across root and 17 active submodules.
+- Removed `bobgui` and `hyperharness` submodules from .gitmodules and index (empty repo / timeout on clone).
+- Initialized nested submodule `crowdsourced_dance_club/external/auto_dj_script` (robertpelloni/auto_dj_script).
+- Forward-merged 6 feature branches with unique progress into primary branches:
+  - `realestateleadcaller`: jules-2713423736642792031-eb4c9364 → main (Phase 21 & 22 Map Circle Prospecting v0.2.0, 437 lines, new MapComponent, geocoding adapter)
+  - `explorerexedecompiled`: ast-parsing-entry-point-* → main (AI Code Summarization Mock & UI Redesign v1.2.23)
+  - `re-agent-workflow-media-1`: jules-10626851319290360880-c8876b20 → main (Refactor, Docs, Repository Sync 2.9.0)
+  - `realestateprototype`: jules-588126708554458831-4191ea81 → master (Next.js 14 App Router migration v1.26.0, 31 new files)
+  - `skillzhub`: dependabot/npm_and_yarn/... → main (dependency updates)
+  - `LegacyLeads`: jules-initial-setup-* → main (OmniLead Nexus Architecture setup)
+- Reverse-merged primary branches back into 7 feature branches across 4 submodules:
+  - `realestateleadcaller`: jules-ai-real-estate-concierge-mvp
+  - `explorerexedecompiled`: ast-parsing-entry-point, jules-14205615201860969798-0a6968ba
+  - `re-agent-workflow-media-1`: feature/init-media-pipeline, jules-10626851319290360880-c8876b20
+  - `realestateprototype`: jules-8744402723558720108-450957f1, jules-588126708554458831-4191ea81, universal-business-tool-ui
+- Resolved merge conflicts in explorerexedecompiled (VERSION.md), LegacyLeads (multi-file add/add), re-agent-workflow-media-1 (package-lock.json).
+- Updated STRUCTURAL_MAP.md with 17 active submodule entries.
+- Bumped global version to v1.0.10.
+
 ## [1.0.9] - 2026-07-06
 
 ### Repository Synchronization v1.0.9 — Feature Branch Forward-Merge & Full Reconciliation

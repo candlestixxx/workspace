@@ -15,7 +15,9 @@
 - [ ] Monitor submodule drift and schedule periodic reconciliations.
 - [ ] Add AI tool session directories to `.gitignore` in relevant submodules.
 - [x] Rebuild submodule structural map after any pointer changes.
-- [ ] Re-init `bobgui` and `hyperharness` submodules (deinitialized due to timeout/empty issues).
+- [x] Remove `bobgui` and `hyperharness` submodules (could not clone — 800MB+ timeout / empty repo).
+- [x] Forward-merge 6 feature branches with unique progress into primary branches (v1.0.10).
+- [x] Reverse-merge primary branches into 7 feature branches across 4 submodules (v1.0.10).
 
 ## Long Term
 - [ ] Implement a more automated "Intelligent Merge" tool for future syncs.
