@@ -9,6 +9,8 @@
 - [x] Forward-merge 4 new remote feature branches (forclosureworkflow S3, excel-legacy-leadgen video, leadG tooltips, socialmediacontentplanner RN/RAG) (v1.0.9).
 - [x] Reverse-merge main into 12 feature branches across 5 submodules (v1.0.9).
 - [x] Execute full system build/deployment sequence (v1.0.9).
+- [x] Forward-merge 9 feature branches with unique progress (v1.0.11).
+- [x] Reverse-merge primary branches into 24 feature branches across 11 submodules (v1.0.11).
 
 ## Maintenance
 - [x] Review and update all execution scripts (`start.bat`, `build.bat`) across submodules.
