@@ -11,6 +11,9 @@
 - [x] Execute full system build/deployment sequence (v1.0.9).
 - [x] Forward-merge 9 feature branches with unique progress (v1.0.11).
 - [x] Reverse-merge primary branches into 24 feature branches across 11 submodules (v1.0.11).
+- [x] Forward-merge 14 feature branches with new remote commits across 13 submodules (v1.0.12).
+- [x] Reverse-merge primary branches into 35+ feature branches across 15 submodules (v1.0.12).
+- [x] Stash/restore local dev modifications during merge cycle (v1.0.12).
 
 ## Maintenance
 - [x] Review and update all execution scripts (`start.bat`, `build.bat`) across submodules.
@@ -18,9 +21,8 @@
 - [ ] Add AI tool session directories to `.gitignore` in relevant submodules.
 - [x] Rebuild submodule structural map after any pointer changes.
 - [x] Remove `bobgui` and `hyperharness` submodules (could not clone — 800MB+ timeout / empty repo).
-- [x] Forward-merge 6 feature branches with unique progress into primary branches (v1.0.10).
-- [x] Reverse-merge primary branches into 7 feature branches across 4 submodules (v1.0.10).
 
 ## Long Term
 - [ ] Implement a more automated "Intelligent Merge" tool for future syncs.
 - [ ] Explore sparse checkout for very large monorepo clones (hyperharness, bobgui are 800MB+).
+- [ ] Standardize CI/CD across submodules.
