@@ -14,6 +14,7 @@
 - [x] Forward-merge 14 feature branches with new remote commits across 13 submodules (v1.0.12).
 - [x] Reverse-merge primary branches into 35+ feature branches across 15 submodules (v1.0.12).
 - [x] Stash/restore local dev modifications during merge cycle (v1.0.12).
+- [x] Push 28 stale feature branch remotes — full 0:0 reconciliation across all submodules (v1.0.13).
 
 ## Maintenance
 - [x] Review and update all execution scripts (`start.bat`, `build.bat`) across submodules.
