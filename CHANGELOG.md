@@ -1,5 +1,42 @@
 # Changelog
 
+## [1.0.14] - 2026-07-09
+
+### Repository Synchronization v1.0.14 — 12 Feature Branch Forward-Merge Cycle
+- Fetched all remotes and tags across root and 17 active submodules (plus 1 nested).
+- Detected new remote commits on 12 feature branches across 11 submodules.
+- Updated nested submodule `auto_dj_script` (robertpelloni upstream) to commit 1317516.
+- No upstream parent fork (robertpelloni upstream removed in v1.0.4).
+
+### Forward Merges (Features → Main/Master) — 12 branches across 11 submodules
+
+| # | Submodule | Feature Branch | Key Changes |
+|---|-----------|---------------|-------------|
+| 1 | LegacyLeads | jules-initial-setup | Backend: Jest tests, SQL migrations, Express routes, pnpm→npm migration (6,476 insertions) |
+| 2 | excel-legacy-leadgen | jules-30340 | ui-app + video-engine package.json scaffolding |
+| 3 | forclosureworkflow | feat/s3-document-upload | Twilio Voice integration: voice route, TwilioVoiceButton component |
+| 4 | leadG | main-141814 | Agent patching script, WebSocket server fix |
+| 5 | p2p_service_marketplace | jules-89995 | README/VERSION updates |
+| 6 | re-agent-workflow-media-1 | jules-10626 | (empty diff — already current) |
+| 7 | realestatecrm | jules-ai-drip-execution | **Major cleanup**: removed blog system, LeadAlertListener, UserProfileDropdown, routing lib. Prisma schema refactor (1,822 lines removed, 512 added) |
+| 8 | realestateleadcaller | jules-27134 | NotificationsBanner component, CRM webhook routes, prisma schema updates |
+| 9 | realestateprototype | jules-58812 | (empty diff — already current) |
+| 10 | socialmediacontentplanner | jules-65040 | Mobile PostReview screen expanded (257 lines) |
+| 11 | techno_platform_detroit | jules-10778 | (empty diff — already current) |
+
+**Total: 12 forward merges, all fast-forward, 1 conflict resolved (realestatecrm stash pop).**
+
+### Reverse Merges (Main/Master → Features) — 32 branches across 11 submodules
+All reverse merges fast-forwarded. realestatecrm required stashing local dev changes and resolving untracked LeadAlertListener.tsx conflict.
+
+### Conflict Resolution
+- **realestatecrm**: Stash pop after forward merge caused conflicts on `layout.tsx`, `LeadAlertListener.tsx`, `tsconfig.tsbuildinfo`. Resolved by accepting upstream simplifications, preserving stashed LeadAlertListener as untracked file.
+
+### Updates
+- 8 submodules advanced to new primary commits; 3 had empty forward diffs (already current).
+- Updated STRUCTURAL_MAP.md with current commit hashes.
+- Bumped global version to v1.0.14.
+
 ## [1.0.13] - 2026-07-09
 
 ### Repository Synchronization v1.0.13 — Feature Branch Remote Sync & Full Reconciliation
