@@ -28,4 +28,4 @@
 
 Root remote: `https://github.com/candlestixxx/workspace.git` (main branch)
 
-**Last verified:** 2026-07-09 (v1.0.14) — 17 active submodules. All branches fully reconciled.
+**Last verified:** 2026-07-09 (v1.0.15) — 17 active submodules. All branches fully reconciled.

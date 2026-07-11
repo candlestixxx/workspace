@@ -10,7 +10,7 @@
 - Conflict resolution and feature preservation.
 
 ## Phase 3: Build & Deployment Automation (In Progress)
-- [x] Global versioning and changelog tracking (v1.0.14).
+- [x] Global versioning and changelog tracking (v1.0.15).
 - [x] Submodule structural map maintained.
 - [x] Feature branch divergence tracking and reconciliation across 17 submodules.
 - [x] Forward-merged 12 new remote feature branch commits across 11 submodules (v1.0.14).
@@ -20,7 +20,7 @@
 - [x] All feature branch remotes fully synced (v1.0.13–v1.0.14).
 - [x] Validate all execution scripts across submodules.
 - [ ] Standardize CI/CD across submodules.
-- [x] Execute full system build/deployment sequence (v1.0.14).
+- [x] Execute full system build/deployment sequence (v1.0.15).
 
 ## Phase 4: Expansion
 - Re-add relevant submodules as needed (bobgui, hyperharness with depth 1).
