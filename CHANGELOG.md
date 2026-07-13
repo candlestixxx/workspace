@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.17] - 2026-07-09
+
+### Repository Synchronization v1.0.17 — Dependabot Update + Local Branch Sync
+- skillzhub: Forward-merged new dependabot branch (npm_and_yarn-afdf7649b9, package-lock.json + package.json updates).
+- skillzhub: Reverse-merged main into old dependabot branch (f8272807e4) and main-16382.
+- forclosureworkflow: Reverse-merged main into local foreclosure-crm-mvp branch (was 2 commits behind).
+- All other submodules clean — no divergence.
+- Bumped global version to v1.0.17.
+
 ## [1.0.16] - 2026-07-09
 
 ### Repository Synchronization v1.0.16 — 12 Feature Branch Forward-Merge Cycle
