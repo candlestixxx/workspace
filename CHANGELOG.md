@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.0.18] - 2026-07-09
+
+### Repository Synchronization v1.0.18 — Direct Main Commits + Local Branch Sync
+- skillzhub: New direct commit on main (AI session doc, 6,100 lines).
+- skillzhub: Reverse-merged main → 3 feature branches.
+- auto_dj_script: Updated to 33cc653 (robertpelloni upstream).
+- re-agent-workflow-media-1: Reverse-merged main → local init-media-pipeline (was 2 behind), pushed.
+- All other submodules clean.
+- Bumped global version to v1.0.18.
+
 ## [1.0.17] - 2026-07-09
 
 ### Repository Synchronization v1.0.17 — Dependabot Update + Local Branch Sync

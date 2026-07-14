@@ -12,7 +12,7 @@
 | 8 | realestatecrm | realestatecrm/ | git@github.com:candlestixxx/realestatecrm.git | 6649fc7e81bac6146493bc14d081e3be9a993014 |
 | 9 | realestateleadcaller | realestateleadcaller/ | https://github.com/candlestixxx/realestateleadcaller.git | fa4c35ba06d6cd36f4e0e3d1f872a4e3231a9516 |
 | 10 | realestateprototype | realestateprototype/ | https://github.com/candlestixxx/realestateprototype.git | a9cdf13da33b88e7fece71ef3b17839990eb73d1 |
-| 11 | skillzhub | skillzhub/ | https://github.com/candlestixxx/skillzhub.git | 6dce1a5 |
+| 11 | skillzhub | skillzhub/ | https://github.com/candlestixxx/skillzhub.git | 2ef6d26 |
 | 12 | socialmediacontentplanner | socialmediacontentplanner/ | https://github.com/candlestixxx/socialmediacontentplanner.git | ad26710997613d3a0b37dfab5778aabcf955ff8d |
 | 13 | techno_platform_detroit | techno_platform_detroit/ | https://github.com/candlestixxx/techno_platform_detroit.git | b02008672ba5aa9c8deaf7eb3a6caf7c86440541 |
 | 14 | theta-data-api | theta-data-api/ | https://github.com/candlestixxx/theta-data-api.git | 1110e9b198b216981a68e4b3969b7765b000ecf2 |
@@ -28,4 +28,4 @@
 
 Root remote: `https://github.com/candlestixxx/workspace.git` (main branch)
 
-**Last verified:** 2026-07-09 (v1.0.17) — 17 active submodules. All branches fully reconciled.
+**Last verified:** 2026-07-09 (v1.0.18) — 17 active submodules. All branches fully reconciled.
