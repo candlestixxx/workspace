@@ -1,5 +1,31 @@
 # Changelog
 
+## [1.0.20] - 2026-07-17
+
+### Repository Refresh v1.0.20 — .gitignore Sanitization & Session File Preservation
+
+#### Full Fetch & Audit
+- Fetched all remotes recursively across root and 20 submodules.
+- bobgui: 300+ historical GTK tags fetched on first full fetch.
+- Full divergence audit: all 20 submodules at 0:0 — no new remote commits.
+
+#### .gitignore Sanitization
+Removed session/memory file exclusions across 6 submodules per retention directive:
+| Submodule | Removed Entries |
+|-----------|----------------|
+| brokeragentworkflow | `.hypercode/` |
+| realestatecrm | `.hypernexus/`, `.hypernexus-session.json`, `.hypernexus_startup_marker`, `.hypercode/` |
+| realestateprototype | `.hypercode/`, `.hypercode-session.json` |
+| socialmediacontentplanner | `.claude` |
+| bobgui | `.jules/sessions/` |
+| hyperharness | `.jules/sessions/` |
+
+#### Verification
+- Confirmed all MEMORY.md, HANDOFF.md, CHANGELOG.md, ROADMAP.md, TODO.md, VERSION.md, IDEAS.md, VISION.md are tracked across all submodules.
+- All session files (`.hypercode-session.json`, `.hypernexus-session.json`, startup markers) verified present and tracked.
+- Working trees clean across all 20 submodules.
+- Bumped global version to v1.0.20.
+
 ## [1.0.19] - 2026-07-17
 
 ### Repository Synchronization v1.0.19 — Emergency Restoration, Submodule Expansion & Full Reconciliation
