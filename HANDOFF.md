@@ -1,75 +1,68 @@
-# Handoff Summary — Workspace Repository Refresh v1.0.20
+# Handoff Summary — Upstream Tracking & Submodule Sanitization v1.0.21
 
-## Session: 2026-07-17 (Comprehensive Local & Remote Refresh + .gitignore Sanitization)
+## Session: 2026-07-17 (Upstream Tracking + Stale Reference Cleanup)
 
-### Full Fetch & Audit
-- Fetched all remotes and tags across root and all 20 submodules.
-- bobgui: First complete fetch retrieved 300+ historical GTK release tags (v0.0 through v4.22.2).
-- **Full divergence audit: all 20 submodules at 0:0 — zero new remote commits detected.**
+### Submodule Sanitization
 
-### .gitignore Sanitization — Session File Preservation
-Per explicit directive to not gitignore memory or session documentation, removed AI tool session exclusions from 6 submodules:
+#### Stale Gitlinks Removed (hyperharness — 14 total)
+Removed gitlinks without corresponding `.gitmodules` entries:
 
-| Submodule | Removed from .gitignore |
-|-----------|------------------------|
-| brokeragentworkflow | `.hypercode/` |
-| realestatecrm | `.hypernexus/`, `.hypernexus-session.json`, `.hypernexus_startup_marker`, `.hypercode/` |
-| realestateprototype | `.hypercode/`, `.hypercode-session.json` |
-| socialmediacontentplanner | `.claude` |
-| bobgui | `.jules/sessions/` |
-| hyperharness | `.jules/sessions/` |
+| Path | Type |
+|------|------|
+| `archive/submodules/litellm` | Duplicate of root `litellm` submodule |
+| `archive/submodules/mcpproxy` | Orphaned reference |
+| `external/OmniRoute` | Orphaned reference (different from archive/OmniRoute) |
+| `submodules/CLIProxyAPIPlus` | Orphaned reference |
+| `submodules/HyperHarness` | Orphaned reference |
+| `submodules/LinJun` | Orphaned reference |
+| `submodules/borg` | Orphaned reference |
+| `submodules/coding_agent_usage_tracker` | Orphaned reference |
+| `submodules/hyperharness` | Orphaned reference |
+| `submodules/multica` | Orphaned reference |
+| `submodules/pi-mono` | Orphaned reference |
+| `submodules/prism-mcp` | Orphaned reference |
+| `submodules/unifyroute` | Orphaned reference |
 
-### Documentation Audit
-- Confirmed all 8 key documentation files (MEMORY.md, HANDOFF.md, CHANGELOG.md, ROADMAP.md, TODO.md, VERSION.md, IDEAS.md, VISION.md) are tracked across all submodules that contain them.
-- All session files (`.hypercode-session.json`, `.hypernexus-session.json`, startup markers) verified present on disk and tracked in git.
-- No important documentation files are excluded by any .gitignore.
+#### Dead Upstream Removed
+- `archive/OmniRoute` (robertpelloni/OmniRoute): Repository deleted from GitHub, removed from `.gitmodules` and index.
 
-### No New Remote Activity
-- All 20 submodules already at latest remote commits.
-- No forward or reverse merges required this cycle.
-- No stash conflicts or working tree corruption.
+### Upstream Tracking (robertpelloni)
 
-### Pushed to Remotes
-- brokeragentworkflow: main (e54bcab)
-- realestatecrm: main (4eaba9c)
-- realestateprototype: main (8d625ee)
-- socialmediacontentplanner: main (182b684)
-- bobgui: main (e43bc6f51a)
-- hyperharness: main (ff04814)
+#### auto_dj_script — UPDATED
+- **Path**: `crowdsourced_dance_club/external/auto_dj_script`
+- **Remote**: `https://github.com/robertpelloni/auto_dj_script.git` (ACTIVE)
+- **Update**: acd2f45 → 33cc653 (13 new commits)
+- **Key changes**:
+  - DSP: Zero-phase crossover fix, LUFS normalization, bass ducking removal, large file export fix
+  - 19 artist Rekordbox XML mixes (Astrix, Avalon, Cosmosis, GMS, Koxbox, Space Tribe, Tristan, etc.)
+  - New scripts: `make_artist_mixes.py`, `run_filtered_mix.py`, `mix_all_artists.sh`
+  - 59 files changed, +3,352/-521 lines
+
+#### OmniRoute — DEAD
+- **Remote**: `https://github.com/robertpelloni/OmniRoute` — HTTP 404, repo deleted
+- **Action**: Removed from `.gitmodules` and index in hyperharness
+
+### Remote & Branch Health Audit
+
+| Check | Result |
+|-------|--------|
+| All submodules have single `origin` remote | ✅ 20/20 |
+| All origin/HEAD aligned to primary branch | ✅ 20/20 (16 main, 2 master, 2 master legacy) |
+| Dead/stale remotes | ✅ None |
+| Nested submodule structure | 3 repos have nested: crowdsourced_dance_club (1), bobgui (2), hyperharness (34) |
+| Nested submodule init | auto_dj_script: ✅, bobgui: ✅, hyperharness: 34 defined (most uninitialized) |
 
 ### Documentation Updates
-- `VERSION.md`: 1.0.19 → 1.0.20
-- `CHANGELOG.md`: Added v1.0.20 entry
-- `STRUCTURAL_MAP.md`: Updated 6 commit hashes
+- `VERSION.md`: 1.0.20 → 1.0.21
+- `CHANGELOG.md`: Added v1.0.21 entry
+- `STRUCTURAL_MAP.md`: Updated crowdsourced_dance_club (a1474e1), hyperharness (9a43bde)
 - `HANDOFF.md`: This file
+- `SUBMODULE_STATUS.md`: Updated commit hashes
 
-### Current Submodule State (All Clean, 0:0 Divergence)
-
-| Submodule | Commit | Branch |
-|-----------|--------|--------|
-| brokeragentworkflow | **e54bcab** | main |
-| excel-legacy-leadgen | e62c3d0 | master |
-| explorerexedecompiled | 2ce2bab | main |
-| forclosureworkflow | 518a58d | main |
-| leadG | 4393b39 | main |
-| p2p_service_marketplace | 211b472 | main |
-| re-agent-workflow-media-1 | f142f2c | main |
-| realestatecrm | **4eaba9c** | main |
-| realestateleadcaller | e72a083 | main |
-| realestateprototype | **8d625ee** | main |
-| skillzhub | 2ef6d26 | main |
-| socialmediacontentplanner | **182b684** | main |
-| techno_platform_detroit | b500d18 | main |
-| theta-data-api | 1110e9b | main |
-| ultratrader | bdd0ff8 | master |
-| LegacyLeads | 39436c6 | main |
-| crowdsourced_dance_club | f1c3ce0 | main |
-| Prank-Deck-AI | 891db15 | main |
-| bobgui | **e43bc6f51a** | main |
-| hyperharness | **ff04814** | main |
-
-Bold = updated this session.
+### Pushed to Remotes
+- hyperharness: main (ff04814 → 9a43bde) — 14 stale gitlinks removed + OmniRoute cleanup
+- crowdsourced_dance_club: main (f1c3ce0 → a1474e1) — auto_dj_script updated to 33cc653
 
 Root: `https://github.com/candlestixxx/workspace.git` (main branch)
 
-**Last verified:** 2026-07-17 (v1.0.20) — 20 active submodules. Clean.
+**Last verified:** 2026-07-17 (v1.0.21)

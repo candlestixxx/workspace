@@ -1,5 +1,34 @@
 # Changelog
 
+## [1.0.21] - 2026-07-17
+
+### Upstream Tracking & Submodule Sanitization v1.0.21
+
+#### Submodule Sanitization
+- **hyperharness**: Removed 14 stale submodule gitlinks (no .gitmodules entries):
+  - `archive/submodules/litellm`, `archive/submodules/mcpproxy`
+  - `external/OmniRoute`, `submodules/CLIProxyAPIPlus`, `submodules/HyperHarness`
+  - `submodules/LinJun`, `submodules/borg`, `submodules/coding_agent_usage_tracker`
+  - `submodules/hyperharness`, `submodules/multica`, `submodules/pi-mono`
+  - `submodules/prism-mcp`, `submodules/unifyroute`
+- **hyperharness**: Removed dead `archive/OmniRoute` from .gitmodules (robertpelloni/OmniRoute repo deleted from GitHub)
+
+#### Upstream Tracking (robertpelloni)
+- **auto_dj_script** (crowdsourced_dance_club nested): Updated from acd2f45 → 33cc653
+  - 13 new commits from robertpelloni upstream
+  - Major DSP: zero-phase crossover fix, LUFS normalization, bass ducking removal
+  - 19 new artist Rekordbox XML mixes + tracklists
+  - New scripts: `make_artist_mixes.py`, `run_filtered_mix.py`, `mix_all_artists.sh`
+  - 59 files changed, +3,352/-521 lines
+- **OmniRoute** (archive): Dead upstream — robertpelloni repo deleted, removed from tracking
+
+#### Remote & Branch Health
+- All 20 submodules: single `origin` remote, clean candlestixxx ownership
+- All origin/HEAD pointers correctly aligned to primary branches (16 main, 2 master)
+- No dead or stale remotes detected
+- Verified nested submodule structure (crowdsourced_dance_club: 1, bobgui: 2, hyperharness: 34)
+- Bumped global version to v1.0.21.
+
 ## [1.0.20] - 2026-07-17
 
 ### Repository Refresh v1.0.20 — .gitignore Sanitization & Session File Preservation

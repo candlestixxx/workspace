@@ -18,10 +18,10 @@
 | 14 | theta-data-api | theta-data-api/ | https://github.com/candlestixxx/theta-data-api.git | 1110e9b |
 | 15 | ultratrader | ultratrader/ | https://github.com/candlestixxx/ultratrader.git | bdd0ff8 |
 | 16 | LegacyLeads | LegacyLeads/ | https://github.com/candlestixxx/LegacyLeads.git | 39436c6 |
-| 17 | crowdsourced_dance_club | crowdsourced_dance_club/ | https://github.com/candlestixxx/crowdsourced_dance_club.git | f1c3ce0 |
+| 17 | crowdsourced_dance_club | crowdsourced_dance_club/ | https://github.com/candlestixxx/crowdsourced_dance_club.git | a1474e1 |
 | 18 | Prank-Deck-AI | Prank-Deck-AI/ | https://github.com/candlestixxx/Prank-Deck-AI.git | 891db15 |
 | 19 | bobgui | bobgui/ | https://github.com/candlestixxx/bobgui.git | e43bc6f51a |
-| 20 | hyperharness | hyperharness/ | https://github.com/candlestixxx/hyperharness.git | ff04814 |
+| 20 | hyperharness | hyperharness/ | https://github.com/candlestixxx/hyperharness.git | 9a43bde |
 
 **Notes:**
 - All 20 submodules are candlestixxx repos. `ultratrader` was forked from robertpelloni/ultratrader (upstream no longer accessible, dead remote removed).
@@ -31,4 +31,4 @@
 
 Root remote: `https://github.com/candlestixxx/workspace.git` (main branch)
 
-**Last verified:** 2026-07-17 (v1.0.20) — 20 active submodules. All branches fully reconciled.
+**Last verified:** 2026-07-17 (v1.0.21) — 20 active submodules. Upstream tracked, stale references removed.
