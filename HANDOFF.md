@@ -1,68 +1,54 @@
-# Handoff Summary — Upstream Tracking & Submodule Sanitization v1.0.21
+# Handoff Summary — Upstream Sync v1.0.22
 
-## Session: 2026-07-17 (Upstream Tracking + Stale Reference Cleanup)
+## Session: 2026-07-17 (Upstream Parent Sync — robertpelloni)
 
-### Submodule Sanitization
+### Upstream Discovery Results
 
-#### Stale Gitlinks Removed (hyperharness — 14 total)
-Removed gitlinks without corresponding `.gitmodules` entries:
+| Submodule | robertpelloni Upstream | Status |
+|-----------|----------------------|--------|
+| crowdsourced_dance_club | robertpelloni/crowdsourced_dance_club | **ACTIVE** — synced 76 commits |
+| ultratrader | robertpelloni/ultratrader | **DEAD** — repo deleted (404) |
+| bobgui | robertpelloni/bobgui | **UNREACHABLE** — protocol error (too large, 800MB+) |
+| hyperharness | robertpelloni/hyperharness | **UNREACHABLE** — invalid index-pack (too large) |
 
-| Path | Type |
-|------|------|
-| `archive/submodules/litellm` | Duplicate of root `litellm` submodule |
-| `archive/submodules/mcpproxy` | Orphaned reference |
-| `external/OmniRoute` | Orphaned reference (different from archive/OmniRoute) |
-| `submodules/CLIProxyAPIPlus` | Orphaned reference |
-| `submodules/HyperHarness` | Orphaned reference |
-| `submodules/LinJun` | Orphaned reference |
-| `submodules/borg` | Orphaned reference |
-| `submodules/coding_agent_usage_tracker` | Orphaned reference |
-| `submodules/hyperharness` | Orphaned reference |
-| `submodules/multica` | Orphaned reference |
-| `submodules/pi-mono` | Orphaned reference |
-| `submodules/prism-mcp` | Orphaned reference |
-| `submodules/unifyroute` | Orphaned reference |
+### Upstream Merge: crowdsourced_dance_club
 
-#### Dead Upstream Removed
-- `archive/OmniRoute` (robertpelloni/OmniRoute): Repository deleted from GitHub, removed from `.gitmodules` and index.
+**Merge**: upstream/main (robertpelloni) → local main
+**Strategy**: Ort merge, **0 conflicts**
+**Delta**: 76 commits behind → fully synced. 63 files, +2,956/-1,031.
 
-### Upstream Tracking (robertpelloni)
+#### New Upstream Features Integrated
 
-#### auto_dj_script — UPDATED
-- **Path**: `crowdsourced_dance_club/external/auto_dj_script`
-- **Remote**: `https://github.com/robertpelloni/auto_dj_script.git` (ACTIVE)
-- **Update**: acd2f45 → 33cc653 (13 new commits)
-- **Key changes**:
-  - DSP: Zero-phase crossover fix, LUFS normalization, bass ducking removal, large file export fix
-  - 19 artist Rekordbox XML mixes (Astrix, Avalon, Cosmosis, GMS, Koxbox, Space Tribe, Tristan, etc.)
-  - New scripts: `make_artist_mixes.py`, `run_filtered_mix.py`, `mix_all_artists.sh`
-  - 59 files changed, +3,352/-521 lines
+| Category | Components |
+|----------|-----------|
+| **ML/AI** | Neural Conductor (predictive vibe analysis), stem separator, generative visuals |
+| **Hardware** | DMX controller (lighting), audio engine patches, patch_engine_dmx |
+| **Architecture** | Global Network Sync protocol, OLA Architecture, PubSub, Governance, Telemetry |
+| **Integrations** | Spotify integration |
+| **Agents** | Shadow Pilot, Virtual MC, Agent framework |
+| **UI** | Vibe Orb (`src/static/vibe_orb.html`) |
+| **Testing** | ML endpoint tests, Neural Conductor tests, Locust load testing |
+| **Database** | tracks.db updated (61KB → 143KB) |
 
-#### OmniRoute — DEAD
-- **Remote**: `https://github.com/robertpelloni/OmniRoute` — HTTP 404, repo deleted
-- **Action**: Removed from `.gitmodules` and index in hyperharness
+#### Removed by Upstream
+- `tests/test_club_management.py` (104 lines deleted)
 
-### Remote & Branch Health Audit
+### Cleanup
+- Removed dead upstream remotes from ultratrader, bobgui, hyperharness
+- Kept `upstream` remote on crowdsourced_dance_club for ongoing sync
 
-| Check | Result |
-|-------|--------|
-| All submodules have single `origin` remote | ✅ 20/20 |
-| All origin/HEAD aligned to primary branch | ✅ 20/20 (16 main, 2 master, 2 master legacy) |
-| Dead/stale remotes | ✅ None |
-| Nested submodule structure | 3 repos have nested: crowdsourced_dance_club (1), bobgui (2), hyperharness (34) |
-| Nested submodule init | auto_dj_script: ✅, bobgui: ✅, hyperharness: 34 defined (most uninitialized) |
-
-### Documentation Updates
-- `VERSION.md`: 1.0.20 → 1.0.21
-- `CHANGELOG.md`: Added v1.0.21 entry
-- `STRUCTURAL_MAP.md`: Updated crowdsourced_dance_club (a1474e1), hyperharness (9a43bde)
+### Root Updates
+- `VERSION.md`: 1.0.21 → 1.0.22
+- `CHANGELOG.md`: Added v1.0.22 entry
+- `STRUCTURAL_MAP.md`: crowdsourced_dance_club → b29b0b4
 - `HANDOFF.md`: This file
-- `SUBMODULE_STATUS.md`: Updated commit hashes
+- `SUBMODULE_STATUS.md`: Updated
 
-### Pushed to Remotes
-- hyperharness: main (ff04814 → 9a43bde) — 14 stale gitlinks removed + OmniRoute cleanup
-- crowdsourced_dance_club: main (f1c3ce0 → a1474e1) — auto_dj_script updated to 33cc653
+### Current State
+- All 20 submodules clean, 0:0 divergence
+- 1 active upstream (crowdsourced_dance_club → robertpelloni)
+- 1 nested upstream (auto_dj_script → robertpelloni, already at latest 33cc653)
 
 Root: `https://github.com/candlestixxx/workspace.git` (main branch)
 
-**Last verified:** 2026-07-17 (v1.0.21)
+**Last verified:** 2026-07-17 (v1.0.22)

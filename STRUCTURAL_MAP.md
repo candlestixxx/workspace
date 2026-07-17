@@ -18,7 +18,7 @@
 | 14 | theta-data-api | theta-data-api/ | https://github.com/candlestixxx/theta-data-api.git | 1110e9b |
 | 15 | ultratrader | ultratrader/ | https://github.com/candlestixxx/ultratrader.git | bdd0ff8 |
 | 16 | LegacyLeads | LegacyLeads/ | https://github.com/candlestixxx/LegacyLeads.git | 39436c6 |
-| 17 | crowdsourced_dance_club | crowdsourced_dance_club/ | https://github.com/candlestixxx/crowdsourced_dance_club.git | a1474e1 |
+| 17 | crowdsourced_dance_club | crowdsourced_dance_club/ | https://github.com/candlestixxx/crowdsourced_dance_club.git | b29b0b4 |
 | 18 | Prank-Deck-AI | Prank-Deck-AI/ | https://github.com/candlestixxx/Prank-Deck-AI.git | 891db15 |
 | 19 | bobgui | bobgui/ | https://github.com/candlestixxx/bobgui.git | e43bc6f51a |
 | 20 | hyperharness | hyperharness/ | https://github.com/candlestixxx/hyperharness.git | 9a43bde |
@@ -31,4 +31,4 @@
 
 Root remote: `https://github.com/candlestixxx/workspace.git` (main branch)
 
-**Last verified:** 2026-07-17 (v1.0.21) — 20 active submodules. Upstream tracked, stale references removed.
+**Last verified:** 2026-07-17 (v1.0.22) — 20 active submodules. Upstream synced.

@@ -1,5 +1,39 @@
 # Changelog
 
+## [1.0.22] - 2026-07-17
+
+### Upstream Sync v1.0.22 — robertpelloni/crowdsourced_dance_club
+
+#### Upstream Discovery
+- Scanned all 20 submodules for robertpelloni fork relationships.
+- **Accessible**: `crowdsourced_dance_club` (robertpelloni/crowdsourced_dance_club)
+- **Dead**: `ultratrader` (repo deleted), `bobgui` (protocol error/too large), `hyperharness` (protocol error/too large)
+
+#### Upstream Merge (crowdsourced_dance_club)
+- Merged 76 commits from robertpelloni upstream/main → local main
+- **Ort strategy, 0 conflicts**
+- 63 files changed: +2,956/-1,031
+
+**New features from upstream:**
+| Feature | Files |
+|---------|-------|
+| Neural Conductor (ML predictive vibe analysis) | `src/ml/neural_conductor.py` |
+| DMX hardware controller | `engine/include/dmx_controller.h`, `engine/src/dmx_controller.cpp` |
+| Generative visuals | `src/core/generative_visuals.py` |
+| Spotify integration | `src/core/spotify_integration.py` |
+| Stem separator | `src/core/stem_separator.py` |
+| PubSub + Governance + Telemetry | `src/core/pubsub.py`, `src/api/governance.py`, `src/telemetry/` |
+| Vibe Orb UI | `src/static/vibe_orb.html` |
+| Shadow Pilot + Virtual MC agents | `src/core/shadow_pilot.py`, `src/core/virtual_mc.py` |
+| Global Network Sync protocol | `GLOBAL_NETWORK_SYNC.md` |
+| ML endpoints + load testing | `tests/test_ml_endpoints.py`, `tests/locustfile.py` |
+| Audio engine patches (DMX, effects) | `patch_engine_dmx.patch`, `patch_audio_engine.patch` |
+
+#### Cleanup
+- Removed dead upstream remotes from ultratrader, bobgui, hyperharness
+- Kept upstream remote on crowdsourced_dance_club for future syncs
+- Bumped global version to v1.0.22.
+
 ## [1.0.21] - 2026-07-17
 
 ### Upstream Tracking & Submodule Sanitization v1.0.21
