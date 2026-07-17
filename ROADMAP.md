@@ -22,7 +22,12 @@
 - [ ] Standardize CI/CD across submodules.
 - [x] Execute full system build/deployment sequence (v1.0.15).
 
-## Phase 4: Expansion
-- Re-add relevant submodules as needed (bobgui, hyperharness with depth 1).
-- Optimize monorepo performance and disk space.
-- Implement automated periodic submodule reconciliation tooling.
+## Phase 4: Expansion (In Progress)
+- [x] Re-add relevant submodules: Prank-Deck-AI, bobgui, hyperharness (v1.0.19).
+- [ ] Optimize monorepo performance and disk space.
+- [ ] Implement automated periodic submodule reconciliation tooling.
+
+## Phase 5: Stabilization
+- [ ] Standardize CI/CD across all 20 submodules.
+- [ ] Schedule periodic reconciliation (weekly automated check).
+- [ ] Monitor hyperharness and bobgui for upstream robertpelloni changes.

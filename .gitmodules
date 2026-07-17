@@ -49,3 +49,12 @@
 [submodule "crowdsourced_dance_club"]
 	path = crowdsourced_dance_club
 	url = https://github.com/candlestixxx/crowdsourced_dance_club.git
+[submodule "Prank-Deck-AI"]
+	path = Prank-Deck-AI
+	url = https://github.com/candlestixxx/Prank-Deck-AI.git
+[submodule "bobgui"]
+	path = bobgui
+	url = https://github.com/candlestixxx/bobgui.git
+[submodule "hyperharness"]
+	path = hyperharness
+	url = https://github.com/candlestixxx/hyperharness.git

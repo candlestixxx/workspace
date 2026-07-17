@@ -2,7 +2,7 @@
 
 This workspace serves as a centralized monorepo and orchestration hub for various independent projects.
 
-## Submodules (19 total)
+## Submodules (20 total)
 
 | # | Submodule | Description |
 |---|-----------|-------------|
@@ -22,9 +22,10 @@ This workspace serves as a centralized monorepo and orchestration hub for variou
 | 14 | theta-data-api | Theta blockchain data API |
 | 15 | ultratrader | Trading automation platform |
 | 16 | LegacyLeads | Legacy lead management system |
-| 17 | bobgui | Bob's GUI toolkit (robertpelloni fork) |
-| 18 | crowdsourced_dance_club | Crowdsourced dance club (robertpelloni fork) |
-| 19 | hyperharness | Hypermedia harness (robertpelloni fork) |
+| 17 | crowdsourced_dance_club | Crowdsourced dance club (robertpelloni fork) |
+| 18 | Prank-Deck-AI | Prank deck AI application |
+| 19 | bobgui | Bob's GUI toolkit (robertpelloni fork) |
+| 20 | hyperharness | Hypermedia harness (robertpelloni fork) |
 
 ## Quick Start
 
