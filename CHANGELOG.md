@@ -1,5 +1,58 @@
 # Changelog
 
+## [1.0.23] - 2026-07-20
+
+### Full Reconciliation v1.0.23 — Forward/Reverse Merge Cycle + Documentation Foundation
+
+#### Forward Merges (Feature → Primary) — 12 branches across 11 submodules
+
+| # | Submodule | Feature Branch | Key Changes |
+|---|-----------|---------------|-------------|
+| 1 | brokeragentworkflow | jules-2988077965038434350-7b70c27a | Mobile-first Capacitor migration prep, iOS CapApp-SPM setup |
+| 2 | forclosureworkflow | feat/s3-document-upload | ActiveCallsMonitor component, Twilio voice webhook, server.js entry |
+| 3 | leadG | main-14181498285415879315 | Analytics page copy updates (2 lines) |
+| 4 | p2p_service_marketplace | jules-8999598513845091996-64c48c3e | PDF generation (pdf.ts), Stripe webhook, notifications lib (364 lines) |
+| 5 | re-agent-workflow-media-1 | jules-10626851319290360880-c8876b20 | MicroserviceOrchestrator, MessageBroker refactor (201 lines) |
+| 6 | realestateleadcaller | jules-2713423736642792031-eb4c9364 | NativeDialer component, Twilio token route, Inngest functions (416 lines) |
+| 7 | realestateprototype | jules-588126708554458831-4191ea81 | package-lock.json + vite.config.ts updates (1,076 lines) |
+| 8 | skillzhub | dependabot/npm_and_yarn-9ae428cbce | package-lock.json dependency bump (32 lines) |
+| 9 | socialmediacontentplanner | jules-6504094641305471454-6d1e3af8 | Settings page expansion (137 lines), scraper enhancements, mobile screens |
+| 10 | techno_platform_detroit | jules-10778029499852904827-36922aba | MapScreen + MarketplaceScreen mobile expansions (131 lines) |
+| 11 | LegacyLeads | jules-initial-setup-9943991237688238805 | Skip trace module, InteractiveMap, OmniSearch, Sidebar components |
+| 12 | Prank-Deck-AI | init-documentation-and-ui-enhancement | MEMORY.md, ROADMAP.md, TODO.md, VERSION.md, VISION.md scaffolding |
+
+**Total: 12 forward merges, 1 conflict resolved (brokeragentworkflow stash/merge/pop).**
+
+#### Reverse Merges (Primary → Feature) — 35+ branches across 14 submodules
+All reverse merges completed successfully. Feature branches updated with latest primary changes.
+
+#### Primary Branch Updates (Pull from Remote)
+- `realestatecrm`: Pulled 2 commits (blog system, LeadCaptureModal, LeadTableClient updates)
+- `skillzhub`: Pulled 1 commit (package.json + dataset route updates, 64 lines)
+
+#### hyperharness Recovery
+- Submodule was in broken state (detached HEAD, empty git directory)
+- Deinitialized and re-cloned with `--depth 1` to work around 800MB+ repo size
+- Now properly tracking main at 9a43bde
+
+#### Submodule Tracking Fixes
+- `realestateprototype`: Set upstream tracking (master → origin/master)
+- `ultratrader`: Set upstream tracking (master → origin/master)
+- `bobgui`: Fixed detached HEAD, now tracking main
+
+#### Documentation Foundation
+- **Created**: `VISION.md` — Comprehensive project vision and end-state goals
+- **Created**: `MEMORY.md` — Architectural observations, constraints, and design preferences
+- **Created**: `DEPLOY.md` — Environment setup, clone strategies, per-submodule instructions
+- **Created**: `IDEAS.md` — Innovation pipeline with 13 aggressive feature/pivot ideas
+- **Updated**: All existing docs to v1.0.23
+
+#### Verification
+- Full divergence audit: all submodules at 0:0 across primary and feature branches
+- All 20 submodules tracking primary branches (16 main, 2 master, 2 fixed from detached HEAD)
+- hyperharness properly initialized after recovery
+- Bumped global version to v1.0.23
+
 ## [1.0.22] - 2026-07-17
 
 ### Upstream Sync v1.0.22 — robertpelloni/crowdsourced_dance_club
