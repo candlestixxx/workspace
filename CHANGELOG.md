@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.24] - 2026-07-20
+
+### Repository Sync v1.0.24 — PrankDeck AI Merge + Cleanup
+- Prank-Deck-AI: Forward-merged init-safe-architecture (divergent 1:1, +CI workflow, app refactor).
+- LegacyLeads: Reverse-merged main → jules-initial-setup (was 1 behind).
+- All branches reconciled, 0 conflicts.
+
 ## [1.0.23] - 2026-07-20
 
 ### Full Reconciliation v1.0.23 — Forward/Reverse Merge Cycle + Documentation Foundation
