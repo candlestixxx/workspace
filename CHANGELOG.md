@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.25] - 2026-07-20
+
+### v1.0.25 — Skillzhub Forward Merge + Full Reverse-Merge Cycle
+- skillzhub: Forward-merged new dependabot branch (7527c60fca, VLM processor test).
+- Reverse-merged main into 20+ feature branches across 9 submodules.
+- New branch tracked: brokeragentworkflow/jules-29880.
+- All branches reconciled, 0 conflicts.
+
 ## [1.0.24] - 2026-07-20
 
 ### Repository Sync v1.0.24 — PrankDeck AI Merge + Cleanup
