@@ -1,5 +1,35 @@
 # Changelog
 
+## [1.0.26] - 2026-07-20
+
+### Repository Reconciliation v1.0.26 — 9 Forward Merges Across 8 Submodules
+
+#### Forward Merges (Feature → Main)
+
+| # | Submodule | Feature Branch | Key Changes |
+|---|-----------|---------------|-------------|
+| 1 | crowdsourced_dance_club | upstream/main (2 commits) | Neural Conductor, Proactive Sync, Dashboard UI Overhaul |
+| 2 | realestateprototype | jules-588126708554458831 (3 commits) | Next.js 14 App Router migration (v1.26.0) |
+| 3 | LegacyLeads | jules-initial-setup (1 commit) | Phase 6: Record Deduplication and Session Handoff |
+| 4 | Prank-Deck-AI | init-documentation-and-ui-enhancement (1) | Custom sound uploads, mobile CSS (v1.1.0) |
+| 5 | Prank-Deck-AI | init-safe-architecture (1) | UI enhancements, audio export (v1.1.0) |
+| 6 | Prank-Deck-AI | jules-9956925773432264551 (1) | Core-orchestrator initialization |
+| 7 | explorerexedecompiled | ast-parsing-entry-point (1) | Active AST block synthesis (v1.2.31) |
+| 8 | forclosureworkflow | feat/s3-document-upload (1) | Voice monitoring auth, validation schemas |
+| 9 | skillzhub | jules-4381928419539428611 (1) | Auth URL domain fix, VLM processor test suite |
+| 10 | socialmediacontentplanner | jules-6504094641305471454 (1) | Transition to v6 public beta |
+| 11 | techno_platform_detroit | jules-10778029499852904827 (1) | Mobile profile UI editing + backend API (v4.5.0) |
+
+#### Skipped (Stale/Empty)
+- brokeragentworkflow/jules-29880: .gitignore-only change (2 lines)
+
+#### Conflicts Resolved
+- Prank-Deck-AI: init-safe-architecture → CHANGELOG, HANDOFF, ROADMAP, TODO, VERSION, VoiceStudio.tsx
+- skillzhub: jules-438192 → CHANGELOG, HANDOFF, MEMORY, ROADMAP, VERSION, storage.ts, vlm.ts, worker.ts
+
+#### Reverse Merge
+- None needed: all feature branches with unique work were forward-merged.
+
 ## [1.0.25] - 2026-07-20
 
 ### v1.0.25 — Skillzhub Forward Merge + Full Reverse-Merge Cycle
