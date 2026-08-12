@@ -58,3 +58,6 @@
 [submodule "hyperharness"]
 	path = hyperharness
 	url = https://github.com/candlestixxx/hyperharness.git
+[submodule "aicrm"]
+	path = aicrm
+	url = https://github.com/candlestixxx/aicrm.git
