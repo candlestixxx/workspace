@@ -1,5 +1,42 @@
 # Changelog
 
+## [1.0.35] - 2026-08-13
+
+### Repository Synchronization & Intelligent Merge v1.0.35
+
+#### New Submodule
+- **HyperNexus** (`github.com/HyperNexusllc/HyperNexus`) added — orchestration/control-plane kernel used by aicrm's MCP router and swarm console.
+
+#### Sanitization
+- Normalized `realestatecrm` submodule remote URL from SSH (`git@github.com:...`) to HTTPS for consistency + portability.
+
+#### Remote Sync (fast-forward to origin)
+- explorerexedecompiled → 31a4794 (AST block synthesis)
+- skillzhub → c589f8a (dependabot npm_and_yarn group bump)
+- socialmediacontentplanner → 0413eb3 (v6 public beta)
+- techno_platform_detroit → d850be6 (mobile profile UI + backend API)
+- realestateprototype → switched to canonical `main` (cc5d9c1, Next.js 14 migration)
+
+#### Forward Merges (Feature → Main)
+| # | Submodule | Feature Branch | Key Changes |
+|---|-----------|---------------|-------------|
+| 1 | skillzhub | dependabot/npm_and_yarn-37951cc692 | dompurify 3.4.12 → 3.4.13 |
+
+#### Committed WIP Progress (preserved + pushed)
+| Submodule | Commit | Key Changes |
+|-----------|--------|-------------|
+| aicrm | 451f40f | Full CRM buildout: auth (JWT/password), contacts/pipelines/properties/tasks/team APIs, MCP endpoint, HyperNexus console/dashboard/swarm, LLM router, mailer, workflow builder, Prisma schema+migrations+seed |
+| realestatecrm | bebca08 | Notification center, MLS scrub cron, LeadTableClient refactor (responsive/bulk), prisma schema extension |
+| leadG | 107a6fd | .gitignore for `.env`, logs, `__pycache__`, `*.tsbuildinfo` |
+| brokeragentworkflow | 127f3e0 | .gitignore for `server.log` and Windows `nul` artifact |
+| crowdsourced_dance_club | f175aa7 | CI workflow (pytest + flake8 + coverage) — pushed |
+
+#### Pointer Updates
+Recorded 11 submodule pointer updates (aicrm, brokeragentworkflow, crowdsourced_dance_club, leadG, p2p_service_marketplace, re-agent-workflow-media-1, realestatecrm, realestateleadcaller, skillzhub, theta-data-api, ultratrader).
+
+#### Reverse Merge
+None required — all feature branches were already fully merged into their primary branches (ahead=0).
+
 ## [1.0.26] - 2026-07-20
 
 ### Repository Reconciliation v1.0.26 — 9 Forward Merges Across 8 Submodules

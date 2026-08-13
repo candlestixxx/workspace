@@ -18,7 +18,7 @@
 	url = https://github.com/candlestixxx/re-agent-workflow-media-1
 [submodule "realestatecrm"]
 	path = realestatecrm
-	url = git@github.com:candlestixxx/realestatecrm.git
+	url = https://github.com/candlestixxx/realestatecrm.git
 [submodule "realestateleadcaller"]
 	path = realestateleadcaller
 	url = https://github.com/candlestixxx/realestateleadcaller.git
@@ -61,3 +61,6 @@
 [submodule "aicrm"]
 	path = aicrm
 	url = https://github.com/candlestixxx/aicrm.git
+[submodule "HyperNexus"]
+	path = HyperNexus
+	url = https://github.com/HyperNexusllc/HyperNexus.git
