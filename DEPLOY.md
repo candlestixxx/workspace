@@ -5,9 +5,9 @@
 ### Minimum System Requirements
 - **OS**: Linux, macOS, or Windows (WSL2 recommended for Windows)
 - **Git**: 2.40+ (required for recursive submodule support)
-- **Disk Space**: 5GB+ (20 submodules, some large like hyperharness at 800MB+)
+- **Disk Space**: 5GB+ (22 submodules, some large like hyperharness at 800MB+, HyperNexus at ~1.9GB)
 - **Network**: Stable broadband connection (initial clone downloads ~3-5GB)
-- **SSH** (optional): Required for `realestatecrm` submodule (uses SSH URL)
+- **SSH** (optional): Not required — all submodules use HTTPS (realestatecrm normalized from SSH)
 
 ### Recommended Tools
 - GitHub CLI (`gh`) for authenticated operations
