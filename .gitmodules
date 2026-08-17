@@ -64,3 +64,6 @@
 [submodule "HyperNexus"]
 	path = HyperNexus
 	url = https://github.com/HyperNexusllc/HyperNexus.git
+[submodule "psychedelic-speech-engine"]
+	path = psychedelic-speech-engine
+	url = https://github.com/candlestixxx/psychedelic-speech-engine.git
