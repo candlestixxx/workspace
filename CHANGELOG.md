@@ -1,5 +1,28 @@
 # Changelog
 
+## [1.0.36] - 2026-08-20
+
+### Repository Synchronization & Intelligent Merge v1.0.36 (robertpelloni scope)
+
+#### Upstream Sync (robertpelloni forks)
+| Fork | Upstream | Result |
+|------|----------|--------|
+| crowdsourced_dance_club | robertpelloni/crowdsourced_dance_club | ✅ Merged (Milestone 4 Neural Conductor + jules-18324564706212732124) → 0a18ce2 |
+| crowdsourced_dance_club/external/auto_dj_script | robertpelloni/auto_dj_script | ✅ Advanced 33cc653 → a47e1d3 |
+| bobgui | robertpelloni/bgtk (renamed from bobgui) | ⚠️ **Blocked** — 1472 commits behind; fetch fails (`invalid index-pack output`, ~870MB) |
+| hyperharness | robertpelloni/hyperharness | ⚠️ **Blocked** — 146 commits behind; fetch/deepen fails (~1.1GB) |
+
+#### Pointer Updates
+- aicrm 451f40f → 484008e (v0.13.0 — light/dark theme, color palettes, AI Assistant suite)
+- psychedelic-speech-engine 3dd6aac → e12810d (end-to-end engine implemented: app.py, auto_run.py, requirements.txt)
+- crowdsourced_dance_club f175aa7 → 0a18ce2 (upstream sync + auto_dj_script bump)
+
+#### Branch Reconciliation
+No forward/reverse merges needed — all `candlestixxx` forks under robertpelloni scope have no feature branches (main only). Upstream robertpelloni `jules-*`/`main-*` feature branches ignored per protocol (unfinished/stagnant).
+
+#### Notes
+- `bobgui` (bgtk) and `hyperharness` upstream merges remain **pending** — require a transport that can pull 870MB–1.1GB packs (or LFS/partial-clone config). Documented for next session.
+
 ## [1.0.35] - 2026-08-13
 
 ### Repository Synchronization & Intelligent Merge v1.0.35

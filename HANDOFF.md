@@ -1,50 +1,43 @@
-# Session Handoff — August 13, 2026 (v1.0.35)
+# Session Handoff — August 20, 2026 (v1.0.36)
 
 ## Summary
 
-Executed the full repository synchronization & intelligent merge protocol across 22 submodules in `candlestixxx/workspace`.
+Executed the repository synchronization & intelligent merge protocol with **Step-2 scope = `github.com/robertpelloni`** (upstream reconciliation for the forks derived from robertpelloni's repos).
 
-## What Was Done
+## Upstream Identification (Step 1.2)
 
-### Step 1 — Fetch & Sync
-- Fetched all 21 top-level `candlestixxx` submodules (+ nested `crowdsourced_dance_club/external/auto_dj_script`).
-- Root repo is **not a fork** (`isFork: false`) — no upstream parent to sync.
-- `HyperNexus` (HyperNexusllc) is a ~1.9GB repo; fetch fails with `fetch-pack: invalid index-pack output`. Checked-out commit (4fe0e1c) already equals origin/main HEAD.
-- Fast-forwarded 5 submodules to their remote primary tip: explorerexedecompiled, skillzhub, socialmediacontentplanner, techno_platform_detroit, realestateprototype (switched to canonical `main`).
+| candlestixxx fork | Upstream parent |
+|-------------------|-----------------|
+| bobgui | `robertpelloni/bgtk` (bobgui was **renamed** to bgtk upstream) |
+| hyperharness | `robertpelloni/hyperharness` |
+| crowdsourced_dance_club | `robertpelloni/crowdsourced_dance_club` |
+| crowdsourced_dance_club/external/auto_dj_script | `robertpelloni/auto_dj_script` (direct, not a fork) |
 
-### Step 2 — Dual-Direction Merge
-- **Forward merge:** skillzhub dependabot branch `npm_and_yarn-37951cc692` (dompurify 3.4.12 → 3.4.13) → main (clean ort merge).
-- **Reverse merge:** none required — every feature branch was already fully merged (ahead=0).
-- Stale/old `master` branches and already-merged AI-generated (`jules-*`, `dependabot-*`) branches left untouched.
+## Completed
 
-### Committed WIP Progress (preserved + pushed)
-| Submodule | Commit | Notes |
-|-----------|--------|-------|
-| aicrm | 451f40f | Full CRM buildout (auth, contacts, pipelines, MCP router, HyperNexus console, Prisma schema+migrations+seed) |
-| realestatecrm | bebca08 | Notification center, MLS scrub cron, LeadTableClient refactor |
-| leadG | 107a6fd | .gitignore for `.env`, logs, pycache, tsbuildinfo |
-| brokeragentworkflow | 127f3e0 | .gitignore for `server.log` + Windows `nul` |
-| crowdsourced_dance_club | f175aa7 | CI workflow (pytest+flake8+coverage) — pushed |
+### Upstream sync
+- **crowdsourced_dance_club**: merged `upstream/main` (4 commits — Milestone 4 Neural Conductor + jules-18324564706212732124 branch) into local `main`; then bumped nested `auto_dj_script` 33cc653 → a47e1d3. Pushed → `0a18ce2`.
+- **auto_dj_script**: advanced to latest `robertpelloni/auto_dj_script` main (a47e1d3).
 
-### Step 3 — Cleanup, Docs, Version
-- Normalized `realestatecrm` remote SSH → HTTPS (`.gitmodules` + `git submodule sync` + submodule remote).
-- Reviewed root script `start-prank.bat` (points at Prank-Deck-AI, valid).
-- Version bumped 1.0.34 → **1.0.35**; CHANGELOG, STRUCTURAL_MAP, ROADMAP, TODO updated.
-- Recorded 11 submodule pointer updates + added HyperNexus gitlink (4fe0e1c).
+### Blocked (documented, not merged)
+- **bobgui (→ bgtk)**: 1472 commits behind upstream (merge-base 2026-06-05). Shallow fetch of `upstream/main` tip succeeded, but the repo (~870MB) fails full/deepen fetch with `fatal: fetch-pack: invalid index-pack output` — likely large-pack truncation or LFS/partial-clone issue. A proper merge needs the merge base, which is unreachable without full history.
+- **hyperharness**: 146 commits behind upstream (merge-base ~2026-07-17). Same `invalid index-pack output` on full and `--deepen` fetch (~1.1GB, 34 nested submodules). Local is a shallow clone (depth 1) with no reachable merge base.
+
+### Submodule progress preserved + pushed
+- **aicrm** → `484008e` (v0.13.0): light/dark theme, color palettes, AI Assistant suite; supercharged 5-section secure vault + multi-step workflows + Gemini key; AI workflows (ai_draft, ai_analyze, negotiation_advisor). Pushed (was ahead 3).
+- **psychedelic-speech-engine** → `e12810d`: full engine now implemented (app.py, auto_run.py, requirements.txt, .env.example, CUDA/Pascal fixes, --start/--end time-range). Pushed (was ahead 4).
+
+### Branch reconciliation (Step 2)
+No forward/reverse merges required — all `candlestixxx` forks in scope track `main` only (no feature branches). Upstream robertpelloni feature branches (`jules-*`, `main-*`) ignored per protocol (unfinished/stagnant/old).
 
 ## Left Untouched (intentional)
-- `realestateleadcaller`: untracked tool state — `.hypercode/`, `.hypernexus/`, `.hypernexus-session.json`, `.hypernexus_startup_marker` (session state, not committed, not gitignored per retention directive).
-- `HyperNexus`: untracked runtime `swarm_state.json` (transient mission state; no commits made to the external repo, pointer left at 4fe0e1c).
-- `bobtrader/` and `prankdeckai/` stray directories (not submodules; empty/legacy — left for a future decision).
-- `EmailSettingsClient.tsx` (realestatecrm) contains a secret-like string — pre-existing committed content, flagged for review but not modified.
-
-## Known Gaps
-- Root `CHANGELOG.md` was stale (top entry 1.0.26 while VERSION was 1.0.34). Added 1.0.35 entry; 1.0.27–1.0.34 entries were never backfilled.
-- `hyperharness` 34 nested submodules remain uninitialized (expected; huge).
-- `HyperNexus` fetch is broken on this transport — investigate LFS/partial-clone or `--depth 1` on next sync.
+- `realestateleadcaller`: `.hypercode/`, `.hypernexus/`, `.hypernexus-session.json`, `.hypernexus_startup_marker` (tool session state).
+- `HyperNexus`: `swarm_state.json`, `debate_history.db`, `packages/tormentnexus/bin/` (runtime state).
+- `bobtrader/` (stray dir, live-trading data), empty `prankdeckai/`.
+- Upstream `upstream/main` shallow refs remain cached in bobgui/hyperharness (incomplete history).
 
 ## Next Steps
-- Verify aicrm build (`npm run build` / `npm run dev`) and realestatecrm build.
-- Consider backfilling missing CHANGELOG 1.0.27–1.0.34 entries.
-- Decide disposition of stray `bobtrader/` and `prankdeckai/` directories.
-- Rotate any secrets if `EmailSettingsClient.tsx` contains a real key.
+1. **Resolve large-repo fetch**: investigate Git LFS / `--filter=blob:none` partial clone / increasing `http.postBuffer` for bgtk (~870MB) and hyperharness (~1.1GB), then complete their upstream merges.
+2. Backfill missing CHANGELOG entries 1.0.27–1.0.34 (still unbackfilled).
+3. Decide disposition of `bobtrader/` (contains `config/live-trading-binance.json` — treat as sensitive).
+4. Build verification: aicrm (`npm run build`) after v0.13.0 changes; psychedelic-speech-engine (`python -m py_compile`) syntax check.

@@ -18,21 +18,25 @@
 | 14 | theta-data-api | theta-data-api/ | https://github.com/candlestixxx/theta-data-api.git | ef15c6f |
 | 15 | ultratrader | ultratrader/ | https://github.com/candlestixxx/ultratrader.git | 89e877e |
 | 16 | LegacyLeads | LegacyLeads/ | https://github.com/candlestixxx/LegacyLeads.git | a76c08e |
-| 17 | crowdsourced_dance_club | crowdsourced_dance_club/ | https://github.com/candlestixxx/crowdsourced_dance_club.git | f175aa7 |
+| 17 | crowdsourced_dance_club | crowdsourced_dance_club/ | https://github.com/candlestixxx/crowdsourced_dance_club.git | 0a18ce2 |
 | 18 | Prank-Deck-AI | Prank-Deck-AI/ | https://github.com/candlestixxx/prank-deck-ai.git | 6ac3dc2 |
 | 19 | bobgui | bobgui/ | https://github.com/candlestixxx/bobgui.git | 9bea319 |
 | 20 | hyperharness | hyperharness/ | https://github.com/candlestixxx/hyperharness.git | 9a43bde |
-| 21 | aicrm | aicrm/ | https://github.com/candlestixxx/aicrm.git | 451f40f |
-| 22 | HyperNexus | HyperNexus/ | https://github.com/HyperNexusllc/HyperNexus.git | 4fe0e1c |
+| 21 | aicrm | aicrm/ | https://github.com/candlestixxx/aicrm.git | 484008e |
+| 22 | psychedelic-speech-engine | psychedelic-speech-engine/ | https://github.com/candlestixxx/psychedelic-speech-engine.git | e12810d |
+| 23 | HyperNexus | HyperNexus/ | https://github.com/HyperNexusllc/HyperNexus.git | 4fe0e1c |
 
 **Notes:**
-- 22 submodules: 21 under `candlestixxx` + 1 external (`HyperNexusllc/HyperNexus`, the aicrm orchestration kernel).
-- `crowdsourced_dance_club` has a nested submodule `external/auto_dj_script` (robertpelloni/auto_dj_script @ 33cc653).
-- `hyperharness` has 34 nested submodules (not initialized; requires `--depth 1` on initial clone due to 800MB+ size).
-- `HyperNexus` is a ~1.9GB repo — its initial fetch may fail on shallow/partial clone transports; the checked-out commit is already at origin/main HEAD.
+- 23 submodules: 22 under `candlestixxx` + 1 external (`HyperNexusllc/HyperNexus`, the aicrm orchestration kernel).
+- `crowdsourced_dance_club` has a nested submodule `external/auto_dj_script` (robertpelloni/auto_dj_script @ a47e1d3).
+- **robertpelloni upstream tracking** (Step-2 scope):
+  - `bobgui` → upstream `robertpelloni/bgtk` (renamed from bobgui); fork is **1472 commits behind** — full fetch fails (`invalid index-pack output`, ~870MB repo).
+  - `hyperharness` → upstream `robertpelloni/hyperharness`; fork is **146 commits behind** — full/deepen fetch fails (~1.1GB repo, 34 nested submodules).
+  - `crowdsourced_dance_club` → upstream `robertpelloni/crowdsourced_dance_club`; **synced** (merged Milestone 4 + jules branch) → 0a18ce2.
+- `hyperharness` requires `--depth 1` for initial clone; `HyperNexus` ~1.9GB; `bgtk` ~870MB.
 - `realestatecrm` remote normalized from SSH to HTTPS.
-- `realestateprototype` canonical primary branch is `main` (default branch); legacy `master` lags by 1 commit.
+- `realestateprototype` canonical primary branch is `main` (default branch).
 
 Root remote: `https://github.com/candlestixxx/workspace.git` (main branch)
 
-**Last verified:** 2026-08-13 (v1.0.35) — 22 active submodules.
+**Last verified:** 2026-08-20 (v1.0.36) — 23 active submodules.
