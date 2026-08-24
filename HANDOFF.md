@@ -1,43 +1,39 @@
-# Session Handoff — August 20, 2026 (v1.0.36)
+# Session Handoff — August 24, 2026 (v1.0.37)
 
 ## Summary
 
-Executed the repository synchronization & intelligent merge protocol with **Step-2 scope = `github.com/robertpelloni`** (upstream reconciliation for the forks derived from robertpelloni's repos).
-
-## Upstream Identification (Step 1.2)
-
-| candlestixxx fork | Upstream parent |
-|-------------------|-----------------|
-| bobgui | `robertpelloni/bgtk` (bobgui was **renamed** to bgtk upstream) |
-| hyperharness | `robertpelloni/hyperharness` |
-| crowdsourced_dance_club | `robertpelloni/crowdsourced_dance_club` |
-| crowdsourced_dance_club/external/auto_dj_script | `robertpelloni/auto_dj_script` (direct, not a fork) |
+Executed the repository synchronization & intelligent merge protocol with **Step-2 scope = `github.com/candlestixxx`**. 24 submodules now tracked.
 
 ## Completed
 
-### Upstream sync
-- **crowdsourced_dance_club**: merged `upstream/main` (4 commits — Milestone 4 Neural Conductor + jules-18324564706212732124 branch) into local `main`; then bumped nested `auto_dj_script` 33cc653 → a47e1d3. Pushed → `0a18ce2`.
-- **auto_dj_script**: advanced to latest `robertpelloni/auto_dj_script` main (a47e1d3).
+### New submodule
+- **suno-api** (`gcui-art/suno-api`) registered at `a2e6a82` — third-party local Suno music backend used by `psychedelic-speech-engine` (calls `http://localhost:3000/api/custom_generate`). Previously an untracked local clone; now a proper submodule (gitdir migrated via `absorbgitdirs`).
 
-### Blocked (documented, not merged)
-- **bobgui (→ bgtk)**: 1472 commits behind upstream (merge-base 2026-06-05). Shallow fetch of `upstream/main` tip succeeded, but the repo (~870MB) fails full/deepen fetch with `fatal: fetch-pack: invalid index-pack output` — likely large-pack truncation or LFS/partial-clone issue. A proper merge needs the merge base, which is unreachable without full history.
-- **hyperharness**: 146 commits behind upstream (merge-base ~2026-07-17). Same `invalid index-pack output` on full and `--deepen` fetch (~1.1GB, 34 nested submodules). Local is a shallow clone (depth 1) with no reachable merge base.
+### Forward merge
+- **skillzhub**: merged `dependabot/npm_and_yarn/npm_and_yarn-60ab56c091` (js-yaml 4.3.0 → 4.3.1) → main, pushed → `3699f20`.
 
-### Submodule progress preserved + pushed
-- **aicrm** → `484008e` (v0.13.0): light/dark theme, color palettes, AI Assistant suite; supercharged 5-section secure vault + multi-step workflows + Gemini key; AI workflows (ai_draft, ai_analyze, negotiation_advisor). Pushed (was ahead 3).
-- **psychedelic-speech-engine** → `e12810d`: full engine now implemented (app.py, auto_run.py, requirements.txt, .env.example, CUDA/Pascal fixes, --start/--end time-range). Pushed (was ahead 4).
+### Pointer updates (recorded + pushed)
+| Submodule | From | To | Notes |
+|-----------|------|----|-------|
+| skillzhub | c5a360a | 3699f20 | dependabot js-yaml merge |
+| psychedelic-speech-engine | e12810d | 5b715a0 | psytrance batch generator + docs v1.1.0 |
+| suno-api | *(new)* | a2e6a82 | gcui-art/suno-api |
 
-### Branch reconciliation (Step 2)
-No forward/reverse merges required — all `candlestixxx` forks in scope track `main` only (no feature branches). Upstream robertpelloni feature branches (`jules-*`, `main-*`) ignored per protocol (unfinished/stagnant/old).
+### Reverse merge
+None required — every other feature branch is already fully merged into its primary (`ahead=0`). Stale `master` branches and previously-merged AI branches left untouched.
+
+### Fetch / sync status
+- All `candlestixxx` submodules fetched clean; none drifted behind origin.
+- Upstream (robertpelloni) reconciliation from v1.0.36 remains: `bobgui`→`bgtk` (1472 behind) and `hyperharness` (146 behind) still blocked by large-repo fetch failure (`invalid index-pack output`).
 
 ## Left Untouched (intentional)
 - `realestateleadcaller`: `.hypercode/`, `.hypernexus/`, `.hypernexus-session.json`, `.hypernexus_startup_marker` (tool session state).
-- `HyperNexus`: `swarm_state.json`, `debate_history.db`, `packages/tormentnexus/bin/` (runtime state).
-- `bobtrader/` (stray dir, live-trading data), empty `prankdeckai/`.
-- Upstream `upstream/main` shallow refs remain cached in bobgui/hyperharness (incomplete history).
+- `HyperNexus`: runtime state (`swarm_state.json`, `debate_history.db`, `packages/tormentnexus/bin/`).
+- `suno-api`: untracked `suno-api.log` (runtime log; no write access to gcui-art to commit a gitignore change).
+- `bobtrader/` (stray dir with live-trading data, incl. `config/live-trading-binance.json`), empty `prankdeckai/`.
 
 ## Next Steps
-1. **Resolve large-repo fetch**: investigate Git LFS / `--filter=blob:none` partial clone / increasing `http.postBuffer` for bgtk (~870MB) and hyperharness (~1.1GB), then complete their upstream merges.
-2. Backfill missing CHANGELOG entries 1.0.27–1.0.34 (still unbackfilled).
-3. Decide disposition of `bobtrader/` (contains `config/live-trading-binance.json` — treat as sensitive).
-4. Build verification: aicrm (`npm run build`) after v0.13.0 changes; psychedelic-speech-engine (`python -m py_compile`) syntax check.
+1. Resolve large-repo fetch (`invalid index-pack output`) to complete `bgtk`/`hyperharness` upstream merges — try Git LFS / `--filter=blob:none` / `http.postBuffer`.
+2. Backfill missing CHANGELOG entries 1.0.27–1.0.34.
+3. Decide disposition of `bobtrader/` (sensitive Binance config).
+4. Build verification: psychedelic-speech-engine + suno-api (Python/Next.js) — full run needs GPU, Suno account/container, DeepSeek/HF keys.

@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.0.37] - 2026-08-24
+
+### Repository Synchronization & Intelligent Merge v1.0.37 (candlestixxx scope)
+
+#### New Submodule
+- **suno-api** (`gcui-art/suno-api`) — local Suno music-generation backend that `psychedelic-speech-engine` calls at `http://localhost:3000/api/custom_generate`. Registered as submodule at a2e6a82.
+
+#### Forward Merge (Feature → Main)
+| # | Submodule | Feature Branch | Key Changes |
+|---|-----------|---------------|-------------|
+| 1 | skillzhub | dependabot/npm_and_yarn-60ab56c091 | js-yaml 4.3.0 → 4.3.1 (indirect dep) |
+
+#### Pointer Updates
+- skillzhub c5a360a → 3699f20 (dependabot js-yaml merge)
+- psychedelic-speech-engine e12810d → 5b715a0 (psytrance batch generator + docs v1.1.0)
+
+#### Reverse Merge
+None required — all other feature branches already fully merged (ahead=0).
+
 ## [1.0.36] - 2026-08-20
 
 ### Repository Synchronization & Intelligent Merge v1.0.36 (robertpelloni scope)

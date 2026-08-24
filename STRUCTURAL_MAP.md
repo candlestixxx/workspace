@@ -12,7 +12,7 @@
 | 8 | realestatecrm | realestatecrm/ | https://github.com/candlestixxx/realestatecrm.git | bebca08 |
 | 9 | realestateleadcaller | realestateleadcaller/ | https://github.com/candlestixxx/realestateleadcaller.git | b856d29 |
 | 10 | realestateprototype | realestateprototype/ | https://github.com/candlestixxx/realestateprototype.git | cc5d9c1 |
-| 11 | skillzhub | skillzhub/ | https://github.com/candlestixxx/skillzhub.git | c5a360a |
+| 11 | skillzhub | skillzhub/ | https://github.com/candlestixxx/skillzhub.git | 3699f20 |
 | 12 | socialmediacontentplanner | socialmediacontentplanner/ | https://github.com/candlestixxx/socialmediacontentplanner.git | 0413eb3 |
 | 13 | techno_platform_detroit | techno_platform_detroit/ | https://github.com/candlestixxx/techno_platform_detroit.git | d850be6 |
 | 14 | theta-data-api | theta-data-api/ | https://github.com/candlestixxx/theta-data-api.git | ef15c6f |
@@ -23,11 +23,12 @@
 | 19 | bobgui | bobgui/ | https://github.com/candlestixxx/bobgui.git | 9bea319 |
 | 20 | hyperharness | hyperharness/ | https://github.com/candlestixxx/hyperharness.git | 9a43bde |
 | 21 | aicrm | aicrm/ | https://github.com/candlestixxx/aicrm.git | 484008e |
-| 22 | psychedelic-speech-engine | psychedelic-speech-engine/ | https://github.com/candlestixxx/psychedelic-speech-engine.git | e12810d |
+| 22 | psychedelic-speech-engine | psychedelic-speech-engine/ | https://github.com/candlestixxx/psychedelic-speech-engine.git | 5b715a0 |
 | 23 | HyperNexus | HyperNexus/ | https://github.com/HyperNexusllc/HyperNexus.git | 4fe0e1c |
+| 24 | suno-api | suno-api/ | https://github.com/gcui-art/suno-api.git | a2e6a82 |
 
 **Notes:**
-- 23 submodules: 22 under `candlestixxx` + 1 external (`HyperNexusllc/HyperNexus`, the aicrm orchestration kernel).
+- 24 submodules: 22 under `candlestixxx` + 2 external (`HyperNexusllc/HyperNexus` — aicrm orchestration kernel; `gcui-art/suno-api` — local Suno music backend for psychedelic-speech-engine).
 - `crowdsourced_dance_club` has a nested submodule `external/auto_dj_script` (robertpelloni/auto_dj_script @ a47e1d3).
 - **robertpelloni upstream tracking** (Step-2 scope):
   - `bobgui` → upstream `robertpelloni/bgtk` (renamed from bobgui); fork is **1472 commits behind** — full fetch fails (`invalid index-pack output`, ~870MB repo).
@@ -39,4 +40,4 @@
 
 Root remote: `https://github.com/candlestixxx/workspace.git` (main branch)
 
-**Last verified:** 2026-08-20 (v1.0.36) — 23 active submodules.
+**Last verified:** 2026-08-24 (v1.0.37) — 24 active submodules.

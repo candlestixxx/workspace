@@ -67,3 +67,6 @@
 [submodule "psychedelic-speech-engine"]
 	path = psychedelic-speech-engine
 	url = https://github.com/candlestixxx/psychedelic-speech-engine.git
+[submodule "suno-api"]
+	path = suno-api
+	url = https://github.com/gcui-art/suno-api.git
