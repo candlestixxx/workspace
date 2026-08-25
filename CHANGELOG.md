@@ -1,5 +1,32 @@
 # Changelog
 
+## [1.0.38] - 2026-08-25
+
+### Repository Synchronization & Intelligent Merge v1.0.38 (candlestixxx scope)
+
+#### Forward Merges (Feature → Main) — 7 branches across 7 submodules
+| # | Submodule | Feature Branch | Key Changes |
+|---|-----------|---------------|-------------|
+| 1 | forclosureworkflow | feat/s3-document-upload | Data quality dashboard, real-time voice monitoring, S3 uploads |
+| 2 | re-agent-workflow-media-1 | jules-10626851319290360880 | React/Vite frontend SPA (v2.13.0) |
+| 3 | realestateleadcaller | jules-2713423736642792031 | Live SSE updates for circle prospecting map |
+| 4 | skillzhub | main-16382952880673608065 | generateSyntheticData + e2e pipeline test, Gemini Flash integration ⚠️ conflict resolved |
+| 5 | socialmediacontentplanner | jules-6504094641305471454 | v6.0 public beta landing polish |
+| 6 | techno_platform_detroit | jules-10778029499852904827 | Native feed posting + JWT auth (v4.6.0) |
+| 7 | psychedelic-speech-engine | feature/psychedelic-speech-engine | DeepSeek retry w/ backoff, --video-filter CLI, warnings suppression ⚠️ conflict resolved |
+
+#### Skipped (redundant / regressive)
+- Prank-Deck-AI `init-documentation-and-ui-enhancement`: download functionality already in main (`saveToDisk`).
+- Prank-Deck-AI `init-safe-architecture`: would DELETE `core-orchestrator/` module (regression).
+- aicrm `jules-3434254056450392757`: Phase-2 vault/router already in main; branch would DELETE all docs (CHANGELOG/HANDOFF/ROADMAP/STRUCTURE/TODO/VERSION).
+
+#### Conflict Resolutions
+- **skillzhub**: kept main's newer `next 16.3.0` / `swagger-ui-react 5.32.13` (branch had spurious downgrades); preserved branch's synthetic-data + e2e test work.
+- **psychedelic-speech-engine**: kept main's batch-generator `auto_run.py` + Windows-safe subtitle path; merged branch's DeepSeek retry + `--video-filter` into `app.py`.
+
+#### Reverse Merge
+None required — all other feature branches fully merged (`ahead=0`).
+
 ## [1.0.37] - 2026-08-24
 
 ### Repository Synchronization & Intelligent Merge v1.0.37 (candlestixxx scope)

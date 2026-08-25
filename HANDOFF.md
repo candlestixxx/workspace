@@ -1,39 +1,57 @@
-# Session Handoff — August 24, 2026 (v1.0.37)
+# Session Handoff — August 25, 2026 (v1.0.38)
 
 ## Summary
 
-Executed the repository synchronization & intelligent merge protocol with **Step-2 scope = `github.com/candlestixxx`**. 24 submodules now tracked.
+Executed the repository synchronization & intelligent merge protocol with **Step-2 scope = `github.com/candlestixxx`**. 7 feature branches forward-merged, 3 skipped as redundant/regressive.
 
-## Completed
+## Forward Merges (Feature → Main)
 
-### New submodule
-- **suno-api** (`gcui-art/suno-api`) registered at `a2e6a82` — third-party local Suno music backend used by `psychedelic-speech-engine` (calls `http://localhost:3000/api/custom_generate`). Previously an untracked local clone; now a proper submodule (gitdir migrated via `absorbgitdirs`).
+| Submodule | Branch | Result |
+|-----------|--------|--------|
+| forclosureworkflow | feat/s3-document-upload | ✅ 8ecdd0a — data quality dashboard, voice monitoring, S3 uploads |
+| re-agent-workflow-media-1 | jules-10626851319290360880 | ✅ 77c691f — React/Vite SPA v2.13.0 |
+| realestateleadcaller | jules-2713423736642792031 | ✅ 93298b1 — live SSE map updates (note: branch removed `src/proxy.ts`, `run_make_due.js`, `audit-2026-06-07.jsonl`) |
+| skillzhub | main-16382952880673608065 | ✅ 51d2a35 — synthetic data + e2e pipeline test (conflict resolved) |
+| socialmediacontentplanner | jules-6504094641305471454 | ✅ 95e13ad — v6.0 beta landing polish |
+| techno_platform_detroit | jules-10778029499852904827 | ✅ 46c46ec — native feed posting + JWT (v4.6.0) |
+| psychedelic-speech-engine | feature/psychedelic-speech-engine | ✅ 7a99734 — DeepSeek retry, --video-filter, warnings suppression (conflict resolved) |
 
-### Forward merge
-- **skillzhub**: merged `dependabot/npm_and_yarn/npm_and_yarn-60ab56c091` (js-yaml 4.3.0 → 4.3.1) → main, pushed → `3699f20`.
+## Skipped (intentional — redundant/regressive)
 
-### Pointer updates (recorded + pushed)
-| Submodule | From | To | Notes |
-|-----------|------|----|-------|
-| skillzhub | c5a360a | 3699f20 | dependabot js-yaml merge |
-| psychedelic-speech-engine | e12810d | 5b715a0 | psytrance batch generator + docs v1.1.0 |
-| suno-api | *(new)* | a2e6a82 | gcui-art/suno-api |
+| Submodule | Branch | Reason |
+|-----------|--------|--------|
+| Prank-Deck-AI | init-documentation-and-ui-enhancement | Download already in main (`saveToDisk` + save button). Branch just renames it + minor a11y. |
+| Prank-Deck-AI | init-safe-architecture | Would DELETE entire `core-orchestrator/` module (2071 lines) — regression. |
+| aicrm | jules-3434254056450392757 | Phase-2 vault/router already in main; branch would DELETE all docs (CHANGELOG/HANDOFF/ROADMAP/STRUCTURE/TODO/VERSION). |
 
-### Reverse merge
-None required — every other feature branch is already fully merged into its primary (`ahead=0`). Stale `master` branches and previously-merged AI branches left untouched.
+## Conflict Resolutions
 
-### Fetch / sync status
-- All `candlestixxx` submodules fetched clean; none drifted behind origin.
-- Upstream (robertpelloni) reconciliation from v1.0.36 remains: `bobgui`→`bgtk` (1472 behind) and `hyperharness` (146 behind) still blocked by large-repo fetch failure (`invalid index-pack output`).
+- **skillzhub** (`package.json`/`package-lock.json`): kept main's newer `next 16.3.0` + `swagger-ui-react 5.32.13` (branch had spurious downgrades 16.2.6 / 5.32.5). Preserved branch's `generateSyntheticData`, `e2e_pipeline.test.ts`, Gemini Flash integration, Prisma filtering, CI workflow.
+- **psychedelic-speech-engine** (`app.py`): merged branch's DeepSeek retry (3 attempts, exponential backoff, timeout) + `--video-filter` CLI + `warnings.filterwarnings`. Kept main's UTF-8 reconfigure, `--start/--end`, and `_ffmpeg_subtitle_path` (Windows-safe). `auto_run.py`: kept main's batch generator (supersedes branch's single-track flow).
+- **Verified:** all 5 psychedelic-speech-engine `.py` files `py_compile` clean.
 
-## Left Untouched (intentional)
-- `realestateleadcaller`: `.hypercode/`, `.hypernexus/`, `.hypernexus-session.json`, `.hypernexus_startup_marker` (tool session state).
-- `HyperNexus`: runtime state (`swarm_state.json`, `debate_history.db`, `packages/tormentnexus/bin/`).
-- `suno-api`: untracked `suno-api.log` (runtime log; no write access to gcui-art to commit a gitignore change).
-- `bobtrader/` (stray dir with live-trading data, incl. `config/live-trading-binance.json`), empty `prankdeckai/`.
+## Reverse Merge
+None required — all other feature branches already fully merged (`ahead=0`).
+
+## Pushed
+- 7 submodules pushed to `origin/main`.
+- Root pointer updates + version bump → **1.0.38**.
+
+## ⚠️ Active concurrent work detected (left untouched)
+
+While running this reconciliation, an AI agent was **actively modifying `aicrm`** (files timestamped 12:40–12:45 today). Uncommitted work present in `aicrm` working tree:
+- Modified: `src/app/page.tsx`, `src/components/ThemeProvider.tsx`, `ThemeSwitcher.tsx`, `src/lib/theme.ts`
+- New (untracked): `src/app/api/help/`, `src/components/{HelpCenter,HelpChat,OnboardingTour,ColorWheel}.tsx`, `src/lib/{help,color}.ts`
+
+This looks like a **Help Center + Color Wheel + Onboarding Tour** feature in progress. **Not committed, not discarded** — left for the active agent to finish. Next session should check whether this landed as a commit (and then update the root pointer).
+
+## Carried-forward (unchanged)
+- `bgtk` (~870MB) and `hyperharness` (~1.1GB) upstream merges still blocked by `invalid index-pack output` fetch failure.
+- `bobtrader/` stray dir with `config/live-trading-binance.json` (sensitive).
+- CHANGELOG 1.0.27–1.0.34 still unbackfilled.
+- Tool session state in `realestateleadcaller`, `HyperNexus`, `suno-api` left untracked.
 
 ## Next Steps
-1. Resolve large-repo fetch (`invalid index-pack output`) to complete `bgtk`/`hyperharness` upstream merges — try Git LFS / `--filter=blob:none` / `http.postBuffer`.
-2. Backfill missing CHANGELOG entries 1.0.27–1.0.34.
-3. Decide disposition of `bobtrader/` (sensitive Binance config).
-4. Build verification: psychedelic-speech-engine + suno-api (Python/Next.js) — full run needs GPU, Suno account/container, DeepSeek/HF keys.
+1. Review realestateleadcaller merge — confirm `src/proxy.ts` removal is intentional (replaced by `src/app/api/sse/route.ts` + `src/lib/sse/emitter.ts`).
+2. Decide whether Prank-Deck-AI `init-safe-architecture` "visual audio analyzer" should be cherry-picked WITHOUT the core-orchestrator deletion.
+3. Resolve large-repo fetch for bgtk/hyperharness.

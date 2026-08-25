@@ -5,16 +5,16 @@
 | 1 | brokeragentworkflow | brokeragentworkflow/ | https://github.com/candlestixxx/brokeragentworkflow | 127f3e0 |
 | 2 | excel-legacy-leadgen | excel-legacy-leadgen/ | https://github.com/candlestixxx/excel-legacy-leadgen.git | e62c3d0 |
 | 3 | explorerexedecompiled | explorerexedecompiled/ | https://github.com/candlestixxx/explorerexedecompiled.git | 31a4794 |
-| 4 | forclosureworkflow | forclosureworkflow/ | https://github.com/candlestixxx/forclosureworkflow.git | a3f884d |
+| 4 | forclosureworkflow | forclosureworkflow/ | https://github.com/candlestixxx/forclosureworkflow.git | 8ecdd0a |
 | 5 | leadG | leadG/ | https://github.com/candlestixxx/leadG.git | 107a6fd |
 | 6 | p2p_service_marketplace | p2p_service_marketplace/ | https://github.com/candlestixxx/p2p_service_marketplace.git | 97c8077 |
-| 7 | re-agent-workflow-media-1 | re-agent-workflow-media-1/ | https://github.com/candlestixxx/re-agent-workflow-media-1 | e6fe336 |
+| 7 | re-agent-workflow-media-1 | re-agent-workflow-media-1/ | https://github.com/candlestixxx/re-agent-workflow-media-1 | 77c691f |
 | 8 | realestatecrm | realestatecrm/ | https://github.com/candlestixxx/realestatecrm.git | bebca08 |
-| 9 | realestateleadcaller | realestateleadcaller/ | https://github.com/candlestixxx/realestateleadcaller.git | b856d29 |
+| 9 | realestateleadcaller | realestateleadcaller/ | https://github.com/candlestixxx/realestateleadcaller.git | 93298b1 |
 | 10 | realestateprototype | realestateprototype/ | https://github.com/candlestixxx/realestateprototype.git | cc5d9c1 |
-| 11 | skillzhub | skillzhub/ | https://github.com/candlestixxx/skillzhub.git | 3699f20 |
-| 12 | socialmediacontentplanner | socialmediacontentplanner/ | https://github.com/candlestixxx/socialmediacontentplanner.git | 0413eb3 |
-| 13 | techno_platform_detroit | techno_platform_detroit/ | https://github.com/candlestixxx/techno_platform_detroit.git | d850be6 |
+| 11 | skillzhub | skillzhub/ | https://github.com/candlestixxx/skillzhub.git | 51d2a35 |
+| 12 | socialmediacontentplanner | socialmediacontentplanner/ | https://github.com/candlestixxx/socialmediacontentplanner.git | 95e13ad |
+| 13 | techno_platform_detroit | techno_platform_detroit/ | https://github.com/candlestixxx/techno_platform_detroit.git | 46c46ec |
 | 14 | theta-data-api | theta-data-api/ | https://github.com/candlestixxx/theta-data-api.git | ef15c6f |
 | 15 | ultratrader | ultratrader/ | https://github.com/candlestixxx/ultratrader.git | 89e877e |
 | 16 | LegacyLeads | LegacyLeads/ | https://github.com/candlestixxx/LegacyLeads.git | a76c08e |
@@ -23,7 +23,7 @@
 | 19 | bobgui | bobgui/ | https://github.com/candlestixxx/bobgui.git | 9bea319 |
 | 20 | hyperharness | hyperharness/ | https://github.com/candlestixxx/hyperharness.git | 9a43bde |
 | 21 | aicrm | aicrm/ | https://github.com/candlestixxx/aicrm.git | 484008e |
-| 22 | psychedelic-speech-engine | psychedelic-speech-engine/ | https://github.com/candlestixxx/psychedelic-speech-engine.git | 5b715a0 |
+| 22 | psychedelic-speech-engine | psychedelic-speech-engine/ | https://github.com/candlestixxx/psychedelic-speech-engine.git | 7a99734 |
 | 23 | HyperNexus | HyperNexus/ | https://github.com/HyperNexusllc/HyperNexus.git | 4fe0e1c |
 | 24 | suno-api | suno-api/ | https://github.com/gcui-art/suno-api.git | a2e6a82 |
 
@@ -40,4 +40,4 @@
 
 Root remote: `https://github.com/candlestixxx/workspace.git` (main branch)
 
-**Last verified:** 2026-08-24 (v1.0.37) — 24 active submodules.
+**Last verified:** 2026-08-25 (v1.0.38) — 24 active submodules.

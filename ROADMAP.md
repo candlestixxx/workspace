@@ -15,6 +15,7 @@
 - [x] Feature branch divergence tracking and reconciliation across 24 submodules.
 - [x] Forward-merged 12 feature branches across 11 submodules (v1.0.23).
 - [x] Reverse-merged primary branches into 35+ feature branches (v1.0.23).
+- [x] Forward-merged 7 feature branches across 7 submodules (v1.0.38); skipped 3 redundant/regressive AI branches.
 - [x] hyperharness recovery from broken state (v1.0.23).
 - [x] Documentation foundation: VISION.md, MEMORY.md, DEPLOY.md, IDEAS.md created (v1.0.23).
 - [x] Validate all execution scripts across submodules.

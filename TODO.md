@@ -19,6 +19,9 @@
 - [x] Sync robertpelloni upstream for crowdsourced_dance_club + auto_dj_script (v1.0.36).
 - [x] Push aicrm v0.13.0 + psychedelic-speech-engine engine implementation (v1.0.36).
 - [x] Add suno-api submodule + forward-merge skillzhub dependabot js-yaml bump (v1.0.37).
+- [x] Forward-merge 7 feature branches across 7 submodules; skip 3 redundant/regressive (v1.0.38).
+- [ ] Review realestateleadcaller merge — verify `src/proxy.ts` removal intentional (replaced by SSE route).
+- [ ] Decide on cherry-picking Prank-Deck-AI `init-safe-architecture` visual analyzer WITHOUT core-orchestrator deletion.
 
 ## Long Term
 - [ ] Implement automated "Intelligent Merge" tool for future syncs.
