@@ -21,7 +21,9 @@
 - [x] Add suno-api submodule + forward-merge skillzhub dependabot js-yaml bump (v1.0.37).
 - [x] Forward-merge 7 feature branches across 7 submodules; skip 3 redundant/regressive (v1.0.38).
 - [ ] Review realestateleadcaller merge — verify `src/proxy.ts` removal intentional (replaced by SSE route).
-- [ ] Decide on cherry-picking Prank-Deck-AI `init-safe-architecture` visual analyzer WITHOUT core-orchestrator deletion.
+- [x] Integrate Prank-Deck-AI `init-safe-architecture` visual analyzer WITHOUT core-orchestrator deletion (v1.0.39).
+- [x] Forward-merge psychedelic-speech-engine workspace-isolation + `--voice` feature branch (v1.0.39).
+- [x] Commit aicrm help center / onboarding tour / color wheel WIP (v1.0.39).
 
 ## Long Term
 - [ ] Implement automated "Intelligent Merge" tool for future syncs.

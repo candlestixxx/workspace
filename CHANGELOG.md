@@ -1,5 +1,28 @@
 # Changelog
 
+## [1.0.39] - 2026-08-26
+
+### Repository Synchronization & Intelligent Merge v1.0.39 (candlestixxx scope)
+
+#### Forward Merges / Feature Integration
+| # | Submodule | Feature Branch | Key Changes |
+|---|-----------|---------------|-------------|
+| 1 | psychedelic-speech-engine | feature/psychedelic-speech-engine-14401920910254360046 | Workspace isolation (`workspace_run_*/` dirs) + `--voice` Kokoro argument ⚠️ conflicts resolved |
+| 2 | Prank-Deck-AI | init-safe-architecture (selective) | Live waveform visualizer (AnalyzerNode canvas) — integrated while preserving `core-orchestrator` |
+
+#### Committed WIP Progress (preserved + pushed)
+| Submodule | Commit | Key Changes |
+|-----------|--------|-------------|
+| aicrm | 1a3e4e7 | Help center, onboarding tour, color wheel, theme persistence |
+
+#### Skipped (redundant / regressive)
+- aicrm `jules-3434254056450392757-d9850c0f`: "Phase 2 Multi-Model Router & Vault" already in main; branch commit would DELETE CHANGELOG/HANDOFF/ROADMAP/TODO/VERSION.
+- Prank-Deck-AI `init-documentation-and-ui-enhancement`: download already in main (`saveToDisk`).
+- Prank-Deck-AI `init-safe-architecture` `core-orchestrator/` deletion (regression) — feature integrated, deletion rejected.
+
+#### Reverse Merge
+None required — remaining feature branches already merged (ahead=0); upstream robertpelloni branches ignored.
+
 ## [1.0.38] - 2026-08-25
 
 ### Repository Synchronization & Intelligent Merge v1.0.38 (candlestixxx scope)

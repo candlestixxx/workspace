@@ -1,57 +1,42 @@
-# Session Handoff — August 25, 2026 (v1.0.38)
+# Session Handoff — August 26, 2026 (v1.0.39)
 
 ## Summary
 
-Executed the repository synchronization & intelligent merge protocol with **Step-2 scope = `github.com/candlestixxx`**. 7 feature branches forward-merged, 3 skipped as redundant/regressive.
+Executed the repository synchronization & intelligent merge protocol with **Step-2 scope = `github.com/candlestixxx`** across 24 submodules.
 
-## Forward Merges (Feature → Main)
+## Fetch & Sync (Step 1)
+- Root: not a fork (no upstream parent). Fetched clean.
+- Fetched all candlestixxx submodules. `bobgui` upstream (bgtk) still fails (`invalid index-pack output`, ~870MB); `hyperharness` upstream fetch recovered (new robertpelloni branches surfaced, ignored per protocol).
+- All 24 submodules in sync with `origin/<primary>` before merges.
+
+## Forward Merges (Step 2)
 
 | Submodule | Branch | Result |
 |-----------|--------|--------|
-| forclosureworkflow | feat/s3-document-upload | ✅ 8ecdd0a — data quality dashboard, voice monitoring, S3 uploads |
-| re-agent-workflow-media-1 | jules-10626851319290360880 | ✅ 77c691f — React/Vite SPA v2.13.0 |
-| realestateleadcaller | jules-2713423736642792031 | ✅ 93298b1 — live SSE map updates (note: branch removed `src/proxy.ts`, `run_make_due.js`, `audit-2026-06-07.jsonl`) |
-| skillzhub | main-16382952880673608065 | ✅ 51d2a35 — synthetic data + e2e pipeline test (conflict resolved) |
-| socialmediacontentplanner | jules-6504094641305471454 | ✅ 95e13ad — v6.0 beta landing polish |
-| techno_platform_detroit | jules-10778029499852904827 | ✅ 46c46ec — native feed posting + JWT (v4.6.0) |
-| psychedelic-speech-engine | feature/psychedelic-speech-engine | ✅ 7a99734 — DeepSeek retry, --video-filter, warnings suppression (conflict resolved) |
+| psychedelic-speech-engine | feature/psychedelic-speech-engine-14401920910254360046 | ✅ Merged → f6cce83 (workspace isolation + `--voice`). Resolved conflicts: kept main's batch/BPM/time-stretch + threaded `workspace_dir` through download/extract/synthesize. |
+| Prank-Deck-AI | init-safe-architecture | ✅ **Selective** integration → a85b2b5. Integrated the live waveform visualizer (AnalyzerNode canvas + CSS) onto main's v1.2.0 VoiceStudio; **rejected** the `core-orchestrator/` deletion (regression). |
 
-## Skipped (intentional — redundant/regressive)
+### Skipped (documented)
+- **aicrm `jules-3434254056450392757-d9850c0f`**: "Phase 2 Multi-Model Router & Vault" already in main (`5e12169`); the branch commit only DELETES CHANGELOG/HANDOFF/ROADMAP/STRUCTURE/TODO/VERSION. Redundant + regressive.
+- **Prank-Deck-AI `init-documentation-and-ui-enhancement`**: download functionality already in main (`saveToDisk` / "Save" button).
 
-| Submodule | Branch | Reason |
-|-----------|--------|--------|
-| Prank-Deck-AI | init-documentation-and-ui-enhancement | Download already in main (`saveToDisk` + save button). Branch just renames it + minor a11y. |
-| Prank-Deck-AI | init-safe-architecture | Would DELETE entire `core-orchestrator/` module (2071 lines) — regression. |
-| aicrm | jules-3434254056450392757 | Phase-2 vault/router already in main; branch would DELETE all docs (CHANGELOG/HANDOFF/ROADMAP/STRUCTURE/TODO/VERSION). |
+### Committed WIP (preserved + pushed)
+- **aicrm → 1a3e4e7**: Help center, onboarding tour, color wheel + theme persistence (was uncommitted working-tree progress).
 
-## Conflict Resolutions
+## Pointer Updates
+Recorded 3 submodule pointer updates: aicrm (484008e→1a3e4e7), Prank-Deck-AI (6ac3dc2→a85b2b5), psychedelic-speech-engine (7a99734→f6cce83).
 
-- **skillzhub** (`package.json`/`package-lock.json`): kept main's newer `next 16.3.0` + `swagger-ui-react 5.32.13` (branch had spurious downgrades 16.2.6 / 5.32.5). Preserved branch's `generateSyntheticData`, `e2e_pipeline.test.ts`, Gemini Flash integration, Prisma filtering, CI workflow.
-- **psychedelic-speech-engine** (`app.py`): merged branch's DeepSeek retry (3 attempts, exponential backoff, timeout) + `--video-filter` CLI + `warnings.filterwarnings`. Kept main's UTF-8 reconfigure, `--start/--end`, and `_ffmpeg_subtitle_path` (Windows-safe). `auto_run.py`: kept main's batch generator (supersedes branch's single-track flow).
-- **Verified:** all 5 psychedelic-speech-engine `.py` files `py_compile` clean.
+## Left Untouched (intentional)
+- `HyperNexus`: runtime state (`swarm_state.json`, `debate_history.db`, `packages/tormentnexus/bin/`).
+- `realestateleadcaller`: `.hypercode/`, `.hypernexus/`, session files.
+- `suno-api`: untracked `suno-api.log` (external repo, no write access).
+- `bobtrader/` (stray dir), empty `prankdeckai/`.
 
-## Reverse Merge
-None required — all other feature branches already fully merged (`ahead=0`).
+## Notable / For Next Session
+- The v1.0.38 session had already skipped both Prank-Deck-AI branches; this session went further on `init-safe-architecture` by integrating its unique visualizer while preserving `core-orchestrator`. The branch remains technically "unmerged" (diverged base); its unique work is now in main.
+- psychedelic-speech-engine has accumulated multiple sequential feature branches (DeepSeek retry → workspace isolation); consider squashing the branch queue.
+- Large-repo fetch blocker (bgtk/hyperharness upstream) persists — see STRUCTURAL_MAP notes.
 
-## Pushed
-- 7 submodules pushed to `origin/main`.
-- Root pointer updates + version bump → **1.0.38**.
-
-## ⚠️ Active concurrent work detected (left untouched)
-
-While running this reconciliation, an AI agent was **actively modifying `aicrm`** (files timestamped 12:40–12:45 today). Uncommitted work present in `aicrm` working tree:
-- Modified: `src/app/page.tsx`, `src/components/ThemeProvider.tsx`, `ThemeSwitcher.tsx`, `src/lib/theme.ts`
-- New (untracked): `src/app/api/help/`, `src/components/{HelpCenter,HelpChat,OnboardingTour,ColorWheel}.tsx`, `src/lib/{help,color}.ts`
-
-This looks like a **Help Center + Color Wheel + Onboarding Tour** feature in progress. **Not committed, not discarded** — left for the active agent to finish. Next session should check whether this landed as a commit (and then update the root pointer).
-
-## Carried-forward (unchanged)
-- `bgtk` (~870MB) and `hyperharness` (~1.1GB) upstream merges still blocked by `invalid index-pack output` fetch failure.
-- `bobtrader/` stray dir with `config/live-trading-binance.json` (sensitive).
-- CHANGELOG 1.0.27–1.0.34 still unbackfilled.
-- Tool session state in `realestateleadcaller`, `HyperNexus`, `suno-api` left untracked.
-
-## Next Steps
-1. Review realestateleadcaller merge — confirm `src/proxy.ts` removal is intentional (replaced by `src/app/api/sse/route.ts` + `src/lib/sse/emitter.ts`).
-2. Decide whether Prank-Deck-AI `init-safe-architecture` "visual audio analyzer" should be cherry-picked WITHOUT the core-orchestrator deletion.
-3. Resolve large-repo fetch for bgtk/hyperharness.
+## Build Verification
+- psychedelic-speech-engine: `python -m py_compile app.py auto_run.py` ✅
+- Prank-Deck-AI: `tsc --noEmit` ✅
