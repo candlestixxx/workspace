@@ -22,8 +22,8 @@
 | 18 | Prank-Deck-AI | Prank-Deck-AI/ | https://github.com/candlestixxx/prank-deck-ai.git | a85b2b5 |
 | 19 | bobgui | bobgui/ | https://github.com/candlestixxx/bobgui.git | 9bea319 |
 | 20 | hyperharness | hyperharness/ | https://github.com/candlestixxx/hyperharness.git | 9a43bde |
-| 21 | aicrm | aicrm/ | https://github.com/candlestixxx/aicrm.git | 1a3e4e7 |
-| 22 | psychedelic-speech-engine | psychedelic-speech-engine/ | https://github.com/candlestixxx/psychedelic-speech-engine.git | f6cce83 |
+| 21 | aicrm | aicrm/ | https://github.com/candlestixxx/aicrm.git | db5a786 |
+| 22 | psychedelic-speech-engine | psychedelic-speech-engine/ | https://github.com/candlestixxx/psychedelic-speech-engine.git | 6ad2c86 |
 | 23 | HyperNexus | HyperNexus/ | https://github.com/HyperNexusllc/HyperNexus.git | 4fe0e1c |
 | 24 | suno-api | suno-api/ | https://github.com/gcui-art/suno-api.git | a2e6a82 |
 
@@ -40,4 +40,4 @@
 
 Root remote: `https://github.com/candlestixxx/workspace.git` (main branch)
 
-**Last verified:** 2026-08-26 (v1.0.39) — 24 active submodules.
+**Last verified:** 2026-08-31 (v1.0.40) — 24 active submodules.

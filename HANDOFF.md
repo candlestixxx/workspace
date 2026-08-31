@@ -1,42 +1,37 @@
-# Session Handoff — August 26, 2026 (v1.0.39)
+# Session Handoff — August 31, 2026 (v1.0.40)
 
 ## Summary
 
-Executed the repository synchronization & intelligent merge protocol with **Step-2 scope = `github.com/candlestixxx`** across 24 submodules.
+Executed the repository synchronization & intelligent merge protocol (Step-2 scope = `github.com/candlestixxx`) across 24 submodules.
 
-## Fetch & Sync (Step 1)
-- Root: not a fork (no upstream parent). Fetched clean.
-- Fetched all candlestixxx submodules. `bobgui` upstream (bgtk) still fails (`invalid index-pack output`, ~870MB); `hyperharness` upstream fetch recovered (new robertpelloni branches surfaced, ignored per protocol).
-- All 24 submodules in sync with `origin/<primary>` before merges.
+## Fetch & Sync
+- Root: not a fork — no upstream parent. Fetched clean.
+- All candlestixxx submodules fetched. `bobgui` upstream (bgtk) still fails (`protocol error: bad pack header`, ~870MB).
+- Two feature branches advanced remotely since last run.
 
-## Forward Merges (Step 2)
-
+## Forward Merge
 | Submodule | Branch | Result |
 |-----------|--------|--------|
-| psychedelic-speech-engine | feature/psychedelic-speech-engine-14401920910254360046 | ✅ Merged → f6cce83 (workspace isolation + `--voice`). Resolved conflicts: kept main's batch/BPM/time-stretch + threaded `workspace_dir` through download/extract/synthesize. |
-| Prank-Deck-AI | init-safe-architecture | ✅ **Selective** integration → a85b2b5. Integrated the live waveform visualizer (AnalyzerNode canvas + CSS) onto main's v1.2.0 VoiceStudio; **rejected** the `core-orchestrator/` deletion (regression). |
+| psychedelic-speech-engine | feature/psychedelic-speech-engine-14401920910254360046 | ✅ Merged → 6ad2c86 (v1.2.0: `--prompt-style` + `--subtitle-style`). Resolved conflicts: re-applied the 2 new flags onto main's version (preserving batch/BPM/workspace-isolation). |
 
-### Skipped (documented)
-- **aicrm `jules-3434254056450392757-d9850c0f`**: "Phase 2 Multi-Model Router & Vault" already in main (`5e12169`); the branch commit only DELETES CHANGELOG/HANDOFF/ROADMAP/STRUCTURE/TODO/VERSION. Redundant + regressive.
-- **Prank-Deck-AI `init-documentation-and-ui-enhancement`**: download functionality already in main (`saveToDisk` / "Save" button).
+## Committed WIP (preserved + pushed)
+- **aicrm → db5a786**: real-time MLS/Realcomp listing status sync + property creation field support (was 2 commits ahead, now pushed).
 
-### Committed WIP (preserved + pushed)
-- **aicrm → 1a3e4e7**: Help center, onboarding tour, color wheel + theme persistence (was uncommitted working-tree progress).
+## Skipped (documented)
+- aicrm `jules-3434254056450392757-d9850c0f` — "Phase 2" already in main; would delete docs.
+- Prank-Deck-AI `init-documentation-and-ui-enhancement` — download already in main (`saveToDisk`).
+- Prank-Deck-AI `init-safe-architecture` — visualizer already integrated (v1.0.39).
+- Prank-Deck-AI `jules-9956925773432264551-9f00ac93` — would DELETE the app (2,524 deletions); `core-orchestrator` already in main.
 
 ## Pointer Updates
-Recorded 3 submodule pointer updates: aicrm (484008e→1a3e4e7), Prank-Deck-AI (6ac3dc2→a85b2b5), psychedelic-speech-engine (7a99734→f6cce83).
+Recorded 2: aicrm (1a3e4e7→db5a786), psychedelic-speech-engine (f6cce83→6ad2c86).
 
 ## Left Untouched (intentional)
-- `HyperNexus`: runtime state (`swarm_state.json`, `debate_history.db`, `packages/tormentnexus/bin/`).
-- `realestateleadcaller`: `.hypercode/`, `.hypernexus/`, session files.
-- `suno-api`: untracked `suno-api.log` (external repo, no write access).
-- `bobtrader/` (stray dir), empty `prankdeckai/`.
+- `HyperNexus` runtime state; `realestateleadcaller` session files; `suno-api/suno-api.log` (external repo); `bobtrader/` stray dir.
 
-## Notable / For Next Session
-- The v1.0.38 session had already skipped both Prank-Deck-AI branches; this session went further on `init-safe-architecture` by integrating its unique visualizer while preserving `core-orchestrator`. The branch remains technically "unmerged" (diverged base); its unique work is now in main.
-- psychedelic-speech-engine has accumulated multiple sequential feature branches (DeepSeek retry → workspace isolation); consider squashing the branch queue.
-- Large-repo fetch blocker (bgtk/hyperharness upstream) persists — see STRUCTURAL_MAP notes.
+## Notes for Next Session
+- psychedelic-speech-engine's feature branch keeps accumulating sequential commits (workspace isolation → prompt/subtitle styling). The branch's `auto_run.py` still uses the OLD `run_pipeline` subprocess design; `--subtitle-style` was only wired into `app.py` (single-video path) + `--prompt-style` into both. Batch-mode subtitle styling (render_beat.py) is not wired.
+- Large-repo upstream fetch blocker (bgtk ~870MB, hyperharness ~1.1GB) persists.
 
 ## Build Verification
 - psychedelic-speech-engine: `python -m py_compile app.py auto_run.py` ✅
-- Prank-Deck-AI: `tsc --noEmit` ✅

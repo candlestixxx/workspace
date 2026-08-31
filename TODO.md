@@ -23,6 +23,8 @@
 - [ ] Review realestateleadcaller merge — verify `src/proxy.ts` removal intentional (replaced by SSE route).
 - [x] Integrate Prank-Deck-AI `init-safe-architecture` visual analyzer WITHOUT core-orchestrator deletion (v1.0.39).
 - [x] Forward-merge psychedelic-speech-engine workspace-isolation + `--voice` feature branch (v1.0.39).
+- [x] Forward-merge psychedelic-speech-engine `--prompt-style` + `--subtitle-style` (v1.2.0) (v1.0.40).
+- [x] Push aicrm MLS/Realcomp status sync + property creation fields (v1.0.40).
 - [x] Commit aicrm help center / onboarding tour / color wheel WIP (v1.0.39).
 
 ## Long Term

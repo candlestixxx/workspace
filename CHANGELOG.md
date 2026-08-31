@@ -1,5 +1,28 @@
 # Changelog
 
+## [1.0.40] - 2026-08-31
+
+### Repository Synchronization & Intelligent Merge v1.0.40 (candlestixxx scope)
+
+#### Forward Merges (Feature → Main)
+| # | Submodule | Feature Branch | Key Changes |
+|---|-----------|---------------|-------------|
+| 1 | psychedelic-speech-engine | feature/psychedelic-speech-engine-14401920910254360046 | `--prompt-style` (DeepSeek narrative flavor) + `--subtitle-style` (FFmpeg force_style) → v1.2.0 ⚠️ conflicts resolved |
+
+#### Committed WIP Progress (preserved + pushed)
+| Submodule | Commit | Key Changes |
+|-----------|--------|-------------|
+| aicrm | db5a786 | Real-time MLS/Realcomp listing status sync; accept contactId/source/mlsStatus when creating a property |
+
+#### Skipped (redundant / regressive)
+- aicrm `jules-3434254056450392757-d9850c0f`: "Phase 2" already in main; would delete docs.
+- Prank-Deck-AI `init-documentation-and-ui-enhancement`: download already in main (`saveToDisk`).
+- Prank-Deck-AI `init-safe-architecture`: visualizer already integrated (v1.0.39).
+- Prank-Deck-AI `jules-9956925773432264551-9f00ac93`: would DELETE the app (2,524 deletions) — `core-orchestrator` already in main.
+
+#### Reverse Merge
+None required — remaining feature branches already merged or ignored.
+
 ## [1.0.39] - 2026-08-26
 
 ### Repository Synchronization & Intelligent Merge v1.0.39 (candlestixxx scope)
