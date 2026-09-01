@@ -22,7 +22,7 @@
 | 18 | Prank-Deck-AI | Prank-Deck-AI/ | https://github.com/candlestixxx/prank-deck-ai.git | a85b2b5 |
 | 19 | bobgui | bobgui/ | https://github.com/candlestixxx/bobgui.git | 9bea319 |
 | 20 | hyperharness | hyperharness/ | https://github.com/candlestixxx/hyperharness.git | 9a43bde |
-| 21 | aicrm | aicrm/ | https://github.com/candlestixxx/aicrm.git | 77ac2a4 |
+| 21 | aicrm | aicrm/ | https://github.com/candlestixxx/aicrm.git | e0c4b78 |
 | 22 | psychedelic-speech-engine | psychedelic-speech-engine/ | https://github.com/candlestixxx/psychedelic-speech-engine.git | 25a7338 |
 | 23 | HyperNexus | HyperNexus/ | https://github.com/HyperNexusllc/HyperNexus.git | 4fe0e1c |
 | 24 | suno-api | suno-api/ | https://github.com/gcui-art/suno-api.git | a2e6a82 |

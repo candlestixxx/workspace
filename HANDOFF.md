@@ -43,4 +43,7 @@ Recorded 9: aicrm, brokeragentworkflow, forclosureworkflow, leadG, p2p_service_m
 - brokeragentworkflow `.gitignore` now excludes `instance/` (SQLite) — runtime DB was accidentally committed in the branch and excluded from the merge.
 
 ## Build Verification
-- (builds pending — see Step 3.6)
+- aicrm: `next build` ✅ (after fixing 5 broken spots in WIP: corrupted `console.log` template-literal escapes in twilio.ts/resend.ts/swarm-coordinator.ts/agent-scraper.ts + Inngest v4 `createFunction` 3-arg→2-arg `triggers` migration in agent-scraper.ts/campaign-scheduler.ts) → e0c4b78
+- realestatecrm: `next build` ✅
+- psychedelic-speech-engine: `py_compile` ✅
+- p2p_service_marketplace: ⚠️ pre-existing build failure — `src/lib/pdf.ts` imports `jspdf` but it is NOT installed (in package.json, never `npm install`ed). Unrelated to this session's merge.
