@@ -26,6 +26,7 @@
 - [x] Forward-merge psychedelic-speech-engine `--prompt-style` + `--subtitle-style` (v1.2.0) (v1.0.40).
 - [x] Push aicrm MLS/Realcomp status sync + property creation fields (v1.0.40).
 - [x] Commit aicrm help center / onboarding tour / color wheel WIP (v1.0.39).
+- [x] Forward-merge brokeragentworkflow (Broker Workflow Phase 46 + Native Plugin v0.45.0), p2p interactive maps, + 4 docs/maintenance branches; commit aicrm Inngest/agents + pse batch_links + realestatecrm command palette (v1.0.41).
 
 ## Long Term
 - [ ] Implement automated "Intelligent Merge" tool for future syncs.

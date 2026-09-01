@@ -1,5 +1,33 @@
 # Changelog
 
+## [1.0.41] - 2026-09-01
+
+### Repository Synchronization & Intelligent Merge v1.0.41 (candlestixxx scope)
+
+#### Forward Merges (Feature → Main)
+| # | Submodule | Feature Branch | Key Changes |
+|---|-----------|---------------|-------------|
+| 1 | brokeragentworkflow | jules-2876471418335953163 | Broker Agent Workflow (Phase 46): Peer Feedback, Daily Top 3, Quarterly Initiatives, iOS Capacitor scaffolding ⚠️ resolved |
+| 2 | brokeragentworkflow | jules-2988077965038434350 | Native Plugin Integration (v0.45.0) |
+| 3 | p2p_service_marketplace | jules-8999598513845091996 | Interactive maps + UI tooltips |
+| 4 | skillzhub | main-16382952880673608065 | Aggressive Ideas framework docs |
+| 5 | techno_platform_detroit | jules-10778029499852904827 | Gold Master + Phase 4 finalize (v5.0.0) |
+| 6 | leadG | main-14181498285415879315 | TODO docs + campaign page fixes |
+| 7 | forclosureworkflow | feat/s3-document-upload | Session docs sync |
+
+#### Committed WIP Progress (preserved + pushed)
+| Submodule | Commit | Key Changes |
+|-----------|--------|-------------|
+| aicrm | 77ac2a4 | Agent audit panel, approval queue, Inngest background jobs (delivery/agents) |
+| psychedelic-speech-engine | 25a7338 | batch_links.py, diarize_probe.py, render_beat enhancements |
+| realestatecrm | 095b698 | Command palette, notification dropdown, providers polish |
+
+#### Skipped (redundant / regressive)
+- realestateprototype `jules-588126708554458831`: would DELETE 3,831 lines (stale rebase artifact).
+- socialmediacontentplanner `jules-6504094641305471454`: maintenance sweep with 11,931-line lockfile churn.
+- aicrm `jules-3434254056450392757`: "Phase 2" already in main.
+- Prank-Deck-AI `init-documentation` / `init-safe-architecture` / `jules-99569`: already integrated or regressive.
+
 ## [1.0.40] - 2026-08-31
 
 ### Repository Synchronization & Intelligent Merge v1.0.40 (candlestixxx scope)
