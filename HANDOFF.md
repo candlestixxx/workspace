@@ -48,8 +48,13 @@ Executed the repository synchronization & intelligent merge protocol (Step-2 sco
 - **HyperNexus** (external): `pnpm-lock.yaml` modified + untracked runtime (`debate_history.db`, `swarm_state.json`, `packages/tormentnexus/bin/`).
 - **realestateleadcaller**: untracked session files (`.hypernexus*`, `.hypercode/`, `data/`) — preserved per retention directive (NOT gitignored).
 
+## Retention Directive Fix (gitignore audit)
+Removed AI-session-dir ignore patterns (`.hypernexus*`, `.hypercode*`, `.claude`, `.jules/sessions/`) from 6 submodules per MEMORY.md retention rules:
+- realestatecrm (60aa5fc), realestateprototype (7c40d91), socialmediacontentplanner (9a54bba), hyperharness (50c8826), aicrm (899c8e1) — committed + pushed.
+- HyperNexus — `.gitignore` fixed locally only (external repo, not pushed).
+
 ## Pointer Updates
-Recorded 7 in root: brokeragentworkflow, excel-legacy-leadgen, forclosureworkflow, re-agent-workflow-media-1, skillzhub, techno_platform_detroit, psychedelic-speech-engine.
+Recorded 12 in root: brokeragentworkflow, excel-legacy-leadgen, forclosureworkflow, re-agent-workflow-media-1, skillzhub, techno_platform_detroit, psychedelic-speech-engine, realestatecrm, realestateprototype, socialmediacontentplanner, hyperharness, aicrm.
 
 ## Build Verification
 - brokeragentworkflow: ✅ Python `py_compile` (main.py, routers/admin.py) + Vue frontend `vite build` (after `npm install` for Capacitor ^8 deps).

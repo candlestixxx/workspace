@@ -9,11 +9,11 @@
 | 5 | leadG | leadG/ | https://github.com/candlestixxx/leadG.git | dc3589f |
 | 6 | p2p_service_marketplace | p2p_service_marketplace/ | https://github.com/candlestixxx/p2p_service_marketplace.git | 115aaa3 |
 | 7 | re-agent-workflow-media-1 | re-agent-workflow-media-1/ | https://github.com/candlestixxx/re-agent-workflow-media-1 | 49bb626 |
-| 8 | realestatecrm | realestatecrm/ | https://github.com/candlestixxx/realestatecrm.git | 095b698 |
+| 8 | realestatecrm | realestatecrm/ | https://github.com/candlestixxx/realestatecrm.git | 60aa5fc |
 | 9 | realestateleadcaller | realestateleadcaller/ | https://github.com/candlestixxx/realestateleadcaller.git | 93298b1 |
-| 10 | realestateprototype | realestateprototype/ | https://github.com/candlestixxx/realestateprototype.git | cc5d9c1 |
+| 10 | realestateprototype | realestateprototype/ | https://github.com/candlestixxx/realestateprototype.git | 7c40d91 |
 | 11 | skillzhub | skillzhub/ | https://github.com/candlestixxx/skillzhub.git | 9afe515 |
-| 12 | socialmediacontentplanner | socialmediacontentplanner/ | https://github.com/candlestixxx/socialmediacontentplanner.git | 95e13ad |
+| 12 | socialmediacontentplanner | socialmediacontentplanner/ | https://github.com/candlestixxx/socialmediacontentplanner.git | 9a54bba |
 | 13 | techno_platform_detroit | techno_platform_detroit/ | https://github.com/candlestixxx/techno_platform_detroit.git | 827d3f7 |
 | 14 | theta-data-api | theta-data-api/ | https://github.com/candlestixxx/theta-data-api.git | ef15c6f |
 | 15 | ultratrader | ultratrader/ | https://github.com/candlestixxx/ultratrader.git | 89e877e |
@@ -21,8 +21,8 @@
 | 17 | crowdsourced_dance_club | crowdsourced_dance_club/ | https://github.com/candlestixxx/crowdsourced_dance_club.git | 0a18ce2 |
 | 18 | Prank-Deck-AI | Prank-Deck-AI/ | https://github.com/candlestixxx/prank-deck-ai.git | a85b2b5 |
 | 19 | bobgui | bobgui/ | https://github.com/candlestixxx/bobgui.git | 9bea319 |
-| 20 | hyperharness | hyperharness/ | https://github.com/candlestixxx/hyperharness.git | 9a43bde |
-| 21 | aicrm | aicrm/ | https://github.com/candlestixxx/aicrm.git | e0c4b78 |
+| 20 | hyperharness | hyperharness/ | https://github.com/candlestixxx/hyperharness.git | 50c8826 |
+| 21 | aicrm | aicrm/ | https://github.com/candlestixxx/aicrm.git | 899c8e1 |
 | 22 | psychedelic-speech-engine | psychedelic-speech-engine/ | https://github.com/candlestixxx/psychedelic-speech-engine.git | 86502a3 |
 | 23 | HyperNexus | HyperNexus/ | https://github.com/HyperNexusllc/HyperNexus.git | 4fe0e1c |
 | 24 | suno-api | suno-api/ | https://github.com/gcui-art/suno-api.git | a2e6a82 |
