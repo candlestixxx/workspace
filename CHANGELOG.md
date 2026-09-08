@@ -1,5 +1,32 @@
 # Changelog
 
+## [1.0.42] - 2026-09-08
+
+### Repository Synchronization & Intelligent Merge v1.0.42 (candlestixxx scope)
+
+#### Forward Merges (Feature → Main)
+| # | Submodule | Feature Branch | Key Changes |
+|---|-----------|---------------|-------------|
+| 1 | brokeragentworkflow | jules-2876471418335953163 | Broker agent Celery scheduled tasks (`tasks.py`) ⚠️ resolved |
+| 2 | brokeragentworkflow | jules-2988077965038434350 | v0.46 Final Code Hardening, v0.47 Agent Context Sync, v0.48 Pre-Production Finalization (admin router, NavBar camera, Phase renumber) ⚠️ resolved |
+| 3 | excel-legacy-leadgen | jules-3034080756571898596 | Next.js UI mockups + Phase 3 transition (v1.7.0); gitignored runtime `next.log` |
+| 4 | forclosureworkflow | feat/s3-document-upload | Data quality dashboard, real-time voice monitoring, S3 uploads, socket auth fix |
+| 5 | re-agent-workflow-media-1 | jules-10626851319290360880 | v2.14 Phase 12 Resiliency/DLQ + v2.15 Advanced Video Assembly |
+| 6 | skillzhub | main-16382952880673608065 | Edge Runtime auth/me + WebCrypto API-key hash offload + Phase 8 Go porting docs |
+| 7 | skillzhub | dependabot/npm_and_yarn-895d47d4bb | Security bump (npm_and_yarn group, 4 updates) |
+| 8 | techno_platform_detroit | jules-10778029499852904827 | Direct Messaging v5.1 backend schema/API + v5.2 web inbox + v5.3 React Native inbox |
+| 9 | psychedelic-speech-engine | feature/…14401920910254360046 | v1.5.0 — Gradio UI, Docker/Docker Compose, audio-reactive `--visual-mode` (showwaves/showcqt) ⚠️ resolved (merged into advanced main; ui.py rewired to auto_run.py CLI; docker-compose fixed) |
+
+#### Skipped (redundant / regressive / competing)
+- aicrm `jules-3434254056450392757`: Phase 2/3 (ContactManager, enrichment, contacts API) **already in main**; branch is 15 commits behind and would regress docs/schema.
+- realestateprototype `jules-588126708554458831`: Next.js 14 migration deletes the working Vite app (4065 lines) — stale rebase artifact.
+- socialmediacontentplanner `jules-6504094641305471454`: repository-zero maintenance sweep (11.9k-line lockfile churn).
+- Prank-Deck-AI `init-documentation` / `init-safe-architecture` / `jules-99569`: competing AI branches; both delete `core-orchestrator` (or restructure to `client-app/`). Core features already integrated in main (v1.0.39 visualizer + v1.2.0 14 voice effects).
+
+#### Upstream Sync
+- `crowdsourced_dance_club` ↔ robertpelloni: already synced (fork 5 ahead, 0 behind).
+- `bobgui` → bgtk (1472 behind) and `hyperharness` (146 behind): upstream fetch still blocked (`invalid index-pack output`, ~870MB/1.1GB repos).
+
 ## [1.0.41] - 2026-09-01
 
 ### Repository Synchronization & Intelligent Merge v1.0.41 (candlestixxx scope)

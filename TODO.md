@@ -27,6 +27,7 @@
 - [x] Push aicrm MLS/Realcomp status sync + property creation fields (v1.0.40).
 - [x] Commit aicrm help center / onboarding tour / color wheel WIP (v1.0.39).
 - [x] Forward-merge brokeragentworkflow (Broker Workflow Phase 46 + Native Plugin v0.45.0), p2p interactive maps, + 4 docs/maintenance branches; commit aicrm Inngest/agents + pse batch_links + realestatecrm command palette (v1.0.41).
+- [x] Forward-merge 9 branches across 7 submodules (brokeragentworkflow v0.46-0.48, excel Next.js UI, forclosureworkflow dashboard/S3, re-agent v2.14-2.15, skillzhub Edge/WebCrypto + dependabot, techno DM v5.1-5.3, pse v1.5.0 Gradio/Docker/audio-reactive); skip aicrm Phase2/3 (already in main), realestateprototype Next.js migration, socialmediacontentplanner lockfile churn, Prank-Deck-AI competing branches (v1.0.42).
 
 ## Long Term
 - [ ] Implement automated "Intelligent Merge" tool for future syncs.
