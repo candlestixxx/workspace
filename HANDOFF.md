@@ -51,10 +51,15 @@ Executed the repository synchronization & intelligent merge protocol (Step-2 sco
 ## Pointer Updates
 Recorded 7 in root: brokeragentworkflow, excel-legacy-leadgen, forclosureworkflow, re-agent-workflow-media-1, skillzhub, techno_platform_detroit, psychedelic-speech-engine.
 
-## Build Verification (to run after commit)
-- brokeragentworkflow: python `py_compile` (main.py) — pending.
-- psychedelic-speech-engine: `py_compile` ✅ (app.py, auto_run.py, ui.py all compile).
-- techno_platform_detroit / skillzhub / forclosureworkflow / re-agent-workflow-media-1: Next.js/Vite builds — pending (see notes).
+## Build Verification
+- brokeragentworkflow: ✅ Python `py_compile` (main.py, routers/admin.py) + Vue frontend `vite build` (after `npm install` for Capacitor ^8 deps).
+- forclosureworkflow: ✅ `next build` (after `npm install` + `npx prisma generate`).
+- skillzhub: ✅ `next build`.
+- techno_platform_detroit: ✅ `next build` (after `npx prisma generate` for new DM Conversation model).
+- re-agent-workflow-media-1: ✅ root `tsc --noEmit` (after `npm install` socket.io/redis); frontend build deferred (frontend/node_modules absent).
+- psychedelic-speech-engine: ✅ `py_compile` (app.py, auto_run.py, ui.py).
+- excel-legacy-leadgen: ⚠️ deferred — `ui-app` is a fresh Next.js scaffold; `node_modules` absent (needs `npm install` in `ui-app/`).
+- No built binaries were cleaned/purged.
 
 ## Notes for Next Session
 - brokeragentworkflow now spans Phases 45–49; watch for future phase renumber collisions (recurring pattern).
