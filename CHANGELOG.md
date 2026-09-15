@@ -1,5 +1,29 @@
 # Changelog
 
+## [1.0.43] - 2026-09-15
+
+### Repository Synchronization & Intelligent Merge v1.0.43 (candlestixxx scope)
+
+#### Forward Merges (Feature → Main)
+| # | Submodule | Feature Branch | Key Changes |
+|---|-----------|---------------|-------------|
+| 1 | skillzhub | main-16382952880673608065 | FFprobe metadata extraction (Go microservice) |
+| 2 | skillzhub | dependabot ea5d8ae93f | @vitest/mocker bump |
+| 3 | techno_platform_detroit | jules-10778029499852904827 | Event Reviews + JWT handling (v5.4.0) |
+| 4 | socialmediacontentplanner | jules-6504094641305471454 | Decoupled background worker orchestration (v6.0.2) |
+| 5 | psychedelic-speech-engine | feature/…-14401920910254360046 | BPM-synced showwaves/showcqt shaders (v1.6.0) ⚠️ conflicts resolved |
+
+#### Submodule Preservation
+- **suno-api**: forked `gcui-art/suno-api` → `candlestixxx/suno-api`; pushed 5 local Suno-API fix commits (chirp-hawk v6, hCaptcha/Turnstile, media_urls) → f609d44; repointed submodule.
+- **realestatecrm**: committed foreclosure checkpoint script → 4d5abb1.
+- **aicrm**: record pointer → b724cca.
+
+#### Skipped (redundant / regressive)
+- aicrm `jules-3434254056450392757` (Phase 2/3/4 dup — already in main via other paths).
+- realestateprototype `jules-588126708554458831` (stale nextjs-migration dup, would delete code).
+- brokeragentworkflow `jules-2988077965038434350` + realestateleadcaller `jules-2713423736642792031` (docs-only).
+- Prank-Deck-AI branches (already integrated/regressive).
+
 ## [1.0.42] - 2026-09-08
 
 ### Repository Synchronization & Intelligent Merge v1.0.42 (candlestixxx scope)

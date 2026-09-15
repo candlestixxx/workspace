@@ -9,12 +9,12 @@
 | 5 | leadG | leadG/ | https://github.com/candlestixxx/leadG.git | dc3589f |
 | 6 | p2p_service_marketplace | p2p_service_marketplace/ | https://github.com/candlestixxx/p2p_service_marketplace.git | 115aaa3 |
 | 7 | re-agent-workflow-media-1 | re-agent-workflow-media-1/ | https://github.com/candlestixxx/re-agent-workflow-media-1 | 49bb626 |
-| 8 | realestatecrm | realestatecrm/ | https://github.com/candlestixxx/realestatecrm.git | 60aa5fc |
+| 8 | realestatecrm | realestatecrm/ | https://github.com/candlestixxx/realestatecrm.git | 4d5abb1 |
 | 9 | realestateleadcaller | realestateleadcaller/ | https://github.com/candlestixxx/realestateleadcaller.git | 93298b1 |
 | 10 | realestateprototype | realestateprototype/ | https://github.com/candlestixxx/realestateprototype.git | 7c40d91 |
-| 11 | skillzhub | skillzhub/ | https://github.com/candlestixxx/skillzhub.git | 9afe515 |
-| 12 | socialmediacontentplanner | socialmediacontentplanner/ | https://github.com/candlestixxx/socialmediacontentplanner.git | 9a54bba |
-| 13 | techno_platform_detroit | techno_platform_detroit/ | https://github.com/candlestixxx/techno_platform_detroit.git | 827d3f7 |
+| 11 | skillzhub | skillzhub/ | https://github.com/candlestixxx/skillzhub.git | 9e1e0ea |
+| 12 | socialmediacontentplanner | socialmediacontentplanner/ | https://github.com/candlestixxx/socialmediacontentplanner.git | 4e5ca53 |
+| 13 | techno_platform_detroit | techno_platform_detroit/ | https://github.com/candlestixxx/techno_platform_detroit.git | 0f2b67b |
 | 14 | theta-data-api | theta-data-api/ | https://github.com/candlestixxx/theta-data-api.git | ef15c6f |
 | 15 | ultratrader | ultratrader/ | https://github.com/candlestixxx/ultratrader.git | 89e877e |
 | 16 | LegacyLeads | LegacyLeads/ | https://github.com/candlestixxx/LegacyLeads.git | a76c08e |
@@ -22,15 +22,15 @@
 | 18 | Prank-Deck-AI | Prank-Deck-AI/ | https://github.com/candlestixxx/prank-deck-ai.git | a85b2b5 |
 | 19 | bobgui | bobgui/ | https://github.com/candlestixxx/bobgui.git | 9bea319 |
 | 20 | hyperharness | hyperharness/ | https://github.com/candlestixxx/hyperharness.git | 50c8826 |
-| 21 | aicrm | aicrm/ | https://github.com/candlestixxx/aicrm.git | 899c8e1 |
-| 22 | psychedelic-speech-engine | psychedelic-speech-engine/ | https://github.com/candlestixxx/psychedelic-speech-engine.git | 86502a3 |
+| 21 | aicrm | aicrm/ | https://github.com/candlestixxx/aicrm.git | b724cca |
+| 22 | psychedelic-speech-engine | psychedelic-speech-engine/ | https://github.com/candlestixxx/psychedelic-speech-engine.git | fdea36a |
 | 23 | HyperNexus | HyperNexus/ | https://github.com/HyperNexusllc/HyperNexus.git | 4fe0e1c |
-| 24 | suno-api | suno-api/ | https://github.com/gcui-art/suno-api.git | a2e6a82 |
+| 24 | suno-api | suno-api/ | https://github.com/candlestixxx/suno-api.git | f609d44 |
 
 **Notes:**
-- 24 submodules: 22 under `candlestixxx` + 2 external (`HyperNexusllc/HyperNexus` — aicrm orchestration kernel; `gcui-art/suno-api` — local Suno music backend for psychedelic-speech-engine).
+- 24 submodules: 23 under `candlestixxx` + 1 external (`HyperNexusllc/HyperNexus` — aicrm orchestration kernel).
 - `crowdsourced_dance_club` has a nested submodule `external/auto_dj_script` (robertpelloni/auto_dj_script @ a47e1d3).
-- **suno-api local WIP**: submodule working tree is at `af3c4b1` (3 local commits — hCaptcha→Turnstile detection, media_urls fix, 2Captcha server-side solve). These are NOT pushed (external `gcui-art` repo, no push access), so the root pointer stays at `a2e6a82` (origin/main). Preserve locally.
+- **suno-api**: forked from `gcui-art/suno-api` → `candlestixxx/suno-api` (v1.0.43) to preserve 5 local Suno-API fix commits (chirp-hawk v6, hCaptcha/Turnstile, media_urls, status=complete wait).
 - **robertpelloni upstream tracking** (Step-2 scope):
   - `bobgui` → upstream `robertpelloni/bgtk` (renamed from bobgui); fork is **1472 commits behind** — full fetch fails (`invalid index-pack output`, ~870MB repo).
   - `hyperharness` → upstream `robertpelloni/hyperharness`; fork is **146 commits behind** — full/deepen fetch fails (~1.1GB repo, 34 nested submodules).
@@ -41,4 +41,4 @@
 
 Root remote: `https://github.com/candlestixxx/workspace.git` (main branch)
 
-**Last verified:** 2026-09-08 (v1.0.42) — 24 active submodules.
+**Last verified:** 2026-09-15 (v1.0.43) — 24 active submodules.
