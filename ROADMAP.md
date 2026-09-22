@@ -10,6 +10,7 @@
 - Conflict resolution and feature preservation.
 
 ## Phase 3: Build & Deployment Automation (In Progress)
+- ⚠️ Disk at 100% (2.8GB free) as of v1.0.44 — full fetch/build deferred until disk is freed.
 - [x] Global versioning and changelog tracking (v1.0.23).
 - [x] Submodule structural map maintained.
 - [x] Feature branch divergence tracking and reconciliation across 24 submodules.

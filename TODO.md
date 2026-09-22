@@ -1,6 +1,8 @@
 # Workspace TODO
 
 ## High Priority
+- [x] v1.0.44: commit realestatecrm MyPlus Neighborhood → Lofty pipeline scripts (`b5efa0f`); record stale pointers (psychedelic-speech-engine `b5fa4d4`, suno-api `a5d6990`); push root + realestatecrm. Full fetch deferred (disk 100%, 2.8GB free).
+- [ ] **Free up disk** before any full fetch/build (psychedelic-speech-engine 9.1GB working tree is top candidate).
 - [x] Add all missing repos as submodules (20: Prank-Deck-AI, bobgui, hyperharness added v1.0.19).
 - [x] Execute forward merge cycle v1.0.23: 12 feature branches across 11 submodules.
 - [x] Execute reverse merge cycle v1.0.23: 35+ feature branches across 14 submodules.
