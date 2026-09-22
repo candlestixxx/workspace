@@ -1,43 +1,36 @@
-# Session Handoff — September 15, 2026 (v1.0.43)
+# Session Handoff — September 21, 2026 (v1.0.44)
 
 ## Summary
 
-Executed the repository synchronization & intelligent merge protocol (Step-2 scope = `github.com/candlestixxx`) across 24 submodules.
+Ran the repository synchronization & intelligent merge protocol (Step-2 scope = `github.com/candlestixxx`). **Disk was at 100% (2.8GB free)**, so the operation was deliberately scoped to safe retention + pointer reconciliation instead of a blanket `git fetch --all --tags`.
 
-## Fetch & Sync
-- Root: not a fork — no upstream parent. Fetched clean (12GB disk free — skipped large upstream fetches for bgtk/hyperharness/HyperNexus to avoid disk exhaustion).
-- All candlestixxx submodules fetched.
+## Critical Constraint
+- **Disk: 100% used, 2.8GB free** (C: 476G, 473G used). Do NOT run full fetches of large repos:
+  - `psychedelic-speech-engine` working tree ~9.1GB
+  - `.git` (root) ~4.8GB
+  - `HyperNexus` ~2.2GB, `realestatecrm` ~2.1GB, `aicrm` ~1.8GB
+  - `hyperharness` ~515M (upstream ~1.1GB), `bobgui` ~175M (upstream bgtk ~870MB)
 
-## Forward Merges (Feature → Main)
-| Submodule | Branch | Result |
-|-----------|--------|--------|
-| skillzhub | main-16382952880673608065 | ✅ FFprobe Go microservice (worker-go/) |
-| skillzhub | dependabot ea5d8ae93f | ✅ @vitest/mocker bump |
-| techno_platform_detroit | jules-10778029499852904827 | ✅ Event Reviews + JWT (v5.4.0) |
-| socialmediacontentplanner | jules-6504094641305471454 | ✅ Decoupled background worker (v6.0.2) |
-| psychedelic-speech-engine | feature/…-14401920910254360046 | ✅ BPM-synced shaders (v1.6.0) — resolved conflicts by re-applying detect_bpm() + draw_rate onto main |
+## Completed
+1. **Retention — realestatecrm**: committed MyPlus "Neighborhood Data" → Lofty import/finalize pipeline scripts to `scripts/LOFTY/` → new HEAD `b5efa0f`:
+   - `import-neighborhood-list.mjs` (generic importer, `--skip-no-premium` filter)
+   - `finalize-neighborhood-list.mjs` (notes + hashtags + segment)
+   - `import-neighborhood-leads.mjs`, `add-neighborhood-notes-tags.mjs`, `assign-neighborhood-segment.mjs` (ESTATES LANE 1 run)
+   - `Lead/Delivery/BackUp/Script.mjs` (original MyPlus listings importer)
+2. **Pointer reconciliation** (superproject gitlinks recorded):
+   - `psychedelic-speech-engine`: `fdea36a` → `b5fa4d4`
+   - `suno-api`: `ef2b7cd` → `a5d6990`
+   - `realestatecrm`: `4d5abb1` → `b5efa0f`
+3. **Docs/version**: VERSION.md → `1.0.44`; CHANGELOG.md entry added; STRUCTURAL_MAP.md commits + date updated; HANDOFF.md regenerated.
 
-## Submodule Preservation
-- **suno-api**: forked `gcui-art/suno-api` → `candlestixxx/suno-api`, pushed 5 local Suno-API fix commits (chirp-hawk v6, hCaptcha→Turnstile, 2Captcha server-side, media_urls, status=complete wait) → f609d44; repointed `.gitmodules` + `git submodule sync`.
-- **realestatecrm**: committed foreclosure checkpoint script → 4d5abb1.
-- **aicrm**: pointer → b724cca (already pushed).
-
-## Skipped (documented)
-- aicrm `jules-3434254056450392757` — Phase 2/3/4 dup (already in main via other commits; Phase 2 commit also deletes docs).
-- realestateprototype `jules-588126708554458831` — 5× duplicate "nextjs migration" commits (regressive).
-- brokeragentworkflow `jules-2988077965038434350`, realestateleadcaller `jules-2713423736642792031` — docs-only.
-- Prank-Deck-AI `init-documentation`/`init-safe-architecture`/`jules-99569` — already integrated/regressive.
-
-## Pointer Updates
-Recorded 7: aicrm, psychedelic-speech-engine, realestatecrm, skillzhub, socialmediacontentplanner, suno-api, techno_platform_detroit.
-
-## Left Untouched (intentional)
-- `HyperNexus` runtime state; `realestateleadcaller` `.hypercode/` + session files; `realestateprototype` `.hypercode*/` session files.
+## Deferred / Left Untouched (intentional)
+- **Full fetch**: not run — disk risk (see above).
+- **Feature-branch merge cycle**: no new unique feature commits detected on tracked branches beyond the v1.0.43 reconciliation (branches inspected read-only via cached remote refs). Skipped re-merging already-reconciled/regressive branches (aicrm `jules-3434…`, realestateprototype `jules-5881…`, brokeragentworkflow `jules-2988…`, realestateleadcaller `jules-2713…`, Prank-Deck-AI init/docs branches).
+- **Session/runtime state** left untracked (not gitignored, not committed): `realestatecrm/.hypercode/`, `realestateleadcaller/.hypercode* + .hypernexus* + data/`, `realestateprototype/.hypercode*`, `HyperNexus` runtime (`debate_history.db`, `swarm_state.json`, `packages/tormentnexus/bin/`), `skillzhub/worker-go/skillzhub-worker.exe`, Prank-Deck-AI deleted `dist/` files.
+- **Push/build**: not executed this session (pending explicit approval + disk headroom).
 
 ## Notes for Next Session
-- **Disk at 98% (12GB free)** — avoid full fetches of bgtk (~870MB), hyperharness (~1.1GB), HyperNexus (~1.9GB). robertpelloni upstream sync still blocked for bobgui→bgtk (fetch fails) and hyperharness (deepen failed with "No space left on device").
-- `techno_platform_detroit` still tracks `prisma/dev.db` (binary SQLite) — pre-existing; consider removing + gitignoring.
-- suno-api fork commits include `next-3010.log` + `create_debug.png` (junk artifacts) — consider cleaning later.
-
-## Build Verification
-- psychedelic-speech-engine: `py_compile app.py` ✅
+- **Free up disk before any full fetch** — this is now the #1 blocker. Candidates: prune `psychedelic-speech-engine` (9.1GB working tree, likely includes venvs/artifacts), `HyperNexus` runtime, old `.next`/`dist` build outputs.
+- `realestatecrm` is now **1 local commit ahead** of `origin/main` (`b5efa0f`) — push when ready.
+- Superproject has staged-but-not-yet-committed pointer updates; commit + push pending.
+- `suno-api` STRUCTURAL_MAP entry was corrected to the actual gitlink (`a5d6990`, previously mis-recorded as `f609d44`).

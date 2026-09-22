@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.0.44] - 2026-09-21
+
+### Repository Synchronization & Intelligent Merge v1.0.44 (candlestixxx scope)
+
+#### Retention & Pointer Reconciliation
+- **realestatecrm**: committed MyPlus Neighborhood → Lofty import + finalize pipeline scripts → `b5efa0f`.
+- **psychedelic-speech-engine**: recorded submodule pointer → `b5fa4d4`.
+- **suno-api**: recorded submodule pointer → `a5d6990`.
+
+#### Deferred (disk-constrained — 100% used, 2.8GB free)
+- Full `git fetch --all --tags` deferred across submodules; large repos not re-fetched (bgtk ~870MB, hyperharness ~1.1GB, HyperNexus ~1.9GB, psychedelic-speech-engine 9.1GB working tree).
+- Feature-branch merge cycle: no new unique feature commits detected on tracked branches beyond the v1.0.43 reconciliation. Untracked session/runtime state left intentionally untouched.
+
 ## [1.0.43] - 2026-09-15
 
 ### Repository Synchronization & Intelligent Merge v1.0.43 (candlestixxx scope)

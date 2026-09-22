@@ -9,7 +9,7 @@
 | 5 | leadG | leadG/ | https://github.com/candlestixxx/leadG.git | dc3589f |
 | 6 | p2p_service_marketplace | p2p_service_marketplace/ | https://github.com/candlestixxx/p2p_service_marketplace.git | 115aaa3 |
 | 7 | re-agent-workflow-media-1 | re-agent-workflow-media-1/ | https://github.com/candlestixxx/re-agent-workflow-media-1 | 49bb626 |
-| 8 | realestatecrm | realestatecrm/ | https://github.com/candlestixxx/realestatecrm.git | 4d5abb1 |
+| 8 | realestatecrm | realestatecrm/ | https://github.com/candlestixxx/realestatecrm.git | b5efa0f |
 | 9 | realestateleadcaller | realestateleadcaller/ | https://github.com/candlestixxx/realestateleadcaller.git | 93298b1 |
 | 10 | realestateprototype | realestateprototype/ | https://github.com/candlestixxx/realestateprototype.git | 7c40d91 |
 | 11 | skillzhub | skillzhub/ | https://github.com/candlestixxx/skillzhub.git | 9e1e0ea |
@@ -23,9 +23,9 @@
 | 19 | bobgui | bobgui/ | https://github.com/candlestixxx/bobgui.git | 9bea319 |
 | 20 | hyperharness | hyperharness/ | https://github.com/candlestixxx/hyperharness.git | 50c8826 |
 | 21 | aicrm | aicrm/ | https://github.com/candlestixxx/aicrm.git | b724cca |
-| 22 | psychedelic-speech-engine | psychedelic-speech-engine/ | https://github.com/candlestixxx/psychedelic-speech-engine.git | fdea36a |
+| 22 | psychedelic-speech-engine | psychedelic-speech-engine/ | https://github.com/candlestixxx/psychedelic-speech-engine.git | b5fa4d4 |
 | 23 | HyperNexus | HyperNexus/ | https://github.com/HyperNexusllc/HyperNexus.git | 4fe0e1c |
-| 24 | suno-api | suno-api/ | https://github.com/candlestixxx/suno-api.git | f609d44 |
+| 24 | suno-api | suno-api/ | https://github.com/candlestixxx/suno-api.git | a5d6990 |
 
 **Notes:**
 - 24 submodules: 23 under `candlestixxx` + 1 external (`HyperNexusllc/HyperNexus` — aicrm orchestration kernel).
@@ -41,4 +41,4 @@
 
 Root remote: `https://github.com/candlestixxx/workspace.git` (main branch)
 
-**Last verified:** 2026-09-15 (v1.0.43) — 24 active submodules.
+**Last verified:** 2026-09-21 (v1.0.44) — 24 active submodules.
