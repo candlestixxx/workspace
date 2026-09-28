@@ -1,15 +1,16 @@
 # Workspace TODO
 
 ## High Priority
+- [x] v1.0.45: verified all 24 submodules at latest origin commit; disk freed (22GB); no new feature merges; docs + push.
 - [x] v1.0.44: commit realestatecrm MyPlus Neighborhood → Lofty pipeline scripts (`b5efa0f`); record stale pointers (psychedelic-speech-engine `b5fa4d4`, suno-api `a5d6990`); push root + realestatecrm. Full fetch deferred (disk 100%, 2.8GB free).
-- [ ] **Free up disk** before any full fetch/build (psychedelic-speech-engine 9.1GB working tree is top candidate).
+- [x] Free up disk (22GB free as of v1.0.45).
 - [x] Add all missing repos as submodules (20: Prank-Deck-AI, bobgui, hyperharness added v1.0.19).
 - [x] Execute forward merge cycle v1.0.23: 12 feature branches across 11 submodules.
 - [x] Execute reverse merge cycle v1.0.23: 35+ feature branches across 14 submodules.
 - [x] Recover hyperharness from broken state (deinit + shallow clone, v1.0.23).
 - [x] Create missing documentation: VISION.md, MEMORY.md, DEPLOY.md, IDEAS.md (v1.0.23).
 - [x] Commit and push root repo changes (documentation, submodule pointers) — v1.0.37.
-- [ ] **Resolve large-repo fetch** (`invalid index-pack output`) to complete robertpelloni upstream merges for bobgui→bgtk (~870MB, 1472 behind) and hyperharness (~1.1GB, 146 behind).
+- [ ] **Resolve large-repo fetch** (`invalid index-pack output`) — persists in v1.0.45 even with 22GB free (network/proxy, not disk). Blocks robertpelloni upstream merges for bobgui→bgtk (1472 behind) and hyperharness (146 behind).
 
 ## Maintenance
 - [x] Review root execution scripts — none present at root level.
@@ -30,7 +31,7 @@
 - [x] Commit aicrm help center / onboarding tour / color wheel WIP (v1.0.39).
 - [x] Forward-merge brokeragentworkflow (Broker Workflow Phase 46 + Native Plugin v0.45.0), p2p interactive maps, + 4 docs/maintenance branches; commit aicrm Inngest/agents + pse batch_links + realestatecrm command palette (v1.0.41).
 - [x] Forward-merge skillzhub FFprobe Go + dependabot, techno_platform_detroit Event Reviews, socialmediacontentplanner worker, pse BPM shaders; fork suno-api → candlestixxx to preserve 5 Suno fixes (v1.0.43).
-- [ ] Free disk space (~12GB left) before attempting bgtk/hyperharness robertpelloni upstream syncs.
+- [x] Free disk space (22GB free as of v1.0.45); bgtk/hyperharness sync still blocked by fetch error.
 - [x] Forward-merge 9 branches across 7 submodules (brokeragentworkflow v0.46-0.48, excel Next.js UI, forclosureworkflow dashboard/S3, re-agent v2.14-2.15, skillzhub Edge/WebCrypto + dependabot, techno DM v5.1-5.3, pse v1.5.0 Gradio/Docker/audio-reactive); skip aicrm Phase2/3 (already in main), realestateprototype Next.js migration, socialmediacontentplanner lockfile churn, Prank-Deck-AI competing branches (v1.0.42).
 
 ## Long Term

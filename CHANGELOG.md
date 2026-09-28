@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.0.45] - 2026-09-28
+
+### Repository Synchronization & Intelligent Merge v1.0.45 (candlestixxx scope)
+
+#### Verification & Maintenance
+- **Disk blocker resolved:** 22GB free (was 2.8GB at 100% in v1.0.44).
+- **Fetch:** root + 22/24 submodules fetched cleanly. All 24 submodules confirmed at latest origin tracking commit (0 ahead / 0 behind).
+- **Feature-branch scan:** no new unique feature/UI commits beyond the v1.0.44 reconciliation. Only new remote branch is skillzhub dependabot `npm_and_yarn-5fa4c4e860` (routine 2-package dependency bump — left unmerged, consistent with lockfile-churn skips).
+
+#### Blocked / Deferred
+- **Large-repo fetch still fails** (network, not disk): `HyperNexus` (~1.9GB) and `bobgui`→`robertpelloni/bgtk` upstream (~870MB) both return `fetch-pack: invalid index-pack output`.
+- **Upstream fork drift unchanged:** bobgui 1472 behind, hyperharness 146 behind, crowdsourced_dance_club synced (0 behind).
+- **Push:** attempted this session (see HANDOFF.md for outcome).
+
 ## [1.0.44] - 2026-09-21
 
 ### Repository Synchronization & Intelligent Merge v1.0.44 (candlestixxx scope)

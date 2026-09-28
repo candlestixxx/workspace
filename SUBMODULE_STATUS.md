@@ -1,20 +1,30 @@
-024f390 brokeragentworkflow (heads/main)
-e62c3d0 excel-legacy-leadgen (heads/master)
-2ce2bab explorerexedecompiled (heads/main)
-51fea2c forclosureworkflow (heads/main)
-8418f0d leadG (heads/main)
-97c8077 p2p_service_marketplace (heads/main)
-e6fe336 re-agent-workflow-media-1 (heads/main)
-c4cd342 realestatecrm (heads/main)
-e5d5217 realestateleadcaller (heads/main)
-87a5570 realestateprototype (heads/master)
-eeb7d2f skillzhub (heads/main)
-b82dcac socialmediacontentplanner (heads/main)
-9ef1d14 techno_platform_detroit (heads/main)
-1110e9b theta-data-api (heads/main)
-bdd0ff8 ultratrader (heads/master)
-6b7bd21 LegacyLeads (heads/main)
-b29b0b4 crowdsourced_dance_club (heads/main)
-19de980 Prank-Deck-AI (heads/main)
-e43bc6f51a bobgui (heads/main)
-9a43bde hyperharness (heads/main)
+# Submodule Status Snapshot — v1.0.45 (2026-09-28)
+
+Auto-generated from `git submodule status`. `STRUCTURAL_MAP.md` is the canonical structural map.
+
+| Submodule | Commit | Branch |
+|-----------|--------|--------|
+| HyperNexus | 4fe0e1c | v1.0.1 |
+| LegacyLeads | a76c08e | jules-initial-setup-9943991237688238805 |
+| Prank-Deck-AI | a85b2b5 | main |
+| aicrm | b724cca | main |
+| bobgui | 9bea319 | main |
+| brokeragentworkflow | 2382d99 | main |
+| crowdsourced_dance_club | 0a18ce2 | main |
+| excel-legacy-leadgen | d271c64 | master |
+| explorerexedecompiled | 31a4794 | main |
+| forclosureworkflow | aaa3ff7 | main |
+| hyperharness | 50c8826 | main |
+| leadG | dc3589f | main |
+| p2p_service_marketplace | 115aaa3 | main |
+| psychedelic-speech-engine | b5fa4d4 | main |
+| re-agent-workflow-media-1 | 49bb626 | main |
+| realestatecrm | b5efa0f | main |
+| realestateleadcaller | 93298b1 | main |
+| realestateprototype | 7c40d91 | main |
+| skillzhub | 9e1e0ea | main |
+| socialmediacontentplanner | 4e5ca53 | main |
+| suno-api | a5d6990 | main |
+| techno_platform_detroit | 0f2b67b | main |
+| theta-data-api | ef15c6f | main |
+| ultratrader | 89e877e | master |

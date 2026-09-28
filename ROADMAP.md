@@ -10,7 +10,7 @@
 - Conflict resolution and feature preservation.
 
 ## Phase 3: Build & Deployment Automation (In Progress)
-- ⚠️ Disk at 100% (2.8GB free) as of v1.0.44 — full fetch/build deferred until disk is freed.
+- ✅ Disk freed to 22GB as of v1.0.45 — full fetch re-attempted; large-repo fetch (bgtk/HyperNexus) still fails with "invalid index-pack output" (network, not disk).
 - [x] Global versioning and changelog tracking (v1.0.23).
 - [x] Submodule structural map maintained.
 - [x] Feature branch divergence tracking and reconciliation across 24 submodules.
@@ -37,6 +37,6 @@
 - [ ] Standardize CI/CD across all 24 submodules.
 - [ ] Schedule periodic reconciliation (weekly automated check).
 - [ ] Monitor hyperharness and bobgui for upstream robertpelloni changes.
-- [ ] **Blocked:** complete upstream merge for bobgui→bgtk (1472 behind) and hyperharness (146 behind) — large-repo fetch fails (`invalid index-pack output`); need LFS/partial-clone fix (v1.0.36).
+- [ ] **Blocked:** complete upstream merge for bobgui→bgtk (1472 behind) and hyperharness (146 behind) — large-repo fetch still fails (`invalid index-pack output`) even with 22GB free (v1.0.45); need LFS/partial-clone/proxy fix.
 - [ ] Consider sparse checkout optimization for contributors needing only specific submodules.
 - [ ] Explore cross-submodule integration layer (message bus between real estate projects).

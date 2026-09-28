@@ -41,4 +41,4 @@
 
 Root remote: `https://github.com/candlestixxx/workspace.git` (main branch)
 
-**Last verified:** 2026-09-21 (v1.0.44) — 24 active submodules.
+**Last verified:** 2026-09-28 (v1.0.45) — 24 active submodules; all confirmed at latest origin tracking commit (0 behind). Large-repo fetch (bgtk/HyperNexus) still fails on this machine (network).
