@@ -4,7 +4,7 @@ Auto-generated from `git submodule status`. `STRUCTURAL_MAP.md` is the canonical
 
 | Submodule | Commit | Branch |
 |-----------|--------|--------|
-| HyperNexus | 4fe0e1c | v1.0.1 |
+| HyperNexus | fc731eb | v1.0.4 |
 | LegacyLeads | a76c08e | jules-initial-setup-9943991237688238805 |
 | Prank-Deck-AI | a85b2b5 | main |
 | aicrm | b724cca | main |

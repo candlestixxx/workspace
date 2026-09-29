@@ -24,12 +24,13 @@
 | 20 | hyperharness | hyperharness/ | https://github.com/candlestixxx/hyperharness.git | 50c8826 |
 | 21 | aicrm | aicrm/ | https://github.com/candlestixxx/aicrm.git | b724cca |
 | 22 | psychedelic-speech-engine | psychedelic-speech-engine/ | https://github.com/candlestixxx/psychedelic-speech-engine.git | b5fa4d4 |
-| 23 | HyperNexus | HyperNexus/ | https://github.com/HyperNexusllc/HyperNexus.git | 4fe0e1c |
+| 23 | HyperNexus | HyperNexus/ | https://github.com/HyperNexusllc/HyperNexus.git | fc731eb |
 | 24 | suno-api | suno-api/ | https://github.com/candlestixxx/suno-api.git | a5d6990 |
 
 **Notes:**
 - 24 submodules: 23 under `candlestixxx` + 1 external (`HyperNexusllc/HyperNexus` — aicrm orchestration kernel).
 - `crowdsourced_dance_club` has a nested submodule `external/auto_dj_script` (robertpelloni/auto_dj_script @ a47e1d3).
+- `HyperNexus` (fc731eb, v1.0.4) now has nested submodules: `lumbros.me` (candlestixxx/lumbros.me @ 91b2505, initialized), plus optional uninitialized vendor harnesses `vendor/deepseek-harness` and `vendor/grok-build`.
 - **suno-api**: forked from `gcui-art/suno-api` → `candlestixxx/suno-api` (v1.0.43) to preserve 5 local Suno-API fix commits (chirp-hawk v6, hCaptcha/Turnstile, media_urls, status=complete wait).
 - **robertpelloni upstream tracking** (Step-2 scope):
   - `bobgui` → upstream `robertpelloni/bgtk` (renamed from bobgui); fork is **1472 commits behind** — full fetch fails (`invalid index-pack output`, ~870MB repo).
