@@ -70,3 +70,6 @@
 [submodule "suno-api"]
 	path = suno-api
 	url = https://github.com/candlestixxx/suno-api.git
+[submodule "lumbros.me"]
+	path = lumbros.me
+	url = https://github.com/candlestixxx/lumbros.me.git
