@@ -1,5 +1,34 @@
 # Changelog
 
+## [1.0.46] - 2026-10-07
+
+### Repository Synchronization & Intelligent Merge v1.0.46 (candlestixxx scope)
+
+#### Submodule Fast-Forwards (caught up to origin)
+- aicrm (+17), forclosureworkflow (+20), leadG (+19), re-agent-workflow-media-1 (+10), socialmediacontentplanner (+12), LegacyLeads (+4), realestateleadcaller (+6), realestateprototype (+10).
+
+#### realestatecrm (288 commits + script reorganization)
+- Fast-forwarded 288 commits. Remote reorganized `scripts/LOFTY/` → `scripts/integrations/lofty/` (commit 75a1247, "organize scripts nondestructively").
+- Preserved local MyPlus→Lofty importer improvements (listing agent/office, spouse, mailing-address mapping) and re-applied them at the new path → committed `b967c1c`.
+
+#### Forward Merges (feature → main)
+| Submodule | Branch | Result |
+|-----------|--------|--------|
+| skillzhub | dependabot npm_and_yarn-5fa4c4e860 | ✅ FF — 2-package dependency bump |
+| techno_platform_detroit | jules-10778029499852904827 | ✅ Event Details + Reviews UI (v5.5.0) |
+| p2p_service_marketplace | jules-8999598513845091996 | ✅ docs sync (phase 6) |
+| brokeragentworkflow | jules-2988077965038434350 | ✅ Release v0.49.0 Security Hardening — resolved ROADMAP.md/TODO.md conflicts (Phase 50) |
+
+#### Deferred (conflicts — needs manual resolution, not dropped)
+- brokeragentworkflow `jules-2876471418335953163` (main.py content conflict + instance/app.db binary modify/delete).
+- Prank-Deck-AI `init-documentation-and-ui-enhancement` (v2.0.0 Electron port; conflicts across CHANGELOG/HANDOFF/TODO/VERSION/package.json/VoiceStudio.*), `init-safe-architecture`, `jules-99569`.
+- psychedelic-speech-engine `feature/…14401920910254360046` (v1.7.0 transcript chunking; 38 commits behind main — stale).
+
+#### Blocked / Documented
+- **HyperNexus**: remote (HyperNexusllc/HyperNexus) was force-pushed to unrelated single-commit history `1dc334266` containing invalid Windows path `go/NUL` — merge impossible on Windows. Local left at `fc731eb` (6 commits ahead, retained).
+
+# Changelog
+
 ## [1.0.45] - 2026-09-28
 
 ### Repository Synchronization & Intelligent Merge v1.0.45 (candlestixxx scope)

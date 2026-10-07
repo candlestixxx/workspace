@@ -1,29 +1,45 @@
-# Session Handoff — September 28, 2026 (v1.0.45)
+# Session Handoff — October 7, 2026 (v1.0.46)
 
 ## Summary
+Executed the repository synchronization & intelligent merge protocol (Step-2 scope = `github.com/candlestixxx`) across 25 submodules. Fast-forwarded 8 drifted repos, reconciled `realestatecrm` across a 288-commit script reorganization (preserving local importer work), forward-merged 4 feature branches, and pushed 5 submodules + root.
 
-Ran the repository synchronization & intelligent merge protocol (Step-2 scope = `github.com/candlestixxx`). This was a **verification & maintenance** pass — no new feature/UI commits existed to merge, since v1.0.41–v1.0.44 already reconciled the tree.
+## Submodule Fast-Forwards (caught up to origin/main)
+| Submodule | Commits | New HEAD |
+|-----------|---------|----------|
+| aicrm | +17 | c719013 |
+| forclosureworkflow | +20 | b890e53 |
+| leadG | +19 | 1e14cca |
+| re-agent-workflow-media-1 | +10 | a37c7e9 |
+| socialmediacontentplanner | +12 | cfc7712 |
+| LegacyLeads | +4 | ec79893 |
+| realestateleadcaller | +6 | d42a4a2 |
+| realestateprototype | +10 | 6990db1 |
 
-## Key Finding
-- **Disk blocker from v1.0.44 is resolved:** 22GB free (was 2.8GB at 100%).
-- **All 24 submodules are at their latest origin tracking commit** (0 ahead / 0 behind) — nothing new to pull from `origin`.
-- **No new feature branches** to forward-merge. The only new remote branch is skillzhub dependabot `npm_and_yarn-5fa4c4e860` (routine 2-package dep bump; left unmerged per lockfile-churn policy).
+## realestatecrm (special handling)
+- Was 288 commits behind. Remote reorganized `scripts/LOFTY/` → `scripts/integrations/lofty/` (commit 75a1247).
+- Preserved the uncommitted MyPlus→Lofty importer improvements (listing agent/office, spouse, mailing-address mapping) — re-applied at the new path → committed `b967c1c`.
 
-## Completed
-1. **Fetch:** root + 22/24 submodules fetched cleanly (`git fetch --all --tags`).
-2. **Verification:** every submodule compared against its origin tracking branch → 0 behind.
-3. **Docs/version:** VERSION.md → `1.0.45`; CHANGELOG, ROADMAP, TODO, STRUCTURAL_MAP, SUBMODULE_STATUS updated; this HANDOFF regenerated.
+## Forward Merges (feature → main)
+| Submodule | Branch | Result |
+|-----------|--------|--------|
+| skillzhub | dependabot npm_and_yarn-5fa4c4e860 | ✅ FF (2-package bump) |
+| techno_platform_detroit | jules-10778029499852904827 | ✅ Event Details + Reviews UI (v5.5.0) |
+| p2p_service_marketplace | jules-8999598513845091996 | ✅ docs (phase 6) |
+| brokeragentworkflow | jules-2988077965038434350 | ✅ v0.49.0 Security Hardening — resolved ROADMAP/TODO conflicts (renumbered to Phase 50) |
 
-## Blocked / Left Untouched (intentional)
-- **Large-repo fetch failures persist (network, NOT disk):**
-  - `HyperNexus` (HyperNexusllc, ~1.9GB) → `fetch-pack: invalid index-pack output`
-  - `bobgui` upstream (`robertpelloni/bgtk`, ~870MB) → `fetch-pack: invalid index-pack output`
-  - Retried with `--depth 50` — same failure. Likely proxy/pack-transfer corruption on this machine.
-- **Upstream fork drift unchanged:** bobgui 1472 behind bgtk, hyperharness 146 behind, crowdsourced_dance_club synced (0 behind). Left unmerged (fetch impossible + high-risk 1472-commit merge).
-- **Dirty submodule working trees** left as-is (same set as v1.0.44, intentionally untracked): HyperNexus runtime, Prank-Deck-AI deleted dist, psychedelic-speech-engine deleted rerender.log, realestatecrm/leadcaller/prototype `.hypercode*`/`.hypernexus*`/`data/`, skillzhub worker exe.
-- **`delete_repos.sh`** is untracked + gitignored (destructive leftover); NOT committed or run. `gh` CLI is not installed.
+## Deferred (conflicts — NOT dropped, need manual resolution)
+- **brokeragentworkflow** `jules-2876471418335953163` — `main.py` content conflict + `instance/app.db` binary modify/delete. Merge aborted cleanly.
+- **Prank-Deck-AI** `init-documentation-and-ui-enhancement` (v2.0.0 Electron port) — conflicts in CHANGELOG/HANDOFF/TODO/VERSION/package.json/VoiceStudio.{css,tsx}. Also `init-safe-architecture` and `jules-99569` (ahead 7/3). Merge aborted.
+- **psychedelic-speech-engine** `feature/…14401920910254360046` (v1.7.0 transcript chunking) — 38 commits behind main (stale), not merged.
+
+## Blocked / Documented
+- **HyperNexus** (HyperNexusllc/HyperNexus): remote force-pushed to unrelated single-commit history `1dc334266` containing invalid Windows path `go/NUL`. `git merge --allow-unrelated-histories` fails on Windows (`invalid path 'go/NUL'`). Local retained at `fc731eb` (6 commits ahead). Reconcile from a Linux/macOS machine.
+
+## Pushed
+- 5 submodules: brokeragentworkflow, p2p_service_marketplace, realestatecrm, skillzhub, techno_platform_detroit.
+- Root: (this commit) — 13 submodule pointers advanced + VERSION/CHANGELOG/TODO/STRUCTURAL_MAP/HANDOFF.
 
 ## Notes for Next Session
-- **GitHub credential may be stale** — the stored `gho_` token returned "Bad credentials" via API. Verify `git push` auth before relying on it (run `gh auth login` or re-auth Git Credential Manager).
-- To finish the robertpelloni upstream merges, fix the `invalid index-pack output` fetch failure (try `git -c http.version=HTTP/1.1`, lower `http.postBuffer`, or a different network/proxy).
-- Push status of this session's commit: see final agent report / `git log` ahead count.
+- Disk: ~21GB free. Large-repo fetches (`bgtk` ~870MB, `HyperNexus` ~1.9GB) still fail on this machine (network `invalid index-pack output`).
+- HyperNexus `go/NUL` path is a Linux-side commit artifact; do not attempt Windows checkout/merge until it's renamed upstream or handled via sparse checkout on Linux.
+- Untracked session/memory dirs (`.hypercode/`, `.hypernexus/`, `.jules/`, `data/`) intentionally left un-gitignored per retention directive.

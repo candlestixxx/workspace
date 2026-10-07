@@ -1,6 +1,7 @@
 # Workspace TODO
 
 ## High Priority
+- [x] v1.0.46: fast-forwarded 8 submodules (aicrm/forclosureworkflow/leadG/re-agent-workflow-media-1/socialmediacontentplanner/LegacyLeads/realestateleadcaller/realestateprototype); realestatecrm ff 288 + preserved Script.mjs improvements (b967c1c); forward-merged 4 feature branches (skillzhub dependabot, techno_platform v5.5.0, p2p docs, brokeragentworkflow v0.49.0); HyperNexus blocked (remote force-pushed + invalid go/NUL path); pushed 5 submodules + root.
 - [x] v1.0.45: verified all 24 submodules at latest origin commit; disk freed (22GB); no new feature merges; docs + push.
 - [x] v1.0.44: commit realestatecrm MyPlus Neighborhood → Lofty pipeline scripts (`b5efa0f`); record stale pointers (psychedelic-speech-engine `b5fa4d4`, suno-api `a5d6990`); push root + realestatecrm. Full fetch deferred (disk 100%, 2.8GB free).
 - [x] Free up disk (22GB free as of v1.0.45).
