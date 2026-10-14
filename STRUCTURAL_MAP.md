@@ -5,19 +5,19 @@
 | 1 | brokeragentworkflow | brokeragentworkflow/ | https://github.com/candlestixxx/brokeragentworkflow | 49718ba |
 | 2 | excel-legacy-leadgen | excel-legacy-leadgen/ | https://github.com/candlestixxx/excel-legacy-leadgen.git | d271c64 |
 | 3 | explorerexedecompiled | explorerexedecompiled/ | https://github.com/candlestixxx/explorerexedecompiled.git | 31a4794 |
-| 4 | forclosureworkflow | forclosureworkflow/ | https://github.com/candlestixxx/forclosureworkflow.git | b890e53 |
+| 4 | forclosureworkflow | forclosureworkflow/ | https://github.com/candlestixxx/forclosureworkflow.git | 9fb7d48 |
 | 5 | leadG | leadG/ | https://github.com/candlestixxx/leadG.git | 1e14cca |
 | 6 | p2p_service_marketplace | p2p_service_marketplace/ | https://github.com/candlestixxx/p2p_service_marketplace.git | faf0acb |
-| 7 | re-agent-workflow-media-1 | re-agent-workflow-media-1/ | https://github.com/candlestixxx/re-agent-workflow-media-1 | a37c7e9 |
-| 8 | realestatecrm | realestatecrm/ | https://github.com/candlestixxx/realestatecrm.git | b967c1c |
+| 7 | re-agent-workflow-media-1 | re-agent-workflow-media-1/ | https://github.com/candlestixxx/re-agent-workflow-media-1 | 21c39b5 |
+| 8 | realestatecrm | realestatecrm/ | https://github.com/candlestixxx/realestatecrm.git | 7e75ebb |
 | 9 | realestateleadcaller | realestateleadcaller/ | https://github.com/candlestixxx/realestateleadcaller.git | d42a4a2 |
 | 10 | realestateprototype | realestateprototype/ | https://github.com/candlestixxx/realestateprototype.git | 6990db1 |
-| 11 | skillzhub | skillzhub/ | https://github.com/candlestixxx/skillzhub.git | 92ea2d8 |
-| 12 | socialmediacontentplanner | socialmediacontentplanner/ | https://github.com/candlestixxx/socialmediacontentplanner.git | cfc7712 |
+| 11 | skillzhub | skillzhub/ | https://github.com/candlestixxx/skillzhub.git | b6285f9 |
+| 12 | socialmediacontentplanner | socialmediacontentplanner/ | https://github.com/candlestixxx/socialmediacontentplanner.git | 512d06a |
 | 13 | techno_platform_detroit | techno_platform_detroit/ | https://github.com/candlestixxx/techno_platform_detroit.git | 05fa71e |
 | 14 | theta-data-api | theta-data-api/ | https://github.com/candlestixxx/theta-data-api.git | ef15c6f |
 | 15 | ultratrader | ultratrader/ | https://github.com/candlestixxx/ultratrader.git | 89e877e |
-| 16 | LegacyLeads | LegacyLeads/ | https://github.com/candlestixxx/LegacyLeads.git | ec79893 |
+| 16 | LegacyLeads | LegacyLeads/ | https://github.com/candlestixxx/LegacyLeads.git | 9dbc5f7 |
 | 17 | crowdsourced_dance_club | crowdsourced_dance_club/ | https://github.com/candlestixxx/crowdsourced_dance_club.git | 0a18ce2 |
 | 18 | Prank-Deck-AI | Prank-Deck-AI/ | https://github.com/candlestixxx/prank-deck-ai.git | a85b2b5 |
 | 19 | bobgui | bobgui/ | https://github.com/candlestixxx/bobgui.git | 9bea319 |
@@ -45,4 +45,4 @@
 
 Root remote: `https://github.com/candlestixxx/workspace.git` (main branch)
 
-**Last verified:** 2026-10-07 (v1.0.46) — 25 active submodules; 13 pointers advanced this cycle (8 fast-forwards + 4 forward-merged + realestatecrm re-committed). HyperNexus intentionally pinned at `fc731eb` pending Linux-side reconciliation.
+**Last verified:** 2026-10-14 (v1.0.47) — 25 active submodules; 6 pointers advanced this cycle (5 fast-forwards + 1 dependabot forward-merge). HyperNexus still pinned at `fc731eb` pending Linux-side reconciliation.

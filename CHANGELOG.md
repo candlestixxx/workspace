@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.0.47] - 2026-10-14
+
+### Repository Synchronization & Intelligent Merge v1.0.47 (candlestixxx scope)
+
+#### Submodule Fast-Forwards (caught up to origin/main)
+- **realestatecrm** (+34) — v0.58.36→v0.58.45 (social OAuth wiring, ContentPlanner API integration, Engagement Overview + Content Pipeline, 12 components archived, start-all.bat, help-center/a11y polish).
+- **forclosureworkflow** (+2) — lucide-react bump + start-3002 launcher.
+- **socialmediacontentplanner** (+2) — @langchain/textsplitters removal (pure-JS chunking) + start-api.bat.
+- **LegacyLeads** (+2) — lucide-react bump + @next/swc-win32 + start launcher.
+- **re-agent-workflow-media-1** (+1) — start-3004 launcher.
+
+#### Forward Merge (feature → main)
+| Submodule | Branch | Result |
+|-----------|--------|--------|
+| skillzhub | dependabot npm_and_yarn-83fff1b3d7 | ✅ FF — 8-package dependency bump |
+
+#### Deferred / Blocked (unchanged from v1.0.46)
+- **HyperNexus**: remote force-pushed to unrelated single-commit `1dc334266` with invalid Windows path `go/NUL` — merge impossible on Windows. Local retained at `fc731eb` (6 ahead).
+- brokeragentworkflow `jules-2876…` (main.py + app.db conflicts), Prank-Deck-AI Electron-port branches, psychedelic-speech-engine stale feature branch — all still deferred (conflicts/stale).
+
 ## [1.0.46] - 2026-10-07
 
 ### Repository Synchronization & Intelligent Merge v1.0.46 (candlestixxx scope)

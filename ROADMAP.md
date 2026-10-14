@@ -18,6 +18,7 @@
 - [x] Reverse-merged primary branches into 35+ feature branches (v1.0.23).
 - [x] Forward-merged 7 feature branches across 7 submodules (v1.0.38); skipped 3 redundant/regressive AI branches.
 - [x] Forward-merged 9 feature branches across 7 submodules (v1.0.42) — brokeragentworkflow v0.46-0.48, excel Next.js UI, forclosureworkflow dashboard/S3, re-agent v2.14-2.15, skillzhub Edge/WebCrypto + dependabot, techno DM v5.1-5.3, pse v1.5.0 Gradio/Docker/audio-reactive; skipped 4 redundant/competing branches.
+- [x] v1.0.47: fast-forwarded 5 submodules (realestatecrm +34, forclosureworkflow +2, socialmediacontentplanner +2, LegacyLeads +2, re-agent +1) + forward-merged skillzhub dependabot 8-pkg bump.
 - [x] hyperharness recovery from broken state (v1.0.23).
 - [x] Documentation foundation: VISION.md, MEMORY.md, DEPLOY.md, IDEAS.md created (v1.0.23).
 - [x] Validate all execution scripts across submodules.
