@@ -1,6 +1,7 @@
 # Workspace TODO
 
 ## High Priority
+- [x] v1.0.48: HyperNexus updated to v1.0.21 (go/NUL resolved upstream; local v1.0.3 preserved in local-v1.0.3-work); fast-forwarded 7 submodules (realestatecrm +87, socialmediacontentplanner +11, leadG +10, forclosureworkflow +8, re-agent +6, LegacyLeads +4, explorerexedecompiled +2); pushed root. HyperNexus push still blocked by LFS budget.
 - [x] v1.0.47: fast-forwarded 5 submodules (realestatecrm +34, forclosureworkflow +2, socialmediacontentplanner +2, LegacyLeads +2, re-agent +1); forward-merged skillzhub dependabot (8-pkg bump); HyperNexus still blocked (go/NUL); pushed skillzhub + root.
 - [x] v1.0.46: fast-forwarded 8 submodules (aicrm/forclosureworkflow/leadG/re-agent-workflow-media-1/socialmediacontentplanner/LegacyLeads/realestateleadcaller/realestateprototype); realestatecrm ff 288 + preserved Script.mjs improvements (b967c1c); forward-merged 4 feature branches (skillzhub dependabot, techno_platform v5.5.0, p2p docs, brokeragentworkflow v0.49.0); HyperNexus blocked (remote force-pushed + invalid go/NUL path); pushed 5 submodules + root.
 - [x] v1.0.45: verified all 24 submodules at latest origin commit; disk freed (22GB); no new feature merges; docs + push.

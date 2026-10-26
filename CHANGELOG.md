@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.0.48] - 2026-10-26
+
+### Repository Synchronization & Intelligent Merge v1.0.48 (candlestixxx scope)
+
+#### HyperNexus — resolved (was blocked 2 cycles)
+- **Updated fc731eb (v1.0.3) → 84459808f (v1.0.21)**. Upstream (HyperNexusllc/HyperNexus) removed the invalid `go/NUL` path itself, so the Windows-checkout blocker is gone.
+- Local v1.0.3 work preserved in branch `local-v1.0.3-work` (6 commits, author Robert Pelloni) before resetting `main` to origin.
+- Nested `lumbros.me` submodule synced 91b2505 → 16261e0.
+- **Still blocked for PUSH**: HyperNexusllc repo LFS budget exceeded (`This repository exceeded its LFS budget`) — requires account-level LFS budget increase.
+
+#### Submodule Fast-Forwards (caught up to origin/main)
+- realestatecrm (+87), socialmediacontentplanner (+11), leadG (+10), forclosureworkflow (+8), re-agent-workflow-media-1 (+6), LegacyLeads (+4), explorerexedecompiled (+2).
+
 ## [1.0.47] - 2026-10-14
 
 ### Repository Synchronization & Intelligent Merge v1.0.47 (candlestixxx scope)
