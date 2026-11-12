@@ -1,5 +1,30 @@
 # Changelog
 
+## [1.0.49] - 2026-11-12
+
+### Repository Synchronization & Intelligent Merge v1.0.49 (candlestixxx scope)
+
+#### Submodule Fast-Forwards (caught up to origin/main)
+- **HyperNexus** 8445980 -> e7aba5994 (+132, v1.0.29 swarm scratchpad mirror). Local untracked session files that collide with newly tracked upstream paths (`.tormentnexus/sectioned_memory.json`, `.tormentnexus/imported_sessions/docs/auto-imported-agent-instructions.md`, `tormentnexus.db`) were preserved to `%TEMP%/HyperNexus-preserve-2026-11-12/` (SHA-256 verified for `tormentnexus.db`); the preserved `sectioned_memory.json` is byte-identical to the tracked upstream copy.
+- explorerexedecompiled ed1c8f2 -> 72262c0 (+4), forclosureworkflow 0524853 -> 357b3eb (+1), LegacyLeads 58e1998 -> a8c4e3f (+3), skillzhub b6285f9 -> 3aa327f (+4), realestatecrm ce69506 -> 9765060 (v0.63.0 TSF Master Bundle, committed and pushed concurrently during this cycle).
+
+#### Forward Merges (feature -> main, pushed)
+| Submodule | Branch | Result |
+|-----------|--------|--------|
+| brokeragentworkflow | jules-2876471418335953163-f9a5c291 (planner) | Merged a12a677: PlannerView.vue + routers/planner.py + models; resolved `main.py` conflict keeping BOTH admin and planner routers; kept `instance/app.db` deleted (binary DB), dropped `uvicorn_output.log`; py_compile verified. This branch was deferred in v1.0.47 for conflicts - now resolved. |
+| techno_platform_detroit | jules-12651673008847514627-4d2b20ae (v5.6.0-v5.8.0) | Merged clean (unified dashboard, tray daemon, mobile reviews parity, reviews unit tests); follow-up 8231ad6 restored CHANGELOG v4.0.0-v4.6.0 history the branch had truncated. |
+| skillzhub | dependabot/npm_and_yarn/npm_and_yarn-5a3aa769a5 | fast-xml-parser bump merged; a concurrent Protocol #281 merge of the same branch landed remotely mid-cycle, reconciled with a sync merge (00f7885, trees identical). |
+| crowdsourced_dance_club | upstream (robertpelloni) main | Upstream sync merged 27a95d7: v3.5.0-v3.5.9 unified dashboard/system-tray line (21 commits) over the fork's 5 local commits, no conflicts. |
+
+#### Reverse Merges (main -> features)
+- No reverse merges were required: every remaining local feature branch in the 25 submodules is already an ancestor of its primary branch (0 unique commits). The one non-ancestor remote branch, explorerexedecompiled `jules-17953985424687139578-97e0278c`, carries a single empty commit (1a6961a, no file changes; its content already landed via 72262c0), so it is redundant rather than active.
+
+#### Deferred / Ignored (per upstream-feature clause)
+- bobgui upstream (robertpelloni/bgtk): 12,833 commits ahead of the fork - a full GTK upstream, not a feature branch; ignored as in prior cycles.
+- hyperharness upstream (robertpelloni/hyperharness): 169 commits ahead, dominated by repeated infra-sanitize commits and a binary rebuild; local fork keeps its 2 retention commits (50c8826). Monitor-only, as before.
+- HyperNexus `vendor/deepseek-harness` + `vendor/grok-build` nested submodules remain uninitialized (recorded gitlinks only); hyperharness's 30+ nested submodules likewise remain uninitialized.
+
+
 ## [1.0.48] - 2026-10-26
 
 ### Repository Synchronization & Intelligent Merge v1.0.48 (candlestixxx scope)

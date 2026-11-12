@@ -19,6 +19,7 @@
 - [x] Forward-merged 7 feature branches across 7 submodules (v1.0.38); skipped 3 redundant/regressive AI branches.
 - [x] Forward-merged 9 feature branches across 7 submodules (v1.0.42) — brokeragentworkflow v0.46-0.48, excel Next.js UI, forclosureworkflow dashboard/S3, re-agent v2.14-2.15, skillzhub Edge/WebCrypto + dependabot, techno DM v5.1-5.3, pse v1.5.0 Gradio/Docker/audio-reactive; skipped 4 redundant/competing branches.
 - [x] v1.0.47: fast-forwarded 5 submodules (realestatecrm +34, forclosureworkflow +2, socialmediacontentplanner +2, LegacyLeads +2, re-agent +1) + forward-merged skillzhub dependabot 8-pkg bump.
+- [x] v1.0.49: fast-forwarded 6 submodules (HyperNexus +132 to v1.0.29, explorerexedecompiled +4, LegacyLeads +3, forclosureworkflow +1, skillzhub +4, realestatecrm to v0.63.0); forward-merged brokeragentworkflow planner (conflicts resolved, deferred since v1.0.47), techno_platform_detroit v5.6.0-v5.8.0 (changelog history restored), skillzhub fast-xml-parser dependabot; upstream-synced crowdsourced_dance_club v3.5.x (21 commits, clean).
 - [x] v1.0.48: HyperNexus v1.0.3→v1.0.21 (go/NUL resolved upstream; local v1.0.3 work preserved in local-v1.0.3-work); fast-forwarded 7 submodules (realestatecrm +87, socialmediacontentplanner +11, leadG +10, forclosureworkflow +8, re-agent +6, LegacyLeads +4, explorerexedecompiled +2).
 - [x] hyperharness recovery from broken state (v1.0.23).
 - [x] Documentation foundation: VISION.md, MEMORY.md, DEPLOY.md, IDEAS.md created (v1.0.23).

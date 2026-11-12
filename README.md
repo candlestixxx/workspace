@@ -2,7 +2,7 @@
 
 This workspace serves as a centralized monorepo and orchestration hub for various independent projects.
 
-## Submodules (20 total)
+## Submodules (25 total)
 
 | # | Submodule | Description |
 |---|-----------|-------------|
@@ -26,6 +26,11 @@ This workspace serves as a centralized monorepo and orchestration hub for variou
 | 18 | Prank-Deck-AI | Prank deck AI application |
 | 19 | bobgui | Bob's GUI toolkit (robertpelloni fork) |
 | 20 | hyperharness | Hypermedia harness (robertpelloni fork) |
+| 21 | aicrm | Agentic real estate CRM |
+| 22 | HyperNexus | Orchestration kernel (HyperNexusllc) |
+| 23 | psychedelic-speech-engine | Speech-to-music video pipeline |
+| 24 | suno-api | Local Suno music backend |
+| 25 | lumbros.me | lumbros.me site |
 
 ## Quick Start
 
