@@ -73,3 +73,12 @@
 [submodule "lumbros.me"]
 	path = lumbros.me
 	url = https://github.com/candlestixxx/lumbros.me.git
+[submodule "unitedbeats"]
+	path = unitedbeats
+	url = https://github.com/UnitedBeatsLLC/unitedbeats_site.git
+[submodule "pulse-dashboard"]
+	path = pulse-dashboard
+	url = https://github.com/candlestixxx/pulse-dashboard.git
+[submodule "HyperNexus VRL-1"]
+	path = HyperNexus VRL-1
+	url = https://github.com/candlestixxx/HyperNexus-VRL-1.git

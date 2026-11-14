@@ -27,9 +27,15 @@
 | 23 | HyperNexus | HyperNexus/ | https://github.com/HyperNexusllc/HyperNexus.git | e7aba5994 |
 | 24 | suno-api | suno-api/ | https://github.com/candlestixxx/suno-api.git | a5d6990 |
 | 25 | lumbros.me | lumbros.me/ | https://github.com/candlestixxx/lumbros.me.git | 16261e0 |
+| 26 | unitedbeats | unitedbeats/ | https://github.com/UnitedBeatsLLC/unitedbeats_site.git | 3d777a1 |
+| 27 | pulse-dashboard | pulse-dashboard/ | https://github.com/candlestixxx/pulse-dashboard.git | efd1c92 |
+| 28 | HyperNexus VRL-1 | HyperNexus VRL-1/ | https://github.com/candlestixxx/HyperNexus-VRL-1.git | 0ab941f |
 
 **Notes:**
-- 25 submodules: 24 under `candlestixxx` + 1 external (`HyperNexusllc/HyperNexus` — aicrm orchestration kernel).
+- 28 submodules: 26 under `candlestixxx` + 1 external (`HyperNexusllc/HyperNexus`) + 1 external (`UnitedBeatsLLC/unitedbeats_site.git`).
+- `HyperNexus VRL-1`: Virtual Routing Layer 1 - Universal Multi-Tenant API Gateway and Radial Vector Secret Vault commercialized for United Beats.
+- `pulse-dashboard`: Real-time system monitoring dashboard.
+- `unitedbeats`: United Beats LLC flagship site and media engine.
 - `crowdsourced_dance_club` has a nested submodule `external/auto_dj_script` (robertpelloni/auto_dj_script @ a47e1d3).
 - `HyperNexus` (8445980, v1.0.21) has a nested gitlink `lumbros.me` (candlestixxx/lumbros.me @ 16261e0); the old `vendor/deepseek-harness` + `vendor/grok-build` nested submodules were dropped in v1.0.21.
 - **lumbros.me** added as a top-level submodule this cycle (was previously only a nested HyperNexus submodule).
@@ -45,4 +51,4 @@
 
 Root remote: `https://github.com/candlestixxx/workspace.git` (main branch)
 
-**Last verified:** 2026-11-12 (v1.0.49) - 25 active submodules, all 0 ahead / 0 behind origin; 9 pointers advanced this cycle (6 fast-forwards incl. HyperNexus v1.0.29 +132, 3 forward merges, 1 upstream sync).
+**Last verified:** 2026-11-14 (v1.0.50) - 28 active submodules; added `HyperNexus VRL-1` (@ 0ab941f), `unitedbeats` (@ 3d777a1), and `pulse-dashboard` (@ efd1c92).

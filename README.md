@@ -2,7 +2,7 @@
 
 This workspace serves as a centralized monorepo and orchestration hub for various independent projects.
 
-## Submodules (25 total)
+## Submodules (28 total)
 
 | # | Submodule | Description |
 |---|-----------|-------------|
@@ -31,6 +31,9 @@ This workspace serves as a centralized monorepo and orchestration hub for variou
 | 23 | psychedelic-speech-engine | Speech-to-music video pipeline |
 | 24 | suno-api | Local Suno music backend |
 | 25 | lumbros.me | lumbros.me site |
+| 26 | unitedbeats | United Beats LLC classy tag cloud site |
+| 27 | pulse-dashboard | Real-time broadcast dashboard + Human Energy Index (live & virgin editions) |
+| 28 | HyperNexus VRL-1 | Universal Multi-Tenant API Gateway & Radial Vector Secret Vault |
 
 ## Quick Start
 

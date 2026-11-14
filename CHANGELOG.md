@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.0.50] - 2026-11-14
+
+### Repository Synchronization & Submodule Expansion v1.0.50
+- **Added HyperNexus VRL-1**:
+  - Registered submodule `HyperNexus VRL-1` pointing to `https://github.com/candlestixxx/HyperNexus-VRL-1.git` (@ 0ab941f).
+  - High-throughput asynchronous multi-tenant API gateway and dynamic control plane with $O(1)$ Radial Vector Secret Vault and TormentNexus MCP integration.
+  - Comprehensive business plan, developer portal UI with HTML5 canvas visualizer, zero-downtime hot onboarding, and isolated database connection pooling.
+- **Added Flagship & Ecosystem Submodules**:
+  - Added `unitedbeats` pointing to `https://github.com/UnitedBeatsLLC/unitedbeats_site.git` (@ 3d777a1).
+  - Added `pulse-dashboard` pointing to `https://github.com/candlestixxx/pulse-dashboard.git` (@ efd1c92).
+- **Submodule Topology Updates**:
+  - Updated `STRUCTURAL_MAP.md` and `.gitmodules` to index 28 active submodules.
+
 ## [1.0.49] - 2026-11-12
 
 ### Repository Synchronization & Intelligent Merge v1.0.49 (candlestixxx scope)
