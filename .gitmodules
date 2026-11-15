@@ -82,3 +82,6 @@
 [submodule "HyperNexus VRL-1"]
 	path = HyperNexus VRL-1
 	url = https://github.com/candlestixxx/HyperNexus-VRL-1.git
+[submodule "Unitedbeats_online"]
+	path = Unitedbeats_online
+	url = https://github.com/candlestixxx/unitedbeats_online.git
