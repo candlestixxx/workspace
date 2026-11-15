@@ -85,3 +85,6 @@
 [submodule "Unitedbeats_online"]
 	path = Unitedbeats_online
 	url = https://github.com/candlestixxx/unitedbeats_online.git
+[submodule "Spectrum Vision VRL-1 VISION-NEW OPTICS-Phramacutical-Optometrty"]
+	path = Spectrum Vision VRL-1 VISION-NEW OPTICS-Phramacutical-Optometrty
+	url = https://github.com/candlestixxx/Spectrum-Vision-VRL-1-VISION-NEW-OPTICS-Phramacutical-Optometrty.git
